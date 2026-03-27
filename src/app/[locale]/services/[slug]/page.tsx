@@ -1,5 +1,3 @@
-import type { ComponentType } from 'react'
-
 import { getTranslations } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 
@@ -8,25 +6,34 @@ import ServiceBusinessTransferContent from '@/components/sections/ServiceBusines
 import ServiceDigitalWalletContent from '@/components/sections/ServiceDigitalWalletContent'
 import ServicePersonalTransferContent from '@/components/sections/ServicePersonalTransferContent'
 import ServiceRealTimeFxContent from '@/components/sections/ServiceRealTimeFxContent'
+import { routing } from '@/i18n/routing'
 import { SERVICE_MENU_SLUGS, isServiceMenuSlug } from '@/lib/service-menu'
-import type { ServiceMenuItem, ServiceMenuSlug } from '@/types'
+import type { LocaleSlugPageProps, ServiceMenuItem, ServiceMenuSlug } from '@/types'
 
-const SERVICE_CONTENT_MAP: Record<ServiceMenuSlug, ComponentType> = {
-  'personal-transfer': ServicePersonalTransferContent,
-  'business-transfer': ServiceBusinessTransferContent,
-  'real-time-fx': ServiceRealTimeFxContent,
-  'digital-wallet': ServiceDigitalWalletContent,
-}
-
-interface Props {
-  params: Promise<{ locale: string; slug: string }>
-}
+export const dynamicParams = false
 
 export function generateStaticParams() {
-  return SERVICE_MENU_SLUGS.map((slug) => ({ slug }))
+  return routing.locales.flatMap((locale) =>
+    SERVICE_MENU_SLUGS.map((slug) => ({ locale, slug }))
+  )
 }
 
-export default async function ServiceDetailPage({ params }: Props) {
+function renderServiceContent(slug: ServiceMenuSlug) {
+  switch (slug) {
+    case 'personal-transfer':
+      return <ServicePersonalTransferContent />
+    case 'business-transfer':
+      return <ServiceBusinessTransferContent />
+    case 'real-time-fx':
+      return <ServiceRealTimeFxContent />
+    case 'digital-wallet':
+      return <ServiceDigitalWalletContent />
+    default:
+      return null
+  }
+}
+
+export default async function ServiceDetailPage({ params }: LocaleSlugPageProps) {
   const { locale, slug } = await params
 
   if (!isServiceMenuSlug(slug)) {
@@ -41,11 +48,11 @@ export default async function ServiceDetailPage({ params }: Props) {
     notFound()
   }
 
-  const ContentComponent = SERVICE_CONTENT_MAP[slug]
+  const content = renderServiceContent(slug)
 
-  if (!ContentComponent) {
+  if (!content) {
     return <SubpageScaffold title={serviceItem.label} />
   }
 
-  return <ContentComponent />
+  return content
 }
