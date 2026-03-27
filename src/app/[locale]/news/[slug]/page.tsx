@@ -5,11 +5,8 @@ import { notFound } from 'next/navigation'
 
 import NewsDetailContent from '@/components/sections/NewsDetailContent'
 import { buildNewsArticleItems, getRelatedNewsItems } from '@/lib/news'
-import type { NewsArticleItem, NewsDetailSection } from '@/types'
-
-interface Props {
-  params: Promise<{ locale: string; slug: string }>
-}
+import { createBasicMetadata } from '@/lib/metadata'
+import type { LocaleSlugPageProps, NewsArticleItem, NewsDetailSection } from '@/types'
 
 async function getNewsDetailData(locale: string) {
   const t = await getTranslations({ locale, namespace: 'newsPage' })
@@ -29,7 +26,7 @@ async function getNewsDetailData(locale: string) {
   }
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: LocaleSlugPageProps): Promise<Metadata> {
   const { locale, slug } = await params
   const { articles, detailTitle, sections } = await getNewsDetailData(locale)
   const article = articles.find((item) => item.slug === slug)
@@ -38,13 +35,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {}
   }
 
-  return {
+  return createBasicMetadata({
+    locale,
+    pathname: `/news/${slug}`,
     title: `${detailTitle} | V Pay`,
     description: sections[0]?.paragraphs[0] ?? '',
-  }
+    image: '/images/news-detail-hero.png',
+    type: 'article',
+  })
 }
 
-export default async function NewsDetailPage({ params }: Props) {
+export default async function NewsDetailPage({ params }: LocaleSlugPageProps) {
   const { locale, slug } = await params
   const { articles, breadcrumbLabel, detailDate, detailTitle, moreLabel, sections } =
     await getNewsDetailData(locale)

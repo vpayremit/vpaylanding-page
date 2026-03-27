@@ -3,6 +3,8 @@ import { Inter, Noto_Sans_KR } from 'next/font/google'
 import { getLocale } from 'next-intl/server'
 import type { ReactNode } from 'react'
 
+import { getSiteUrl } from '@/lib/metadata'
+
 import './globals.css'
 
 const inter = Inter({
@@ -17,8 +19,22 @@ const notoSansKr = Noto_Sans_KR({
 })
 
 export const metadata: Metadata = {
+  metadataBase: getSiteUrl(),
   title: 'V Pay',
   description: 'P2P Remittance Korea ↔ Vietnam',
+  openGraph: {
+    title: 'V Pay',
+    description: 'P2P Remittance Korea ↔ Vietnam',
+    siteName: 'V Pay',
+    type: 'website',
+    images: [{ url: '/images/policy-hero-badge.png', alt: 'V Pay' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'V Pay',
+    description: 'P2P Remittance Korea ↔ Vietnam',
+    images: ['/images/policy-hero-badge.png'],
+  },
 }
 
 interface Props {

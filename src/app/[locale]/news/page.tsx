@@ -3,10 +3,11 @@ import type { Metadata } from 'next'
 import { getTranslations } from 'next-intl/server'
 
 import NewsContent from '@/components/sections/NewsContent'
-import type { NewsTabKey } from '@/types'
+import { createBasicMetadata } from '@/lib/metadata'
+import type { LocalePageProps, NewsTabKey } from '@/types'
 
 interface Props {
-  params: Promise<{ locale: string }>
+  params: LocalePageProps['params']
   searchParams: Promise<{ tab?: string }>
 }
 
@@ -22,10 +23,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'newsPage' })
 
-  return {
+  return createBasicMetadata({
+    locale,
+    pathname: '/news',
     title: t('metaTitle'),
     description: t('metaDescription'),
-  }
+    image: '/images/news-hero-notice.png',
+  })
 }
 
 export default async function NewsPage({ searchParams }: Props) {
