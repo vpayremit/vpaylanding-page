@@ -244,9 +244,8 @@ export default function Header() {
               >
                 <div className="border-t border-slate-200 bg-white/98 shadow-[0_28px_48px_rgba(15,23,42,0.12)] backdrop-blur-md">
                   <div className="grid w-full grid-cols-[minmax(0,1fr)_minmax(0,2fr)]">
-                    <Link
+                    <div
                       className="relative flex min-h-[362px] flex-col justify-center gap-4 overflow-hidden bg-cta px-12 py-12 text-white"
-                      href="/services"
                     >
                       <div className="absolute -bottom-16 -left-12 h-[320px] w-[520px] rounded-full bg-[#FFD13E]/40 blur-[90px]" />
                       <div
@@ -259,7 +258,7 @@ export default function Header() {
                       >
                         {tServiceMenu('subtitle')}
                       </p>
-                    </Link>
+                    </div>
 
                     <div className="flex min-w-0 items-start justify-center gap-[56px] px-8 pb-16 pt-14">
                       {serviceMenuItems.map((item) => (
