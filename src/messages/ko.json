@@ -1,0 +1,849 @@
+{
+  "common": {
+    "ctaDownload": "시작하기",
+    "ctaStarted": "앱다운로드",
+    "langKo": "KOR",
+    "langEn": "ENG",
+    "openMenu": "메뉴 열기",
+    "closeMenu": "메뉴 닫기",
+    "previous": "이전",
+    "next": "다음"
+  },
+  "nav": {
+    "brand": "브이페이",
+    "services": "서비스",
+    "fees": "수수료",
+    "news": "소식",
+    "policy": "정책",
+    "contact": "문의"
+  },
+  "serviceMenu": {
+    "title": "서비스",
+    "subtitle": "글로벌 금융의 경계를 넘어,\n더 쉽고 빠르게",
+    "moreLabel": "더 보기",
+    "items": [
+      {
+        "slug": "personal-transfer",
+        "label": "개인 송금",
+        "image": "service-menu-personal-transfer.png"
+      },
+      {
+        "slug": "business-transfer",
+        "label": "기업 결제/송금",
+        "image": "service-menu-business-transfer.png"
+      },
+      {
+        "slug": "real-time-fx",
+        "label": "실시간 환전",
+        "image": "service-menu-real-time-fx.png"
+      },
+      {
+        "slug": "digital-wallet",
+        "label": "디지털 지갑",
+        "image": "service-menu-digital-wallet.png"
+      }
+    ]
+  },
+  "hero": {
+    "tag": "P2P\n Transfers",
+    "title": "개인 간 송금",
+    "subtitle": "빠르고 저렴하게,\n한국과 해외를 연결하는 개인 간(P2P)\n글로벌 송금 서비스",
+    "googlePlay": "Google Play",
+    "appStore": "Apple Store",
+    "sendNow": "지금 송금하기",
+    "exchangeRate": "1 KRW = 18.0600 VND",
+    "send": "Send",
+    "receive": "Receive",
+    "exchangeFrom": "KRW",
+    "exchangeTo": "VND",
+    "exchangeFromAmount": "1,000,000",
+    "exchangeToAmount": "18,060,000"
+  },
+  "services": {
+    "sectionTitle": "해외송금",
+    "sectionSubtitle": "글로벌 파트너 네트워크 기반 실시간 송금.",
+    "items": [
+      {
+        "tag": "P2P",
+        "title": "P2P 국내·해외송금",
+        "subtitle": "빠른 처리, 낮은 수수료, 시스템 안정성"
+      },
+      {
+        "tag": "B2B",
+        "title": "B2B 결제/송금",
+        "subtitle": "API 연동, 실시간 정산, 정산 자동화"
+      },
+      {
+        "tag": "API",
+        "title": "실시간 환전",
+        "subtitle": "실시간 환율 적용, 최적 비용 자동 계산, 투명한 수수료"
+      },
+      {
+        "tag": "WALLET",
+        "title": "디지털 지갑",
+        "subtitle": "통합 통화 관리, 간편 송금/결제, 즉시 사용 가능, 안전한 거래 환경"
+      }
+    ]
+  },
+  "servicePages": {
+    "personalTransfer": {
+      "hero": {
+        "badge": "P2P",
+        "title": "개인 송금",
+        "subtitle": "빠르고 저렴하게, 한국과 해외를 연결하는 개인 간(P2P) 글로벌 송금 서비스"
+      },
+      "reviews": {
+        "title": "타깃 리뷰",
+        "items": [
+          {
+            "role": "외국인 근로자",
+            "quote": "VPAY는 낮은 수수료와 빠른 도착 덕분에, 고향 가족에게 마음을 전하는 일이 한결 가벼워졌어요."
+          },
+          {
+            "role": "유학생 부모",
+            "quote": "VPAY는 환율이 투명하고 송금 상태를 실시간으로 확인할 수 있어, 멀리 있는 아이에게 안심하고 생활비를 보낼 수 있어요."
+          },
+          {
+            "role": "프리랜서 및 기업",
+            "quote": "VPAY는 대량 송금과 정산을 안정적으로 처리해줘서, 복잡했던 해외 비즈니스 거래가 믿을 수 없을 만큼 매끄러워졌어요."
+          }
+        ]
+      },
+      "keyContent": {
+        "title": "핵심 내용",
+        "items": [
+          { "title": "짧은 처리 기간", "icon": "service-p2p-key-short-processing.svg" },
+          { "title": "낮은 수수료", "icon": "service-p2p-key-low-fee.svg" },
+          { "title": "투명한 환율", "icon": "service-p2p-key-transparent-rate.svg" },
+          { "title": "성공률 높음", "icon": "service-p2p-key-high-success.svg" },
+          { "title": "실시간 추적 가능", "icon": "service-p2p-key-real-time-tracking.svg" },
+          { "title": "다국어", "icon": "service-p2p-key-multilingual.svg" },
+          { "title": "글로벌 네트워크", "icon": "service-p2p-key-global-network.svg" }
+        ]
+      },
+      "process": {
+        "title": "송금 프로세스",
+        "cta": "수수료 안내"
+      },
+      "coreTechnology": {
+        "title": "핵심 기술",
+        "cta": "송금하기",
+        "items": [
+          {
+            "title": "풀링",
+            "description": "여러 송금을 하나로 묶어, 한 번에 처리하는 기술\n중개 비용 절감, 처리 속도 증가, 사용자 수수료 인하, B2B 대량 송금 시 큰 효과",
+            "image": "service-p2p-tech-pooling.png"
+          },
+          {
+            "title": "프리펀딩",
+            "description": "수취 국가에 미리 예치해 둔 금액으로 즉시 지급하는 기술\n빠른 송금 속도(1시간~ 하루 정도), 실패율 감소, 급여 지급과 같은 B2B에 용이",
+            "image": "service-p2p-tech-prefunding.png"
+          },
+          {
+            "title": "스마트 라우팅",
+            "description": "가장 빠르고, 저렴하고, 성공률 높은 경로의 자동 선택 기술\n속도, 비용, 성공률, 파트너사 상태, 규제/시간대",
+            "image": "service-p2p-tech-smart-routing.png"
+          }
+        ]
+      },
+      "faq": {
+        "title": "자주 묻는 질문",
+        "items": [
+          { "question": "개인 간의 거래만 가능한가요?" },
+          { "question": "수수료가 얼마인가요?" },
+          { "question": "송금 금액의 한도가 따로 있나요?" },
+          { "question": "왜 수수료가 낮은가요?" },
+          { "question": "송금 완료까지 얼마나 소요되나요?" }
+        ]
+      }
+    },
+    "businessTransfer": {
+      "hero": {
+        "badge": "국•내외",
+        "title": "기업 결제/송금",
+        "subtitle": "빠른 API 기반의 결제 및 정산 인프라로, 복잡한 국경을 넘어 더 안전하고 효율적인 기업 간(B2B) 글로벌 결제를 제공합니다."
+      },
+      "reviews": {
+        "title": "타깃 리뷰",
+        "quote": "해외 공급업체 송금이 늘 번거로웠는데, VPAY API로 결제와 정산이 자동화되면서 운영 부담이 확 줄고 해외 대금 결제도 빠르고 안정적으로 처리하고 있어요.",
+        "author": "소상공인 및 이커머스"
+      },
+      "keyContent": {
+        "title": "핵심 내용",
+        "items": [
+          { "title": "API 연동", "icon": "service-b2b-key-api.svg" },
+          { "title": "실시간 정산", "icon": "service-b2b-key-real-time-settlement.svg" },
+          { "title": "안전한 처리", "icon": "service-b2b-key-secure-processing.svg" },
+          { "title": "정산 자동화", "icon": "service-b2b-key-automation.svg" }
+        ]
+      },
+      "process": {
+        "title": "결제/송금프로세스",
+        "cta": "수수료 안내"
+      },
+      "coreTechnology": {
+        "title": "핵심 기술",
+        "cta": "송금하기",
+        "items": [
+          {
+            "title": "글로벌 결제 네트워크 인프라",
+            "description": "전 세계 파트너 네트워크와 현지 지급망을 연결하는 국제 결제 인프라",
+            "image": "service-b2b-tech-global-network.png"
+          },
+          {
+            "title": "규칙 기반 정산·라우팅 엔진",
+            "description": "국가·통화·수수료·경로를 최적화하는 Smart Routing 정산 엔진",
+            "image": "service-b2b-tech-routing-engine.png"
+          },
+          {
+            "title": "AML·FDS·KYC 통합 리스크 관리 모듈",
+            "description": "국제 송금에 필수적인 보안·규제 시스템 통합",
+            "image": "service-b2b-tech-risk-management.png"
+          }
+        ]
+      },
+      "faq": {
+        "title": "자주 묻는 질문",
+        "items": [
+          { "question": "기업 간의 거래만 가능한가요?" },
+          { "question": "P2P 수수료와 같나요?" },
+          { "question": "왜 수수료가 낮은가요?" },
+          { "question": "왜 수수료가 낮은가요?" },
+          { "question": "송금 완료까지 얼마나 소요되나요?" }
+        ]
+      }
+    },
+    "realTimeFx": {
+      "hero": {
+        "badge": "투명한 수수료",
+        "title": "실시간 환전",
+        "subtitle": "글로벌 환율 데이터를 기반으로, 투명한 수수료와 즉시 환전을 지원하는 안전한 거래 서비스"
+      },
+      "reviews": {
+        "title": "타깃 리뷰",
+        "items": [
+          {
+            "role": "소규모 수입 카페 사장님",
+            "quote": "해외 원두를 수입할 때마다 환율 확인하고 송금하느라 시간이 오래 걸렸는데, 브이페이 환전 모듈로 자동 계산과 즉시 처리까지 돼서 운영 부담이 크게 줄었어요"
+          },
+          {
+            "role": "1인 크리에이터/셀러",
+            "quote": "해외 플랫폼에서 수익을 받을 때, 환율 변동으로 손해 보는 일이 많았는데 브이페이 실시간 환전으로 최적 환율이 적용돼 안정적으로 수익을 정산받을 수 있어요"
+          }
+        ]
+      },
+      "keyContent": {
+        "title": "핵심 내용",
+        "items": [
+          { "title": "실시간 환율 적용", "icon": "service-fx-key-live-rate.svg" },
+          { "title": "최적 비용 자동 계산", "icon": "service-fx-key-auto-cost.svg" },
+          { "title": "빠른 환전 처리", "icon": "service-fx-key-fast-processing.svg" },
+          { "title": "투명한 수수료 구조", "icon": "service-fx-key-transparent-fee.svg" }
+        ]
+      },
+      "process": {
+        "title": "환전 프로세스",
+        "cta": "수수료 안내"
+      },
+      "coreTechnology": {
+        "title": "핵심 기술",
+        "cta": "환전하기",
+        "items": [
+          {
+            "title": "멀티커런시 코어 엔진",
+            "description": "여러 국가 통화와 잔액을 정확하게 관리",
+            "image": "service-fx-tech-multi-currency-core.png"
+          },
+          {
+            "title": "실시간 환율 모듈",
+            "description": "시장 변동을 즉시 반영해 합리적인 환전 제공",
+            "image": "service-fx-tech-live-rate-module.png"
+          },
+          {
+            "title": "글로벌 파트너 네트워크 (API 연동)",
+            "description": "현지 지급망과 연결되어 빠르고 안정적인 환전 지원",
+            "image": "service-fx-tech-global-partner-network.png"
+          },
+          {
+            "title": "자동 정산 시스템",
+            "description": "환전과 정산을 자동화해 대량·다국가 거래도 신속하고 안정적으로 처리",
+            "image": "service-fx-tech-auto-settlement.png"
+          }
+        ]
+      },
+      "faq": {
+        "title": "자주 묻는 질문",
+        "items": [
+          { "question": "환전 후 바로 입금되나요?" },
+          { "question": "은행 점검 시간 같은 거래 불가능 시간대가 있나요?" },
+          { "question": "환전할 수 있는 금액 한도가 따로 있나요?" }
+        ]
+      }
+    },
+    "digitalWallet": {
+      "hero": {
+        "badge": "디지털 지갑",
+        "title": "디지털 지갑",
+        "subtitle": "스마트 폰 및 웹 디지털 환경의 한 플랫폼에서 현금, 카드, 결제 정보, 송금 기능을 통합 관리하는 편리한 금융 서비스"
+      },
+      "reviews": {
+        "title": "타깃 리뷰",
+        "items": [
+          {
+            "role": "기업",
+            "quote": "해외 거래처에 수입 대금을 송금하고 직원 급여를 해외에서 지급할 때, 브이페이 디지털 지갑 덕분에 여러 통화 잔액과 환율을 한눈에 관리할 수 있어 업무가 훨씬 효율적이고 빠릅니다"
+          },
+          {
+            "role": "크리에이터/프리랜서",
+            "quote": "해외 플랫폼에서 발생한 수익을 여러 계좌로 나눠 받던 번거로움이 사라졌어요! 브이페이 지갑으로 모아두고 필요할 때 환전과 송금을 바로 처리할 수 있어, 글로벌 수익 관리가 간편해졌습니다"
+          }
+        ]
+      },
+      "keyContent": {
+        "title": "핵심 내용",
+        "items": [
+          { "title": "통합 통화 관리", "icon": "service-wallet-key-multi-currency.svg" },
+          { "title": "간편 송금•결제", "icon": "service-wallet-key-easy-payment.svg" },
+          { "title": "즉시 사용 가능", "icon": "service-wallet-key-instant-access.svg" },
+          { "title": "안전한 거래 환경", "icon": "service-wallet-key-secure-environment.svg" }
+        ]
+      },
+      "coreTechnology": {
+        "title": "핵심 기술",
+        "cta": "지갑 열기",
+        "items": [
+          {
+            "title": "멀티커런시 관리",
+            "description": "여러 통화 잔액과 환율 동시 관리",
+            "image": "service-wallet-tech-multi-currency.png"
+          },
+          {
+            "title": "실시간 환율",
+            "description": "즉시 환율 적용, 최적 비용 환전",
+            "image": "service-fx-tech-live-rate-module.png"
+          },
+          {
+            "title": "글로벌 통합 송금",
+            "description": "Wise/Tranglo/GME 등 파트너 기반 안전하고 효율적인 송금·결제",
+            "image": "service-fx-tech-global-partner-network.png"
+          }
+        ]
+      },
+      "faq": {
+        "title": "자주 묻는 질문",
+        "items": [
+          { "question": "앱 사용 시 버벅임이 있나요?" },
+          { "question": "무료 앱인가요?" },
+          { "question": "타 은행의 계좌와 연결 가능한가요?" }
+        ]
+      }
+    }
+  },
+  "testimonials": {
+    "items": [
+      {
+        "quote": "본국에 있는 아이들과 아내에게\n빠르게 돈을 송금할 수 있어서 너무 안심이에요",
+        "role": "유학생 부모",
+        "tags": ["낮은 송금 수수료", "다국어"]
+      },
+      {
+        "quote": "본국에 있는 아이들과 아내에게\n빠르게 돈을 송금할 수 있어서 너무 안심이에요",
+        "role": "유학생 부모",
+        "tags": ["실시간·투명한 환율", "초고속 송금"]
+      },
+      {
+        "quote": "본국에 있는 아이들과 아내에게\n빠르게 돈을 송금할 수 있어서 너무 안심이에요",
+        "role": "프리랜서 / 기업",
+        "tags": ["대량 송금", "빠른 지급"]
+      }
+    ]
+  },
+  "whyVpay": {
+    "sectionTitle": "당신에게 V Pay가 적합한 이유",
+    "items": [
+      {
+        "title": "자금 풀링 (Pooling)",
+        "description": "여러 송금을 하나로 묶어, 한 번에 처리하는 기술."
+      },
+      {
+        "title": "사전 예치 자금 (Pre-funding)",
+        "description": "현지 예치금을 활용한 즉시 지급."
+      },
+      {
+        "title": "스마트 라우팅 (Smart Routing)",
+        "description": "가장 빠르고 저렴하고 성공률 높은 경로 자동 선택."
+      },
+      {
+        "title": "규제 및 위험 관리",
+        "description": "자동화된 KYC / AML / FDS, 전 구간 암호화."
+      }
+    ]
+  },
+  "remittanceProcess": {
+    "sectionTitle": "송금 프로세스",
+    "sectionTag": "V 프로세스",
+    "cta": "앱 다운로드",
+    "steps": [
+      {
+        "title": "정보 입력",
+        "items": ["금액 입력", "환율·수수료 실시간 확인", "수취인 선택", "결제(카드/계좌이체)"]
+      },
+      {
+        "title": "송금하기",
+        "items": ["Smart Routing 자동으로 가장 빠른 송금 경로 선택", "Pre-funding 대기 없이 즉시 지급"]
+      },
+      {
+        "title": "알림 안내",
+        "items": ["수취인 계좌 송금 완료 알림"]
+      }
+    ]
+  },
+  "faq": {
+    "sectionTitle": "FAQ",
+    "items": [
+      {
+        "question": "수수료는 얼마인가요?",
+        "answer": "송금액과 국가에 따라 다르지만, 기존 은행 대비 최대 90% 저렴한 고정 수수료와 투명한 환율을 제공합니다."
+      },
+      {
+        "question": "한도가 따로 있나요?",
+        "answer": "한국 소액해외송금법에 따라 연간 미화 10만 달러 한도 내에서 안전하게 송금하실 수 있습니다."
+      },
+      {
+        "question": "왜 수수료가 낮은가요?",
+        "answer": "다수의 소액 거래를 하나로 묶어 처리하는 Pooling 기술을 통해 불필요한 중개 은행 수수료를 획기적으로 줄였습니다."
+      },
+      {
+        "question": "송금 완료까지 얼마나 걸리나요?",
+        "answer": "현지 파트너사에 자금을 미리 예치하는 Pre-funding 시스템을 통해 보통 수 분 내에 완료되며, 현지 은행 사정에 따라 최대 24시간까지 소요될 수 있습니다."
+      }
+    ]
+  },
+  "aboutPage": {
+    "metaTitle": "회사 소개 | V Pay",
+    "metaDescription": "V Pay의 회사 소개, 연혁, 브랜드 핵심 가치를 확인해 보세요.",
+    "hero": {
+      "eyebrow": "회사 소개",
+      "title": "글로벌 금융의 경계를 넘어,\n더 쉽고 빠르게",
+      "subtitle": "글로벌 금융의 경계를 넘어, 더 빠르고 쉽게"
+    },
+    "history": {
+      "title": "연혁",
+      "items": [
+        {
+          "year": "2025",
+          "description": "브이페이 주식회사 사업자 등록 완료"
+        },
+        {
+          "year": "2026",
+          "description": "V Pay 앱 시범 운행"
+        }
+      ]
+    },
+    "values": {
+      "eyebrow": "V의 가치",
+      "title": "브랜드 핵심 가치",
+      "description": "V Pay는 국내 핀테크 기업으로써, 동남아시아를 중심으로 전략적 파트너십과 규제 협력을 통해 글로벌 결제 네트워크를 확장합니다.\n또한, 한국 기반의 안정적 기술과 경험을 바탕으로 현지 시장 맞춤형 디지털 결제 솔루션을 제공하며 지속 가능한 성장과 시장 점유율 확대를 추구합니다.",
+      "items": [
+        {
+          "title": "시간의 가치",
+          "description": "빠른 송금",
+          "icon": "about-value-time.svg"
+        },
+        {
+          "title": "편리의 가치",
+          "description": "간편한 서비스 사용",
+          "icon": "about-value-convenience.svg"
+        },
+        {
+          "title": "비용의 가치",
+          "description": "낮은 송금 수수료",
+          "icon": "about-value-cost.svg"
+        },
+        {
+          "title": "신뢰의 가치",
+          "description": "투명한 환율",
+          "icon": "about-value-trust.svg"
+        }
+      ]
+    },
+    "confidence": {
+      "title": "안심하고 사용하세요",
+      "subtitle": "브이페이의 금융 보안 기술로, 사용자의 보안을 책임집니다.",
+      "cta": "정책 바로가기"
+    }
+  },
+  "newsPage": {
+    "metaTitle": "소식 | V Pay",
+    "metaDescription": "V Pay의 공지사항, 보도자료, SNS, 파트너십 소식을 확인해 보세요.",
+    "hero": {
+      "eyebrow": "소식",
+      "title": "글로벌 금융의 경계를 넘어,\n더 쉽고 빠르게"
+    },
+    "tabs": {
+      "notice": "공지사항",
+      "pressReleases": "보도자료",
+      "sns": "SNS",
+      "partnership": "파트너십"
+    },
+    "notice": {
+      "sectionTitle": "최신 공지",
+      "searchPlaceholder": "내용 검색",
+      "moreLabel": "더 보기",
+      "items": [
+        {
+          "date": "October 2, 2025",
+          "title": "12cm – 스마트 라벨 솔루션 개발자, 핀테크 플랫폼을 위한",
+          "excerpt": "오늘, 우리는 핀테크 기업을 위한 플랫폼 개발업체인 12cm를 소개합니다. 12cm의 부사장 신성원은 회사를 소개합니다.",
+          "image": "news-notice-01.png"
+        },
+        {
+          "date": "October 2, 2025",
+          "title": "12cm – 스마트 라벨 솔루션 개발자, 핀테크 플랫폼을 위한",
+          "excerpt": "오늘, 우리는 핀테크 기업을 위한 플랫폼 개발업체인 12cm를 소개합니다. 12cm의 부사장 신성원은 회사를 소개합니다.",
+          "image": "news-notice-02.png"
+        },
+        {
+          "date": "October 2, 2025",
+          "title": "12cm – 스마트 라벨 솔루션 개발자, 핀테크 플랫폼을 위한",
+          "excerpt": "오늘, 우리는 핀테크 기업을 위한 플랫폼 개발업체인 12cm를 소개합니다. 12cm의 부사장 신성원은 회사를 소개합니다.",
+          "image": "news-notice-03.png"
+        },
+        {
+          "date": "October 2, 2025",
+          "title": "12cm – 스마트 라벨 솔루션 개발자, 핀테크 플랫폼을 위한",
+          "excerpt": "오늘, 우리는 핀테크 기업을 위한 플랫폼 개발업체인 12cm를 소개합니다. 12cm의 부사장 신성원은 회사를 소개합니다.",
+          "image": "news-notice-04.png"
+        },
+        {
+          "date": "October 2, 2025",
+          "title": "12cm – 스마트 라벨 솔루션 개발자, 핀테크 플랫폼을 위한",
+          "excerpt": "오늘, 우리는 핀테크 기업을 위한 플랫폼 개발업체인 12cm를 소개합니다. 12cm의 부사장 신성원은 회사를 소개합니다.",
+          "image": "news-notice-05.png"
+        },
+        {
+          "date": "October 2, 2025",
+          "title": "12cm – 스마트 라벨 솔루션 개발자, 핀테크 플랫폼을 위한",
+          "excerpt": "오늘, 우리는 핀테크 기업을 위한 플랫폼 개발업체인 12cm를 소개합니다. 12cm의 부사장 신성원은 회사를 소개합니다.",
+          "image": "news-notice-06.png"
+        }
+      ]
+    },
+    "pressReleases": {
+      "sectionTitle": "보도자료",
+      "searchPlaceholder": "내용 검색",
+      "moreLabel": "더 보기",
+      "items": [
+        {
+          "date": "October 2, 2025",
+          "title": "12cm – 스마트 라벨 솔루션 개발자, 핀테크 플랫폼을 위한",
+          "excerpt": "오늘, 우리는 핀테크 기업을 위한 플랫폼 개발업체인 12cm를 소개합니다. 12cm의 부사장 신성원은 회사를 소개합니다.",
+          "image": "news-press-release-01.png"
+        },
+        {
+          "date": "October 2, 2025",
+          "title": "12cm – 스마트 라벨 솔루션 개발자, 핀테크 플랫폼을 위한",
+          "excerpt": "오늘, 우리는 핀테크 기업을 위한 플랫폼 개발업체인 12cm를 소개합니다. 12cm의 부사장 신성원은 회사를 소개합니다.",
+          "image": "news-press-release-02.png"
+        },
+        {
+          "date": "October 2, 2025",
+          "title": "12cm – 스마트 라벨 솔루션 개발자, 핀테크 플랫폼을 위한",
+          "excerpt": "오늘, 우리는 핀테크 기업을 위한 플랫폼 개발업체인 12cm를 소개합니다. 12cm의 부사장 신성원은 회사를 소개합니다.",
+          "image": "news-press-release-03.png"
+        },
+        {
+          "date": "October 2, 2025",
+          "title": "12cm – 스마트 라벨 솔루션 개발자, 핀테크 플랫폼을 위한",
+          "excerpt": "오늘, 우리는 핀테크 기업을 위한 플랫폼 개발업체인 12cm를 소개합니다. 12cm의 부사장 신성원은 회사를 소개합니다.",
+          "image": "news-press-release-04.png"
+        },
+        {
+          "date": "October 2, 2025",
+          "title": "12cm – 스마트 라벨 솔루션 개발자, 핀테크 플랫폼을 위한",
+          "excerpt": "오늘, 우리는 핀테크 기업을 위한 플랫폼 개발업체인 12cm를 소개합니다. 12cm의 부사장 신성원은 회사를 소개합니다.",
+          "image": "news-press-release-05.png"
+        },
+        {
+          "date": "October 2, 2025",
+          "title": "12cm – 스마트 라벨 솔루션 개발자, 핀테크 플랫폼을 위한",
+          "excerpt": "오늘, 우리는 핀테크 기업을 위한 플랫폼 개발업체인 12cm를 소개합니다. 12cm의 부사장 신성원은 회사를 소개합니다.",
+          "image": "news-press-release-06.png"
+        }
+      ]
+    },
+    "detail": {
+      "breadcrumb": "소식",
+      "title": "12cm – 스마트 라벨 솔루션 개발자, 핀테크 플랫폼을 위한",
+      "date": "2025. 12. 3.",
+      "moreLabel": "더 보기",
+      "sections": [
+        {
+          "heading": "글로벌 시장을 겨냥한 전자 스탬프 솔루션",
+          "paragraphs": [
+            "오늘, 우리는 핀테크 기업을 위한 플랫폼 개발업체인 12cm를 소개합니다. 12cm의 부사장 신성원은 회사를 소개합니다.",
+            "IT 스타트업인 12cm는 스마트폰에서 스마트 스탬프인 Echoss Stamp를 활용한 포인트 적립 시스템을 적용한 혁신적인 기술 플랫폼인 Echoss 서비스를 기반으로 국내외에서 다양한 프로젝트를 추진하고 있습니다. 이를 통해 사용자는 스마트폰에서 간단한 조작으로 \"포인트 적립\" 서비스를 활성화하고 인증할 수 있습니다."
+          ]
+        },
+        {
+          "heading": "스마트폰으로 전자 스탬프를 통한 간편한 결제",
+          "paragraphs": [
+            "12cm의 한정규 이사와 신성원 부사장은 모바일 금융 시스템, 즉 온라인 뱅킹과 같은 핀테크 분야의 전문가로, 은행을 위한 솔루션을 제공하는 과정에서 온라인과 오프라인을 연결하는 서비스에 관심을 가지게 되었습니다.",
+            "이를 해결하기 위해 12cm는 스마트 스탬프 시스템을 개발했습니다. 신성원 부사장은 이렇게 말했습니다.",
+            "많은 사람들이 스마트폰에서 정보를 인증하기 위해 스마트 스탬프를 사용하는 장면을 기억할 것입니다. 스마트폰의 정전식 센서를 통해, Echoss Stamp는 전도성 재료의 5개 접촉점으로 만들어지며, 클라우드 기반의 관리 소프트웨어와 결합하여 인증 과정을 완료합니다. Echoss Stamp의 인프라는 바코드나 QR 코드 시스템보다 훨씬 저렴하며, 더 편리하고 간편한 경험을 제공하여 현재 기술에 대한 이상적인 대안이 될 수 있습니다."
+          ]
+        },
+        {
+          "heading": "Echoss 스탬프는 50개 국내 기업과 24개국에서 사용되고 있습니다.",
+          "paragraphs": [
+            "카페나 제과점에서 쇼핑할 때 고객은 종종 구매할 때마다 스탬프를 찍는 포인트 카드를 받습니다. 그러나 종이 스탬프 카드는 다소 번거롭고 불편하기 때문에 12cm는 스마트폰에 전자 스탬프를 붙이는 유사한 기능의 솔루션을 개발했습니다.",
+            "인증 기술과 결합된 Echoss 스탬프는 포인트 적립, 쇼핑 카드 또는 온라인 결제를 편리하게 사용할 수 있으며, 매장에서 카드 단말기를 대체할 수 있습니다. 현재 이 솔루션은 현대백화점, 배스킨라빈스와 같은 한국의 50개 기업과 일본, 중국, 대만, 싱가포르, 스페인, 미국 등 24개국에서 사용되고 있습니다."
+          ]
+        },
+        {
+          "heading": "O2O에서 빅데이터, AI 기술까지 다양한 서비스 제공",
+          "paragraphs": [
+            "필요한 모든 소프트웨어는 클라우드 환경에서 제공되며, 스탬프는 유일한 오프라인 장치입니다. 다른 결제 시스템에 비해 스마트 스탬프 시스템은 더 편리하고 비용을 절감할 수 있습니다. 예를 들어, 한 회사는 일본의 글로벌 커피 체인 매장에서 포인트 시스템을 구축하는 데 450,000달러를 지출해야 했지만, 12cm는 일본의 1,000개 배스킨라빈스 매장에서 스마트 스탬프 시스템을 설치하는 데 27,000달러로 3일밖에 걸리지 않았습니다.",
+            "수년간 축적된 방대한 데이터베이스를 바탕으로 12cm는 빅데이터 분야로 사업을 확장하고, 데이터 분석과 추출 및 통합을 기반으로 새로운 서비스를 창출하고자 합니다. 이를 통해 인공지능 기술을 결합하여 트렌드를 예측할 수 있습니다. 요약하자면, 우리는 O2O 서비스, 빅데이터 및 AI와 관련된 프로젝트를 연구하고 개발하며 추진하기 위해 노력하고 있습니다."
+          ]
+        },
+        {
+          "heading": "기술 분야의 유니콘 기업으로 성장하는 꿈",
+          "paragraphs": [
+            "12cm는 한국에서 클라우드 기반의 금융 서비스를 최초로 출시한 기업입니다. 금융 서비스는 높은 보안 요구 사항이 필요하기 때문에 클라우드에서 구현하기가 매우 어렵지만, 12cm는 클라우드 기반의 핀테크 서비스를 출시했습니다. 이 회사는 강원도에서 COVID-19 확산 방지를 위한 스마트 스탬프 솔루션을 제공하며, 온라인과 오프라인 활동 간의 장벽을 허물기 위해 기술을 활용하여 사업 영역을 확장하고 있습니다.",
+            "우리는 O2O 서비스, 빅데이터 및 AI 분야의 기술 혁신을 달성하기 위해 몇 가지 기술 플랫폼에 대한 글로벌 기준을 구축하는 것을 목표로 하고 있습니다. 또한, 12cm는 \"세계 식량 캠페인\"과 같은 지역 사회 활동에도 관심을 가지고 있으며, ESG 기준을 향한 유사한 활동에도 지속적으로 관심을 가질 것입니다. 한국에서 제작된 우수한 핀테크 기술을 보유한 12cm는 내년에 해외 시장을 추가로 탐색하고, 글로벌 유니콘 기업으로 성장하기 위해 사업을 확장할 계획입니다."
+          ]
+        }
+      ]
+    },
+    "sns": {
+      "heroText": "다양한 채널을 통한 V Pay 콘텐츠",
+      "sectionTitle": "SNS 채널",
+      "cta": "보러 가기",
+      "channels": [
+        { "label": "인스타그램", "icon": "news-social-instagram.svg" },
+        { "label": "페이스북", "icon": "news-social-facebook.svg" },
+        { "label": "유튜브", "icon": "news-social-youtube.svg" },
+        { "label": "네이버 블로그", "icon": "news-social-naver-blog.svg" },
+        { "label": "링크드인", "icon": "news-social-linkedin.svg" }
+      ]
+    },
+    "partnership": {
+      "heroText": "브이페이와 함께 하고 있어요"
+    }
+  },
+  "contactPage": {
+    "metaTitle": "문의하기 | V Pay",
+    "metaDescription": "문의사항이나 질문이 있으시면 V Pay에 연락해 주세요.",
+    "heroTitle": "문의하기",
+    "heroSubtitle": "문의사항이나 질문이 있으시면 저희에게 연락해 주세요.",
+    "contactItems": [
+      {
+        "type": "address",
+        "label": "주소",
+        "value": "서울특별시 강남구 선릉로 155길 15, 2층 (신사동)"
+      },
+      {
+        "type": "phone",
+        "label": "전화",
+        "value": "+82-1533-5845"
+      },
+      {
+        "type": "email",
+        "label": "메일",
+        "value": "admin@vpayv.com"
+      }
+    ],
+    "faq": {
+      "title": "자주 묻는 질문",
+      "searchPlaceholder": "국적 검색",
+      "tabs": {
+        "paymentStatus": "결제 상태",
+        "refundStatus": "환불 상태",
+        "settlementStatus": "정산 상태"
+      },
+      "items": [
+        {
+          "question": "개인 간의 거래만 가능한가요?"
+        },
+        {
+          "question": "수수료가 얼마인가요?"
+        },
+        {
+          "question": "송금 금액의 한도가 따로 있나요?"
+        },
+        {
+          "question": "왜 수수료가 낮은가요?"
+        },
+        {
+          "question": "송금 완료까지 얼마나 소요되나요?"
+        }
+      ],
+      "moreLabel": "더 보기"
+    },
+    "helpTitle": "도움이 필요하신가요?",
+    "helpSubtitle": "거래 상태나 결제 정책에 대한 질문이 있으시면, 저희 지원 팀에 문의해 주세요.",
+    "helpCta": "지원팀에 문의하기"
+  },
+  "policyPage": {
+    "metaTitle": "결제 및 보안 정책 | V Pay",
+    "metaDescription": "결제 상태, 보안 및 거래 처리 프로세스의 투명성을 안내하는 V Pay 정책 페이지입니다.",
+    "heroTitle": "결제 및 보안 정책",
+    "heroSubtitle": "결제 상태, 보안 및 거래 처리 프로세스의 투명성",
+    "complianceSections": [
+      {
+        "title": "규제 및 라이센스",
+        "description": "V Pay는 글로벌 및 국내 금융 규제를 철저히 준수하며, 안정적이고 신뢰할 수 있는 서비스를 제공합니다.\n다양한 국가와 시장에서 필요한 라이선스와 인증을 확보하여 사업 확장과 사용자 보호를 동시에 실현합니다.",
+        "bullets": [
+          "국내 금융 규제 준수: 외국환거래법, 전자금융거래법 등 관련 법규 철저 준수",
+          "글로벌 라이선스 확보: 송금, 결제, 디지털 자산 관련 주요 국가별 인허가 취득",
+          "KYC / AML 정책: 고객 신원 확인 및 자금세탁 방지 자동화 시스템 운영",
+          "데이터 보호 및 보안: 개인정보 보호법, ISO / IEC 27001 등 국제 표준 준수",
+          "규제 변화 대응: 신규 법규 및 정책 변화에 유연하게 대응하여 사업 리스크 최소화"
+        ]
+      },
+      {
+        "title": "보안",
+        "description": "보안 구조 (2FA, Transaction Risk Engine 등)",
+        "bullets": [
+          "2FA 다단계 인증으로 계정 탈취 방지",
+          "Transaction Risk Engine 거래 패턴 분석 및 이상 거래 실시간 탐지",
+          "데이터 암호화, 접근 제어, 로그 모니터링",
+          "데이터 암호화, 접근 제어, 로그 모니터링",
+          "고가용성, 실시간 대응, 규제 준수"
+        ]
+      }
+    ],
+    "statusTitle": "결제 상태",
+    "statusSubtitle": "시스템 내 상태의 의미를 조회하는 표",
+    "tableHeaders": {
+      "code": "상태 코드",
+      "status": "상태",
+      "description": "설명"
+    },
+    "statusTables": [
+      {
+        "title": "결제 상태",
+        "rows": [
+          {
+            "code": "PAY_STANDBY",
+            "status": "대기 중",
+            "description": "거래가 처리 중입니다."
+          },
+          {
+            "code": "PAY_APPROVED",
+            "status": "승인됨",
+            "description": "거래가 확인되었습니다."
+          },
+          {
+            "code": "PAY_PROGRESS",
+            "status": "진행 중",
+            "description": "거래가 처리 중입니다."
+          },
+          {
+            "code": "PAY_COMPLETE",
+            "status": "완료됨",
+            "description": "결제가 완료되었습니다."
+          },
+          {
+            "code": "PAY_CANCEL",
+            "status": "취소됨",
+            "description": "거래가 취소되었습니다."
+          }
+        ]
+      },
+      {
+        "title": "환불 상태",
+        "rows": [
+          {
+            "code": "REFUND_PROGRESS",
+            "status": "환불 진행 중",
+            "description": "환불 처리 중"
+          },
+          {
+            "code": "REFUND_SUCCESS",
+            "status": "환불 성공",
+            "description": "환불 성공"
+          }
+        ]
+      },
+      {
+        "title": "정산 상태",
+        "rows": [
+          {
+            "code": "SETTLEMENT_COMPLETE",
+            "status": "정산 완료",
+            "description": "정산이 완료되었습니다"
+          },
+          {
+            "code": "SETTLEMENT_REFUND_COMPLETE",
+            "status": "정산 환불됨",
+            "description": "정산 환불이 완료되었습니다"
+          }
+        ]
+      }
+    ],
+    "helpTitle": "도움이 필요하신가요?",
+    "helpSubtitle": "거래 상태나 결제 정책에 대한 질문이 있으시면, 저희 지원 팀에 문의해 주세요.",
+    "helpCta": "지원팀에 문의하기"
+  },
+  "feesPage": {
+    "metaTitle": "수수료 | V Pay",
+    "metaDescription": "경쟁사 비교, 수수료 안내, 한도 안내와 시간 안내를 확인하는 V Pay 수수료 페이지입니다.",
+    "comparisonTitle": "경쟁사 비교",
+    "comparisonSubtitle": "Dummy...",
+    "feeGuideTitle": "수수료 안내",
+    "feeGuideSubtitle": "Dummy...",
+    "reasons": {
+      "title": "수수료가 낮은 이유?",
+      "cta": "송금하기",
+      "items": [
+        {
+          "title": "중개 비용 최소화",
+          "description": "중간 금융사 없이 글로벌 파트너와 직접 연결해 불필요한 수수료 제거"
+        },
+        {
+          "title": "완전 디지털 운영",
+          "description": "송금·결제·환전 프로세스를 자동화하여 운영 비용 절감"
+        },
+        {
+          "title": "규모의 경제 활용",
+          "description": "대규모 자금을 풀링(Pooling)해 단위 거래 비용을 최소화"
+        },
+        {
+          "title": "고성능 FX 엔진 & 실시간 환율",
+          "description": "최적 경로 분석과 실시간 환율 적용으로 환전 비용 절감"
+        },
+        {
+          "title": "규제·라이선스 최적화",
+          "description": "글로벌 금융 규제와 라이선스를 전략적으로 확보해 법적 비용 최소화"
+        },
+        {
+          "title": "스마트 라우팅 기술",
+          "description": "자동 경로 최적화로 비용과 처리 시간을 동시에 절약"
+        },
+        {
+          "title": "글로벌 파트너 네트워크",
+          "description": "Wise, Tranglo, GME 등 현지 파트너사와 직접 연동해 안정성과 비용 효율 확보\n*기술과 운영 효율로, 더 빠르고 안전하고 낮은 수수료의 글로벌 결제 가능"
+        }
+      ]
+    },
+    "limitTitle": "한도 안내",
+    "limitSubtitle": "Dummy...",
+    "timeTitle": "시간 안내",
+    "timeSubtitle": "Dummy...",
+    "ctaTitle": "글로벌 금융의 경계를 넘어,\n더 빠르고 쉽게",
+    "ctaButton": "앱 다운로드"
+  },
+  "footer": {
+    "company": "브이페이 주식회사",
+    "contactEmail": "admin@vpayv.com",
+    "contactPhone": "+82-1533-5845",
+    "address": "서울특별시 강남구 선릉로155길 15, 2층 (신사동)",
+    "links": {
+      "terms": "서비스 약관",
+      "privacy": "개인정보 보호정책"
+    },
+    "copyright": "Copyright © 2025 V Pay. All rights reserved."
+  }
+}

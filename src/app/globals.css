@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-desktop: 75rem;
+
+  /* Colors */
+  --color-primary: #1a2530;
+  --color-primary-dark: #0a2540;
+  --color-cta: #ff7a21;
+  --color-accent: #ffd600;
+  --color-surface: #ffffff;
+  --color-text-muted: #8a9bb0;
+  --color-border: #2a3f54;
+
+  /* Font families */
+  --font-noto: var(--font-noto);
+  --font-inter: var(--font-inter);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}

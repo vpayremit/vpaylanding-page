@@ -1,0 +1,848 @@
+{
+  "common": {
+    "ctaDownload": "Get Started",
+    "ctaStarted": "Get Started",
+    "langKo": "KOR",
+    "langEn": "ENG",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "nav": {
+    "brand": "V Pay",
+    "services": "Service",
+    "fees": "Fees",
+    "news": "News",
+    "policy": "Policy",
+    "contact": "Contact"
+  },
+  "serviceMenu": {
+    "title": "Service",
+    "subtitle": "Beyond the boundaries of global finance,\neasier and faster than ever",
+    "moreLabel": "More",
+    "items": [
+      {
+        "slug": "personal-transfer",
+        "label": "Personal Transfer",
+        "image": "service-menu-personal-transfer.png"
+      },
+      {
+        "slug": "business-transfer",
+        "label": "Business Transfer",
+        "image": "service-menu-business-transfer.png"
+      },
+      {
+        "slug": "real-time-fx",
+        "label": "Real-Time FX",
+        "image": "service-menu-real-time-fx.png"
+      },
+      {
+        "slug": "digital-wallet",
+        "label": "Digital Wallet",
+        "image": "service-menu-digital-wallet.png"
+      }
+    ]
+  },
+  "hero": {
+    "tag": "P2P\n Remittance",
+    "title": "Personal overseas remittance",
+    "subtitle": "A fast and affordable global remittance service connecting individuals (P2P) between Korea and abroad.",
+    "googlePlay": "Google Play",
+    "appStore": "Apple Store",
+    "sendNow": "Send now",
+    "exchangeRate": "1 KRW = 18.0600 VND",
+    "send": "Send",
+    "receive": "Receive",
+    "exchangeFrom": "KRW",
+    "exchangeTo": "VND",
+    "exchangeFromAmount": "1,000,000",
+    "exchangeToAmount": "18,060,000"
+  },
+  "services": {
+    "sectionTitle": "International Remittance",
+    "sectionSubtitle": "Real-time remittance based on a global partner network.",
+    "items": [
+      {
+        "tag": "P2P",
+        "title": "P2P Domestic and International Remittance, Real-time Exchange Rate Provision",
+        "subtitle": "Fast Processing, Low Fees, System Stability"
+      },
+      {
+        "tag": "B2B",
+        "title": "B2B Payment / Remittance",
+        "subtitle": "API integration, real-time settlement, automated reconciliation"
+      },
+      {
+        "tag": "API",
+        "title": "Real-time Exchange",
+        "subtitle": "Real-time exchange rates, automatic cost optimization, transparent fees"
+      },
+      {
+        "tag": "WALLET",
+        "title": "Digital Wallet",
+        "subtitle": "Unified currency management, easy transfers/payments, instant access, secure transactions"
+      }
+    ]
+  },
+  "servicePages": {
+    "personalTransfer": {
+      "hero": {
+        "badge": "P2P",
+        "title": "Personal Transfer",
+        "subtitle": "A fast and affordable global P2P remittance service connecting Korea and overseas"
+      },
+      "reviews": {
+        "title": "Target Reviews",
+        "items": [
+          {
+            "role": "Foreign Workers",
+            "quote": "With VPAY’s low fees and rapid delivery, sending love to my family back home has become much more effortless."
+          },
+          {
+            "role": "International Students & Parents",
+            "quote": "I can send living expenses to my child abroad with total peace of mind, thanks to VPAY's transparent exchange rates and real-time tracking."
+          },
+          {
+            "role": "Freelancers & Businesses",
+            "quote": "VPAY handles bulk transfers and settlements so reliably that our complex international business transactions have become incredibly seamless."
+          }
+        ]
+      },
+      "keyContent": {
+        "title": "Key Content",
+        "items": [
+          { "title": "Short Processing Time", "icon": "service-p2p-key-short-processing.svg" },
+          { "title": "Low Fees", "icon": "service-p2p-key-low-fee.svg" },
+          { "title": "Transparent Rates", "icon": "service-p2p-key-transparent-rate.svg" },
+          { "title": "High Success Rate", "icon": "service-p2p-key-high-success.svg" },
+          { "title": "Real-Time Tracking", "icon": "service-p2p-key-real-time-tracking.svg" },
+          { "title": "Multilingual Support", "icon": "service-p2p-key-multilingual.svg" },
+          { "title": "Global Network", "icon": "service-p2p-key-global-network.svg" }
+        ]
+      },
+      "process": {
+        "title": "Remittance Process",
+        "cta": "Fee Guide"
+      },
+      "coreTechnology": {
+        "title": "Core Technology",
+        "cta": "Send Money",
+        "items": [
+          {
+            "title": "Pooling",
+            "description": "Technology that bundles multiple remittances and processes them at once\nReduces intermediary costs, increases processing speed, lowers user fees, and is especially effective for bulk B2B transfers",
+            "image": "service-p2p-tech-pooling.png"
+          },
+          {
+            "title": "Pre-funding",
+            "description": "Technology that pays out instantly using funds pre-deposited in the recipient country\nEnables fast transfer speed, lowers failure rates, and works well for B2B payouts such as payroll",
+            "image": "service-p2p-tech-prefunding.png"
+          },
+          {
+            "title": "Smart Routing",
+            "description": "Technology that automatically selects the fastest, cheapest, and most reliable route\nFactors include speed, cost, success rate, partner status, and regulations / time zones",
+            "image": "service-p2p-tech-smart-routing.png"
+          }
+        ]
+      },
+      "faq": {
+        "title": "FAQ",
+        "items": [
+          { "question": "Is it only available for person-to-person transactions?" },
+          { "question": "How much is the fee?" },
+          { "question": "Is there a limit on the transfer amount?" },
+          { "question": "Why are the fees low?" },
+          { "question": "How long does it take to complete the transfer?" }
+        ]
+      }
+    },
+    "businessTransfer": {
+      "hero": {
+        "badge": "Domestic • Global",
+        "title": "Business Transfer",
+        "subtitle": "We provide safer and more efficient B2B global payments across complex borders through our fast, API-based payment and settlement infrastructure."
+      },
+      "reviews": {
+        "title": "Target Reviews",
+        "quote": "Sending payments to overseas suppliers used to be a hassle, but since automating with VPAY’s API, our operational burden has significantly decreased, and we can now handle international payments quickly and reliably.",
+        "author": "Small Business & E-commerce"
+      },
+      "keyContent": {
+        "title": "Key Content",
+        "items": [
+          { "title": "API Integration", "icon": "service-b2b-key-api.svg" },
+          { "title": "Real-Time Settlement", "icon": "service-b2b-key-real-time-settlement.svg" },
+          { "title": "Secure Processing", "icon": "service-b2b-key-secure-processing.svg" },
+          { "title": "Settlement Automation", "icon": "service-b2b-key-automation.svg" }
+        ]
+      },
+      "process": {
+        "title": "Payment / Transfer Process",
+        "cta": "Fee Guide"
+      },
+      "coreTechnology": {
+        "title": "Core Technology",
+        "cta": "Send Money",
+        "items": [
+          {
+            "title": "Global Payment Network Infrastructure",
+            "description": "An international payment infrastructure that connects global partner networks with local payout rails.",
+            "image": "service-b2b-tech-global-network.png"
+          },
+          {
+            "title": "Rule-Based Settlement and Routing Engine",
+            "description": "A Smart Routing settlement engine that optimizes by country, currency, fee, and path.",
+            "image": "service-b2b-tech-routing-engine.png"
+          },
+          {
+            "title": "Integrated AML, FDS, and KYC Risk Module",
+            "description": "Integrated security and compliance systems essential for international transfers.",
+            "image": "service-b2b-tech-risk-management.png"
+          }
+        ]
+      },
+      "faq": {
+        "title": "FAQ",
+        "items": [
+          { "question": "Is the service only for P2P transactions?" },
+          { "question": "Is it the same as the P2P fee?" },
+          { "question": "Is there a limit on the remittance amount?" },
+          { "question": "Why are the fees low?" },
+          { "question": "How long does it take to complete a transfer?" }
+        ]
+      }
+    },
+    "realTimeFx": {
+      "hero": {
+        "badge": "Transparent Fees",
+        "title": "Real-Time FX",
+        "subtitle": "A secure exchange service powered by global FX data, offering transparent fees and instant conversion"
+      },
+      "reviews": {
+        "title": "Target Reviews",
+        "items": [
+          {
+            "role": "Small Cafe Importer",
+            "quote": "Every time I imported coffee beans, checking rates and sending payments took too long. With V Pay's FX module, the amount is calculated automatically and processed instantly, which has greatly reduced the burden of running the business."
+          },
+          {
+            "role": "Solo Creator / Seller",
+            "quote": "When I receive revenue from overseas platforms, exchange-rate swings often eat into my earnings. With V Pay's real-time FX, the best rate is applied so I can settle my income more steadily."
+          }
+        ]
+      },
+      "keyContent": {
+        "title": "Key Content",
+        "items": [
+          { "title": "Live Exchange Rates", "icon": "service-fx-key-live-rate.svg" },
+          { "title": "Automatic Cost Optimization", "icon": "service-fx-key-auto-cost.svg" },
+          { "title": "Fast FX Processing", "icon": "service-fx-key-fast-processing.svg" },
+          { "title": "Transparent Fee Structure", "icon": "service-fx-key-transparent-fee.svg" }
+        ]
+      },
+      "process": {
+        "title": "FX Process",
+        "cta": "Fee Guide"
+      },
+      "coreTechnology": {
+        "title": "Core Technology",
+        "cta": "Exchange Now",
+        "items": [
+          {
+            "title": "Multi-Currency Core Engine",
+            "description": "Accurately manages balances and currencies across multiple countries.",
+            "image": "service-fx-tech-multi-currency-core.png"
+          },
+          {
+            "title": "Real-Time Rate Module",
+            "description": "Reflects market movements instantly to provide fair exchange pricing.",
+            "image": "service-fx-tech-live-rate-module.png"
+          },
+          {
+            "title": "Global Partner Network (API Integration)",
+            "description": "Connects with local payout rails to support fast and stable FX execution.",
+            "image": "service-fx-tech-global-partner-network.png"
+          },
+          {
+            "title": "Automated Settlement System",
+            "description": "Automates exchange and settlement so even large, multi-country transactions are handled quickly and reliably.",
+            "image": "service-fx-tech-auto-settlement.png"
+          }
+        ]
+      },
+      "faq": {
+        "title": "FAQ",
+        "items": [
+          { "question": "Is the amount deposited immediately after currency exchange?" },
+          { "question": "Are there times when transactions are unavailable, such as bank maintenance hours?" },
+          { "question": "Is there a limit on the amount that can be exchanged?" }
+        ]
+      }
+    },
+    "digitalWallet": {
+      "hero": {
+        "badge": "Digital Wallet",
+        "title": "Digital Wallet",
+        "subtitle": "A convenient financial service that integrates cash, cards, payment details, and remittance functions on a single platform across mobile and web environments"
+      },
+      "reviews": {
+        "title": "Target Reviews",
+        "items": [
+          {
+            "role": "Business",
+            "quote": "When sending import payments to overseas partners and paying employees abroad, V Pay's digital wallet lets us manage multiple currency balances and exchange rates at a glance, making our work far more efficient and faster."
+          },
+          {
+            "role": "Creators / Freelancers",
+            "quote": "I no longer have to split income from overseas platforms across multiple accounts. With the V Pay wallet, I can gather everything in one place and convert or transfer funds whenever needed, which makes managing global earnings much simpler."
+          }
+        ]
+      },
+      "keyContent": {
+        "title": "Key Content",
+        "items": [
+          { "title": "Unified Currency Management", "icon": "service-wallet-key-multi-currency.svg" },
+          { "title": "Easy Remittance • Payment", "icon": "service-wallet-key-easy-payment.svg" },
+          { "title": "Instant Availability", "icon": "service-wallet-key-instant-access.svg" },
+          { "title": "Secure Transaction Environment", "icon": "service-wallet-key-secure-environment.svg" }
+        ]
+      },
+      "coreTechnology": {
+        "title": "Core Technology",
+        "cta": "Open Wallet",
+        "items": [
+          {
+            "title": "Multi-Currency Management",
+            "description": "Manage multiple currency balances and exchange rates at the same time",
+            "image": "service-wallet-tech-multi-currency.png"
+          },
+          {
+            "title": "Real-Time Exchange Rates",
+            "description": "Apply live exchange rates instantly for cost-efficient conversion",
+            "image": "service-fx-tech-live-rate-module.png"
+          },
+          {
+            "title": "Globally Integrated Transfers",
+            "description": "Secure and efficient transfers and payments powered by partners such as Wise, Tranglo, and GME",
+            "image": "service-fx-tech-global-partner-network.png"
+          }
+        ]
+      },
+      "faq": {
+        "title": "FAQ",
+        "items": [
+          { "question": "Does the app experience any lag during use?" },
+          { "question": "Is the app free to use?" },
+          { "question": "Can it be linked to accounts from other banks?" }
+        ]
+      }
+    }
+  },
+  "testimonials": {
+    "items": [
+      {
+        "quote": "I'm so relieved that I can quickly send\nmoney to my children and wife back home.",
+        "role": "Parents of international students",
+        "tags": ["Low fees", "Multilingual support"]
+      },
+      {
+        "quote": "I'm so relieved that I can quickly send\nmoney to my children and wife back home.",
+        "role": "Parents of international students",
+        "tags": ["Transparent exchange rates", "Super-fast remittance"]
+      },
+      {
+        "quote": "I'm so relieved that I can quickly send\nmoney to my children and wife back home.",
+        "role": "Freelancers / Businesses",
+        "tags": ["Bulk remittance", "Quick payment", "Quick payment"]
+      }
+    ]
+  },
+  "whyVpay": {
+    "sectionTitle": "Why V Pay Is Right For You",
+    "items": [
+      {
+        "title": "Pooling",
+        "description": "Combining multiple remittances into one for processing at once."
+      },
+      {
+        "title": "Pre-funding",
+        "description": "Instant payments using local deposits."
+      },
+      {
+        "title": "Smart Routing",
+        "description": "Automatically selects the fastest, cheapest, and most successful route."
+      },
+      {
+        "title": "KYC/AML/FDS",
+        "description": "Automated KYC/AML/FDS with end-to-end encryption."
+      }
+    ]
+  },
+  "remittanceProcess": {
+    "sectionTitle": "Remittance\n Process",
+    "sectionTag": "V Process",
+    "cta": "App Download",
+    "steps": [
+      {
+        "title": "Enter Information",
+        "items": ["Enter Amount", "Check Exchange Rate and Fees in Real Time", "Select Recipient", "Payment (Card/Bank Transfer)"]
+      },
+      {
+        "title": "Send Money",
+        "items": ["Smart Routing Select Optimal Path", "Immediate Payment from Pre-funding Account"]
+      },
+      {
+        "title": "Notification Guide",
+        "items": ["Notification of Completion of Remittance to Recipient's Account"]
+      }
+    ]
+  },
+  "faq": {
+    "sectionTitle": "FAQ",
+    "items": [
+      {
+        "question": "What is the fee?",
+        "answer": "We offer fixed fees and transparent exchange rates that are up to 90% cheaper than traditional banks, depending on the amount and destination."
+      },
+      {
+        "question": "Is there a limit?",
+        "answer": "You can safely transfer funds within the annual limit of $100,000 USD, in accordance with Korea's small-sum overseas remittance regulations."
+      },
+      {
+        "question": "Why is the fee low?",
+        "answer": "Our Pooling technology bundles multiple small transactions into a single batch, significantly reducing unnecessary intermediary banking fees."
+      },
+      {
+        "question": "How long does it take to transfer?",
+        "answer": "While transfers are typically completed within minutes thanks to our Pre-funding system with local partners, it may take up to 24 hours depending on local banking conditions."
+      }
+    ]
+  },
+  "aboutPage": {
+    "metaTitle": "About V Pay | V Pay",
+    "metaDescription": "Explore V Pay's company story, history, and core brand values.",
+    "hero": {
+      "eyebrow": "About V Pay",
+      "title": "Crossing the boundaries of\nglobal finance, more easily\nand quickly",
+      "subtitle": "Beyond the boundaries of global finance, faster and easier"
+    },
+    "history": {
+      "title": "History",
+      "items": [
+        {
+          "year": "2025",
+          "description": "V Pay Co., Ltd. - Business Registration Completed"
+        },
+        {
+          "year": "2026",
+          "description": "V Pay App Pilot Launch"
+        }
+      ]
+    },
+    "values": {
+      "eyebrow": "The Value of V",
+      "title": "Core Brand Values",
+      "description": "As a South Korean fintech company, V Pay expands its global payment network through strategic partnerships and regulatory cooperation, focusing on Southeast Asia.\nLeveraging stable Korean technology and experience, it provides locally tailored digital payment solutions and pursues sustainable growth and increased market share.",
+      "items": [
+        {
+          "title": "Value of Time",
+          "description": "Fast Transfers",
+          "icon": "about-value-time.svg"
+        },
+        {
+          "title": "Value of Convenience",
+          "description": "Easy-to-Use Services",
+          "icon": "about-value-convenience.svg"
+        },
+        {
+          "title": "Value of Cost",
+          "description": "Low Remittance Fees",
+          "icon": "about-value-cost.svg"
+        },
+        {
+          "title": "Value of Trust",
+          "description": "Transparent Exchange Rates",
+          "icon": "about-value-trust.svg"
+        }
+      ]
+    },
+    "confidence": {
+      "title": "Use with Confidence",
+      "subtitle": "With V Pay’s financial security technology, we ensure the protection of our users.",
+      "cta": "Go to Security Policy"
+    }
+  },
+  "newsPage": {
+    "metaTitle": "News | V Pay",
+    "metaDescription": "Explore V Pay notices, press releases, SNS content, and partnership updates.",
+    "hero": {
+      "eyebrow": "News",
+      "title": "Crossing the boundaries of\nglobal finance,\nmore easily and quickly"
+    },
+    "tabs": {
+      "notice": "Notice",
+      "pressReleases": "Press Releases",
+      "sns": "SNS",
+      "partnership": "Partnership"
+    },
+    "notice": {
+      "sectionTitle": "Latest Notices",
+      "searchPlaceholder": "Search content",
+      "moreLabel": "View More",
+      "items": [
+        {
+          "date": "October 2, 2025",
+          "title": "12cm — Smart Label Solution Developer for Fintech Platforms",
+          "excerpt": "Today, we introduce 12cm, a platform development company for fintech businesses. Vice President Shin Sung-won shares the company story.",
+          "image": "news-notice-01.png"
+        },
+        {
+          "date": "October 2, 2025",
+          "title": "12cm — Smart Label Solution Developer for Fintech Platforms",
+          "excerpt": "Today, we introduce 12cm, a platform development company for fintech businesses. Vice President Shin Sung-won shares the company story.",
+          "image": "news-notice-02.png"
+        },
+        {
+          "date": "October 2, 2025",
+          "title": "12cm — Smart Label Solution Developer for Fintech Platforms",
+          "excerpt": "Today, we introduce 12cm, a platform development company for fintech businesses. Vice President Shin Sung-won shares the company story.",
+          "image": "news-notice-03.png"
+        },
+        {
+          "date": "October 2, 2025",
+          "title": "12cm — Smart Label Solution Developer for Fintech Platforms",
+          "excerpt": "Today, we introduce 12cm, a platform development company for fintech businesses. Vice President Shin Sung-won shares the company story.",
+          "image": "news-notice-04.png"
+        },
+        {
+          "date": "October 2, 2025",
+          "title": "12cm — Smart Label Solution Developer for Fintech Platforms",
+          "excerpt": "Today, we introduce 12cm, a platform development company for fintech businesses. Vice President Shin Sung-won shares the company story.",
+          "image": "news-notice-05.png"
+        },
+        {
+          "date": "October 2, 2025",
+          "title": "12cm — Smart Label Solution Developer for Fintech Platforms",
+          "excerpt": "Today, we introduce 12cm, a platform development company for fintech businesses. Vice President Shin Sung-won shares the company story.",
+          "image": "news-notice-06.png"
+        }
+      ]
+    },
+    "pressReleases": {
+      "sectionTitle": "Press Releases",
+      "searchPlaceholder": "Search content",
+      "moreLabel": "View More",
+      "items": [
+        {
+          "date": "October 2, 2025",
+          "title": "12cm — Smart Label Solution Developer for Fintech Platforms",
+          "excerpt": "Today, we introduce 12cm, a platform development company for fintech businesses. Vice President Shin Sung-won shares the company story.",
+          "image": "news-press-release-01.png"
+        },
+        {
+          "date": "October 2, 2025",
+          "title": "12cm — Smart Label Solution Developer for Fintech Platforms",
+          "excerpt": "Today, we introduce 12cm, a platform development company for fintech businesses. Vice President Shin Sung-won shares the company story.",
+          "image": "news-press-release-02.png"
+        },
+        {
+          "date": "October 2, 2025",
+          "title": "12cm — Smart Label Solution Developer for Fintech Platforms",
+          "excerpt": "Today, we introduce 12cm, a platform development company for fintech businesses. Vice President Shin Sung-won shares the company story.",
+          "image": "news-press-release-03.png"
+        },
+        {
+          "date": "October 2, 2025",
+          "title": "12cm — Smart Label Solution Developer for Fintech Platforms",
+          "excerpt": "Today, we introduce 12cm, a platform development company for fintech businesses. Vice President Shin Sung-won shares the company story.",
+          "image": "news-press-release-04.png"
+        },
+        {
+          "date": "October 2, 2025",
+          "title": "12cm — Smart Label Solution Developer for Fintech Platforms",
+          "excerpt": "Today, we introduce 12cm, a platform development company for fintech businesses. Vice President Shin Sung-won shares the company story.",
+          "image": "news-press-release-05.png"
+        },
+        {
+          "date": "October 2, 2025",
+          "title": "12cm — Smart Label Solution Developer for Fintech Platforms",
+          "excerpt": "Today, we introduce 12cm, a platform development company for fintech businesses. Vice President Shin Sung-won shares the company story.",
+          "image": "news-press-release-06.png"
+        }
+      ]
+    },
+    "detail": {
+      "breadcrumb": "News",
+      "title": "12cm — Smart Label Solution Developer for Fintech Platforms",
+      "date": "2025. 12. 3.",
+      "moreLabel": "More",
+      "sections": [
+        {
+          "heading": "An Electronic Stamp Solution Designed for Global Markets",
+          "paragraphs": [
+            "Today, we introduce 12cm, a platform development company for fintech businesses. Vice President Shin Sung-won shares the company story.",
+            "As an IT startup, 12cm has been driving domestic and international projects through Echoss, an innovative technology platform that applies a point-earning system using the smart stamp service Echoss Stamp on smartphones. With it, users can activate and authenticate loyalty services through simple actions on their phones."
+          ]
+        },
+        {
+          "heading": "Simple Payments Through Electronic Stamps on Smartphones",
+          "paragraphs": [
+            "Director Han Jeong-gyu and Vice President Shin Sung-won of 12cm are fintech specialists with experience in mobile financial systems such as online banking, and became interested in services that connect online and offline experiences while delivering banking solutions.",
+            "To address this, 12cm built a smart stamp system. Working through the smartphone's capacitive sensor, Echoss Stamp combines with cloud-based management software to complete authentication, offering a more affordable and convenient alternative to barcode or QR-based systems."
+          ]
+        },
+        {
+          "heading": "Echoss Stamp Is Already Used by 50 Domestic Companies Across 24 Countries",
+          "paragraphs": [
+            "At cafes and bakeries, customers often receive loyalty cards that are stamped with each purchase. Because paper stamp cards can be inconvenient, 12cm created a digital equivalent that lets users attach electronic stamps to their smartphones.",
+            "The solution is now used by 50 Korean companies including Hyundai Department Store and Baskin Robbins, and it has expanded to 24 countries including Japan, China, Taiwan, Singapore, Spain, and the United States."
+          ]
+        },
+        {
+          "heading": "From O2O to Big Data and AI, Expanding Services Further",
+          "paragraphs": [
+            "All required software is delivered through a cloud environment, while the stamp remains the only offline device. Compared with other payment systems, the smart stamp platform is both more convenient and more cost-efficient.",
+            "Built on years of accumulated data, 12cm is expanding into big data by creating new services based on data analysis, extraction, and integration. The company is also researching how to combine that foundation with AI technology to forecast trends."
+          ]
+        },
+        {
+          "heading": "Aiming to Grow Into a Unicorn in Technology",
+          "paragraphs": [
+            "12cm is among the first companies in Korea to launch cloud-based financial services, aiming to set new standards in a sector where strong security requirements have traditionally made innovation difficult.",
+            "The company plans to keep expanding with a focus on innovation across O2O services, big data, and AI, while also pursuing socially meaningful growth from an ESG perspective."
+          ]
+        }
+      ]
+    },
+    "sns": {
+      "heroText": "V Pay content across diverse channels",
+      "sectionTitle": "SNS Channels",
+      "cta": "Visit",
+      "channels": [
+        { "label": "Instagram", "icon": "news-social-instagram.svg" },
+        { "label": "Facebook", "icon": "news-social-facebook.svg" },
+        { "label": "YouTube", "icon": "news-social-youtube.svg" },
+        { "label": "Naver Blog", "icon": "news-social-naver-blog.svg" },
+        { "label": "LinkedIn", "icon": "news-social-linkedin.svg" }
+      ]
+    },
+    "partnership": {
+      "heroText": "Working together with V Pay"
+    }
+  },
+  "contactPage": {
+    "metaTitle": "Contact Us | V Pay",
+    "metaDescription": "Contact V Pay if you have any inquiries or questions.",
+    "heroTitle": "Contact Us",
+    "heroSubtitle": "If you have any inquiries or questions, please contact us.",
+    "contactItems": [
+      {
+        "type": "address",
+        "label": "Address",
+        "value": "15, 2nd Floor, Seolleung-ro 155-gil, Gangnam-gu, Seoul (Sinsa-dong)"
+      },
+      {
+        "type": "phone",
+        "label": "Phone",
+        "value": "+82-1533-5845"
+      },
+      {
+        "type": "email",
+        "label": "Email",
+        "value": "admin@vpayv.com"
+      }
+    ],
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "searchPlaceholder": "Country search",
+      "tabs": {
+        "paymentStatus": "Payment Status",
+        "refundStatus": "Refund Status",
+        "settlementStatus": "Settlement Status"
+      },
+      "items": [
+        {
+          "question": "Are only person-to-person transactions available?"
+        },
+        {
+          "question": "How much is the fee?"
+        },
+        {
+          "question": "Is there a separate limit on the remittance amount?"
+        },
+        {
+          "question": "Why are the fees low?"
+        },
+        {
+          "question": "How long does it take for the transfer to be completed?"
+        }
+      ],
+      "moreLabel": "View More"
+    },
+    "helpTitle": "Need Help?",
+    "helpSubtitle": "If you have questions about transaction status or payment policies, please contact our support team.",
+    "helpCta": "Contact Support Team"
+  },
+  "policyPage": {
+    "metaTitle": "Payment and Security Policy | V Pay",
+    "metaDescription": "V Pay policy page covering payment statuses, security, and the transparency of transaction processing.",
+    "heroTitle": "Payment and Security Policy",
+    "heroSubtitle": "Transparency in payment statuses, security, and transaction processing",
+    "complianceSections": [
+      {
+        "title": "Regulations and Licenses",
+        "description": "V Pay strictly complies with both global and domestic financial regulations to provide a stable and trustworthy service.\nWe secure the licenses and certifications required across multiple countries and markets, enabling business expansion while protecting users.",
+        "bullets": [
+          "Compliance with domestic financial regulations: full adherence to the Foreign Exchange Transactions Act, Electronic Financial Transactions Act, and related laws",
+          "Global licensing secured: acquisition of key country-specific approvals for remittance, payments, and digital asset services",
+          "KYC / AML policy: automated systems for customer identity verification and anti-money laundering controls",
+          "Data protection and security: compliance with personal data protection laws and international standards such as ISO / IEC 27001",
+          "Response to regulatory changes: flexible adaptation to new laws and policy changes to minimize business risk"
+        ]
+      },
+      {
+        "title": "Security",
+        "description": "Security architecture (2FA, Transaction Risk Engine, and more)",
+        "bullets": [
+          "2FA multi-factor authentication to prevent account takeover",
+          "Transaction Risk Engine analyzes transaction patterns and detects abnormal transactions in real time",
+          "Data encryption, access control, and log monitoring",
+          "Data encryption, access control, and log monitoring",
+          "High availability, real-time response, and regulatory compliance"
+        ]
+      }
+    ],
+    "statusTitle": "Payment Status",
+    "statusSubtitle": "A table describing the meaning of statuses used in the system",
+    "tableHeaders": {
+      "code": "Status Code",
+      "status": "Status",
+      "description": "Description"
+    },
+    "statusTables": [
+      {
+        "title": "Payment Status",
+        "rows": [
+          {
+            "code": "PAY_STANDBY",
+            "status": "Pending",
+            "description": "The transaction is being processed."
+          },
+          {
+            "code": "PAY_APPROVED",
+            "status": "Approved",
+            "description": "The transaction has been confirmed."
+          },
+          {
+            "code": "PAY_PROGRESS",
+            "status": "In Progress",
+            "description": "The transaction is being processed."
+          },
+          {
+            "code": "PAY_COMPLETE",
+            "status": "Completed",
+            "description": "The payment has been completed."
+          },
+          {
+            "code": "PAY_CANCEL",
+            "status": "Cancelled",
+            "description": "The transaction has been cancelled."
+          }
+        ]
+      },
+      {
+        "title": "Refund Status",
+        "rows": [
+          {
+            "code": "REFUND_PROGRESS",
+            "status": "Refund in Progress",
+            "description": "Refund is being processed"
+          },
+          {
+            "code": "REFUND_SUCCESS",
+            "status": "Refund Successful",
+            "description": "Refund successful"
+          }
+        ]
+      },
+      {
+        "title": "Settlement Status",
+        "rows": [
+          {
+            "code": "SETTLEMENT_COMPLETE",
+            "status": "Settlement Completed",
+            "description": "Settlement has been completed"
+          },
+          {
+            "code": "SETTLEMENT_REFUND_COMPLETE",
+            "status": "Settlement Refunded",
+            "description": "Settlement refund has been completed"
+          }
+        ]
+      }
+    ],
+    "helpTitle": "Need Help?",
+    "helpSubtitle": "If you have questions about transaction statuses or payment policies, please contact our support team.",
+    "helpCta": "Contact Support Team"
+  },
+  "feesPage": {
+    "metaTitle": "Fees | V Pay",
+    "metaDescription": "Explore competitor comparisons, fee guidance, remittance limits, and processing time guidance on the V Pay fees page.",
+    "comparisonTitle": "Competitor Comparison",
+    "comparisonSubtitle": "Dummy...",
+    "feeGuideTitle": "Fee Guide",
+    "feeGuideSubtitle": "Dummy...",
+    "reasons": {
+      "title": "Why Are Our Fees Lower?",
+      "cta": "Send Money",
+      "items": [
+        {
+          "title": "Minimized intermediary costs",
+          "description": "We connect directly with global partners instead of routing through multiple financial intermediaries, removing unnecessary fees."
+        },
+        {
+          "title": "Fully digital operations",
+          "description": "Automated remittance, payment, and FX processes reduce operational overhead."
+        },
+        {
+          "title": "Economies of scale",
+          "description": "Pooling large funds together minimizes the unit cost of each transaction."
+        },
+        {
+          "title": "High-performance FX engine and real-time rates",
+          "description": "Optimal path analysis and real-time exchange rates reduce conversion costs."
+        },
+        {
+          "title": "Optimized regulation and licensing",
+          "description": "We strategically secure global financial licenses and regulatory coverage to reduce legal costs."
+        },
+        {
+          "title": "Smart routing technology",
+          "description": "Automatic route optimization saves both cost and processing time."
+        },
+        {
+          "title": "Global partner network",
+          "description": "We integrate directly with local partners such as Wise, Tranglo, and GME to secure stability and cost efficiency.\n*Technology and operational efficiency make global payments faster, safer, and more affordable."
+        }
+      ]
+    },
+    "limitTitle": "Limit Guide",
+    "limitSubtitle": "Dummy...",
+    "timeTitle": "Time Guide",
+    "timeSubtitle": "Dummy...",
+    "ctaTitle": "Beyond the borders of global finance,\nfaster and easier",
+    "ctaButton": "Download App"
+  },
+  "footer": {
+    "company": "V Pay Corporation",
+    "contactEmail": "admin@vpayv.com",
+    "contactPhone": "+82-1533-5845",
+    "address": "15, 2nd Floor, Seolleung-ro 155-gil, Gangnam-gu, Seoul (Sinsa-dong)",
+    "links": {
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy"
+    },
+    "copyright": "Copyright © 2025 V Pay. All rights reserved."
+  }
+}
