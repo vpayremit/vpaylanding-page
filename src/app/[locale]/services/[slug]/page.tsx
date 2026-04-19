@@ -5,7 +5,6 @@ import { notFound } from 'next/navigation'
 
 import SubpageScaffold from '@/components/layout/SubpageScaffold'
 import ServiceBusinessTransferContent from '@/components/sections/ServiceBusinessTransferContent'
-import ServiceDigitalWalletContent from '@/components/sections/ServiceDigitalWalletContent'
 import ServicePersonalTransferContent from '@/components/sections/ServicePersonalTransferContent'
 import ServiceRealTimeFxContent from '@/components/sections/ServiceRealTimeFxContent'
 import { routing } from '@/i18n/routing'
@@ -33,11 +32,6 @@ const SERVICE_SEO_CONFIG: Record<
     namespace: 'servicePages.realTimeFx',
     pathname: '/services/real-time-fx',
     image: '/images/service-fx-hero.png',
-  },
-  'digital-wallet': {
-    namespace: 'servicePages.digitalWallet',
-    pathname: '/services/digital-wallet',
-    image: '/images/service-digital-wallet-hero.png',
   },
 }
 
@@ -74,8 +68,6 @@ function renderServiceContent(slug: ServiceMenuSlug) {
       return <ServiceBusinessTransferContent />
     case 'real-time-fx':
       return <ServiceRealTimeFxContent />
-    case 'digital-wallet':
-      return <ServiceDigitalWalletContent />
     default:
       return null
   }
