@@ -85,22 +85,28 @@ export default function ContactFaqPanel({
             {items.map((item) => (
               <div
                 key={item.question}
-                className="relative border-b border-[#d1d1d6] py-5 pr-6 md:py-6 desktop:py-[26px]"
+                className="border-b border-[#d1d1d6] py-5 md:py-6 desktop:py-[26px]"
               >
                 <p
                   className="text-[16px] font-medium leading-[1.5] text-[#1c1c1e] md:text-[18px] desktop:text-[20px] font-noto"
                 >
                   {item.question}
                 </p>
-                <span className="absolute right-0 top-1/2 h-[10px] w-[10px] -translate-y-1/2 rotate-45 bg-accent" />
+                {item.answer && (
+                  <p className="mt-3 text-[15px] leading-[1.6] text-[#666563] md:text-[17px] desktop:text-[20px] font-noto">
+                    {item.answer}
+                  </p>
+                )}
               </div>
             ))}
           </div>
 
+          {/* TODO: Connect to paginated FAQ list or CMS */}
           <div className="flex justify-center">
             <button
-              className="inline-flex h-[54px] cursor-pointer items-center justify-center rounded-[500px] border border-[#b5b5bc] bg-white px-[26px] text-base font-bold leading-6 text-primary transition hover:border-cta hover:text-cta font-inter"
+              className="inline-flex h-[54px] items-center justify-center rounded-[500px] border border-[#b5b5bc] bg-white px-[26px] text-base font-bold leading-6 text-primary font-inter opacity-50 cursor-not-allowed"
               type="button"
+              disabled
             >
               {moreLabel}
             </button>

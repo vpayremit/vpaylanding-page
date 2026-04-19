@@ -51,9 +51,11 @@ export default async function Hero() {
               {t('subtitle')}
             </p>
             <div className="flex flex-wrap gap-3 desktop:gap-4">
+              {/* TODO: Replace disabled state with real Google Play store link */}
               <button
-                className="h-[48px] px-5 text-[14px] transition duration-200 hover:bg-[#111111] md:h-[56px] md:px-6 md:text-[16px] desktop:h-[72px] desktop:px-8 desktop:text-[20px]"
+                className="h-[48px] px-5 text-[14px] md:h-[56px] md:px-6 md:text-[16px] desktop:h-[72px] desktop:px-8 desktop:text-[20px]"
                 type="button"
+                disabled
                 style={{
                   borderRadius: 50,
                   background: '#000000',
@@ -65,16 +67,19 @@ export default async function Hero() {
                   fontWeight: 500,
                   lineHeight: '100%',
                   border: 'none',
-                  cursor: 'pointer',
+                  cursor: 'not-allowed',
+                  opacity: 0.5,
                 }}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/icons/icon-google-play.svg" alt="" style={{ width: 24, height: 24 }} />
                 {t('googlePlay')}
               </button>
+              {/* TODO: Replace disabled state with real Apple App Store link */}
               <button
-                className="h-[48px] px-5 text-[14px] transition duration-200 hover:bg-[#111111] md:h-[56px] md:px-6 md:text-[16px] desktop:h-[72px] desktop:px-8 desktop:text-[20px]"
+                className="h-[48px] px-5 text-[14px] md:h-[56px] md:px-6 md:text-[16px] desktop:h-[72px] desktop:px-8 desktop:text-[20px]"
                 type="button"
+                disabled
                 style={{
                   borderRadius: 50,
                   background: '#000000',
@@ -86,7 +91,8 @@ export default async function Hero() {
                   fontWeight: 500,
                   lineHeight: '100%',
                   border: 'none',
-                  cursor: 'pointer',
+                  cursor: 'not-allowed',
+                  opacity: 0.5,
                 }}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -250,9 +256,11 @@ export default async function Hero() {
               </div>
             </div>
 
+            {/* TODO: Connect to actual remittance app / onboarding flow */}
             <button
-              className="transition duration-200 hover:bg-[#ef6f18] font-inter"
+              className="font-inter"
               type="button"
+              disabled
               style={{
                 width: '100%',
                 height: 54,

@@ -21,10 +21,12 @@ interface NewsTabsProps {
   noticeSectionTitle: string
   noticeSearchPlaceholder: string
   noticeMoreLabel: string
+  noticeEmptyState: string
   noticeItems: NewsArticleCardItem[]
   pressSectionTitle: string
   pressSearchPlaceholder: string
   pressMoreLabel: string
+  pressEmptyState: string
   pressItems: NewsArticleCardItem[]
   snsHeroText: string
   snsSectionTitle: string
@@ -148,11 +150,13 @@ function ArticleGridSection({
   moreLabel,
   searchPlaceholder,
   sectionTitle,
+  emptyState,
 }: {
   items: NewsArticleCardItem[]
   moreLabel: string
   searchPlaceholder: string
   sectionTitle: string
+  emptyState: string
 }) {
   return (
     <section className="bg-white py-12 md:py-16 desktop:px-56 desktop:py-20">
@@ -166,20 +170,28 @@ function ArticleGridSection({
           <SearchBox placeholder={searchPlaceholder} />
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2 desktop:grid-cols-3 desktop:gap-x-10 desktop:gap-y-16">
-          {items.map((item) => (
-            <ArticleCard item={item} key={`${item.image}-${item.date}`} />
-          ))}
-        </div>
+        {items.length === 0 ? (
+          <div className="py-16 text-center text-[18px] text-[#666563] font-noto desktop:text-[22px]">
+            {emptyState}
+          </div>
+        ) : (
+          <>
+            <div className="grid gap-8 md:grid-cols-2 desktop:grid-cols-3 desktop:gap-x-10 desktop:gap-y-16">
+              {items.map((item) => (
+                <ArticleCard item={item} key={`${item.image}-${item.date}`} />
+              ))}
+            </div>
 
-        <div className="flex justify-center pt-2">
-          <button
-            className="inline-flex h-12 cursor-pointer items-center justify-center rounded-[500px] border border-[#d1d1d6] px-6 text-sm font-bold leading-6 text-primary transition hover:border-cta hover:text-cta"
-            type="button"
-          >
-            {moreLabel}
-          </button>
-        </div>
+            <div className="flex justify-center pt-2">
+              <button
+                className="inline-flex h-12 cursor-pointer items-center justify-center rounded-[500px] border border-[#d1d1d6] px-6 text-sm font-bold leading-6 text-primary transition hover:border-cta hover:text-cta"
+                type="button"
+              >
+                {moreLabel}
+              </button>
+            </div>
+          </>
+        )}
       </div>
     </section>
   )
@@ -238,9 +250,11 @@ function SnsPanel({
             >
               {sectionTitle}
             </h2>
+            {/* TODO: Connect SNS CTA to official VPAY social channel landing page */}
             <button
-              className="inline-flex h-12 cursor-pointer items-center justify-center self-start rounded-[500px] bg-cta px-5 text-sm font-bold text-white shadow-[0_14px_32px_rgba(255,122,33,0.18)] transition hover:bg-[#ef6f18] md:h-14 md:px-6 md:text-base desktop:h-16 desktop:px-6 desktop:text-2xl"
+              className="inline-flex h-12 items-center justify-center self-start rounded-[500px] bg-cta px-5 text-sm font-bold text-white md:h-14 md:px-6 md:text-base desktop:h-16 desktop:px-6 desktop:text-2xl opacity-50 cursor-not-allowed"
               type="button"
+              disabled
             >
               {cta}
             </button>
@@ -248,11 +262,13 @@ function SnsPanel({
 
           <div className="flex flex-wrap justify-center gap-4 desktop:gap-8">
             {channels.map((channel) => (
+              // TODO: Replace with <a href={channel.url}> once official SNS URLs are confirmed
               <button
-                className="flex min-h-[92px] w-full flex-none cursor-pointer items-center justify-between rounded-3xl bg-white px-6 py-5 text-left shadow-[0_12px_30px_rgba(15,23,42,0.04)] transition hover:shadow-[0_18px_36px_rgba(15,23,42,0.08)] md:w-[calc((100%-1rem)/2)] desktop:w-[calc((100%-4rem)/3)]"
+                className="flex min-h-[92px] w-full flex-none items-center justify-between rounded-3xl bg-white px-6 py-5 text-left shadow-[0_12px_30px_rgba(15,23,42,0.04)] md:w-[calc((100%-1rem)/2)] desktop:w-[calc((100%-4rem)/3)] opacity-50 cursor-not-allowed"
                 data-news-sns-channel={channel.label}
                 key={channel.label}
                 type="button"
+                disabled
               >
                 <div className="flex items-center gap-4">
                   <SocialIcon filename={channel.icon} />
@@ -309,10 +325,12 @@ export default function NewsTabs({
   noticeSectionTitle,
   noticeSearchPlaceholder,
   noticeMoreLabel,
+  noticeEmptyState,
   noticeItems,
   pressSectionTitle,
   pressSearchPlaceholder,
   pressMoreLabel,
+  pressEmptyState,
   pressItems,
   snsHeroText,
   snsSectionTitle,
@@ -337,6 +355,7 @@ export default function NewsTabs({
             moreLabel={noticeMoreLabel}
             searchPlaceholder={noticeSearchPlaceholder}
             sectionTitle={noticeSectionTitle}
+            emptyState={noticeEmptyState}
           />
         </>
       )
@@ -351,6 +370,7 @@ export default function NewsTabs({
             moreLabel={pressMoreLabel}
             searchPlaceholder={pressSearchPlaceholder}
             sectionTitle={pressSectionTitle}
+            emptyState={pressEmptyState}
           />
         </>
       )
@@ -423,3 +443,4 @@ export default function NewsTabs({
     </>
   )
 }
+

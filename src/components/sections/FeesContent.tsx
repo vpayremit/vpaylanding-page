@@ -156,8 +156,10 @@ export default async function FeesContent() {
                 {t('reasons.title')}
               </h2>
 
+              {/* TODO: Connect to remittance app or onboarding flow */}
               <Button
-                className="h-12 self-start rounded-[500px] px-5 text-sm font-semibold shadow-none md:h-14 md:px-6 md:text-base desktop:h-16 desktop:px-6 desktop:text-2xl desktop:leading-8 font-inter"
+                className="h-12 self-start rounded-[500px] px-5 text-sm font-semibold shadow-none md:h-14 md:px-6 md:text-base desktop:h-16 desktop:px-6 desktop:text-2xl desktop:leading-8 font-inter opacity-50 cursor-not-allowed"
+                disabled
               >
                 {t('reasons.cta')}
               </Button>
@@ -222,7 +224,8 @@ export default async function FeesContent() {
                 {t('ctaTitle')}
               </h2>
 
-              <Button className="h-12 self-start rounded-[500px] px-6 text-base font-bold shadow-none md:h-14 md:text-lg desktop:h-16 desktop:text-2xl desktop:leading-8">
+              {/* TODO: Replace with real app store link once available */}
+              <Button className="h-12 self-start rounded-[500px] px-6 text-base font-bold shadow-none md:h-14 md:text-lg desktop:h-16 desktop:text-2xl desktop:leading-8 opacity-50 cursor-not-allowed" disabled>
                 {t('ctaButton')}
               </Button>
             </div>
