@@ -79,7 +79,8 @@ export function ServiceProcessSection({
           <h2 className="text-3xl font-bold text-primary md:text-5xl desktop:text-6xl font-noto">
             {title}
           </h2>
-          <Button className="self-start px-6 text-lg desktop:self-auto desktop:text-2xl" size="md">
+          {/* TODO: Connect to fees page or service onboarding flow */}
+          <Button className="self-start px-6 text-lg desktop:self-auto desktop:text-2xl opacity-50" size="md" disabled>
             {cta}
           </Button>
         </div>
@@ -116,7 +117,8 @@ export function ServiceCoreTechnologySection({
           <h2 className="text-3xl font-bold text-primary md:text-5xl desktop:text-6xl font-noto">
             {title}
           </h2>
-          <Button className="self-start px-6 text-lg desktop:self-auto desktop:text-2xl" size="md">
+          {/* TODO: Connect to fees page or service onboarding flow */}
+          <Button className="self-start px-6 text-lg desktop:self-auto desktop:text-2xl opacity-50" size="md" disabled>
             {cta}
           </Button>
         </div>

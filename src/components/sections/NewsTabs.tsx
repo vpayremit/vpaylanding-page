@@ -14,6 +14,7 @@ interface NewsTabsProps {
   activeTab: NewsTabKey
   heroEyebrow: string
   heroTitle: string
+  heroSubtitle: string
   noticeLabel: string
   pressLabel: string
   snsLabel: string
@@ -252,7 +253,7 @@ function SnsPanel({
             </h2>
             {/* TODO: Connect SNS CTA to official VPAY social channel landing page */}
             <button
-              className="inline-flex h-12 items-center justify-center self-start rounded-[500px] bg-cta px-5 text-sm font-bold text-white md:h-14 md:px-6 md:text-base desktop:h-16 desktop:px-6 desktop:text-2xl opacity-50 cursor-not-allowed"
+              className="inline-flex h-12 items-center justify-center self-start rounded-[500px] bg-cta px-5 text-sm font-bold text-white md:h-14 md:px-6 md:text-base desktop:h-16 desktop:px-6 desktop:text-2xl opacity-50"
               type="button"
               disabled
             >
@@ -264,7 +265,7 @@ function SnsPanel({
             {channels.map((channel) => (
               // TODO: Replace with <a href={channel.url}> once official SNS URLs are confirmed
               <button
-                className="flex min-h-[92px] w-full flex-none items-center justify-between rounded-3xl bg-white px-6 py-5 text-left shadow-[0_12px_30px_rgba(15,23,42,0.04)] md:w-[calc((100%-1rem)/2)] desktop:w-[calc((100%-4rem)/3)] opacity-50 cursor-not-allowed"
+                className="flex min-h-[92px] w-full flex-none items-center justify-between rounded-3xl bg-white px-6 py-5 text-left shadow-[0_12px_30px_rgba(15,23,42,0.04)] md:w-[calc((100%-1rem)/2)] desktop:w-[calc((100%-4rem)/3)] opacity-50"
                 data-news-sns-channel={channel.label}
                 key={channel.label}
                 type="button"
@@ -318,6 +319,7 @@ export default function NewsTabs({
   activeTab,
   heroEyebrow,
   heroTitle,
+  heroSubtitle,
   noticeLabel,
   pressLabel,
   snsLabel,
@@ -406,6 +408,11 @@ export default function NewsTabs({
               >
                 {heroTitle}
               </h1>
+              <p
+                className="max-w-[760px] text-[16px] font-medium leading-[1.5] text-[#666563] md:text-[20px] desktop:text-[24px] desktop:leading-[36px] font-noto"
+              >
+                {heroSubtitle}
+              </p>
             </div>
           </div>
 

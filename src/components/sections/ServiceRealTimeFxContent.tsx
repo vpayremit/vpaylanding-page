@@ -50,7 +50,8 @@ export default async function ServiceRealTimeFxContent() {
             <h2 className="text-3xl font-bold text-primary md:text-5xl desktop:text-6xl font-noto">
               {t('coreTechnology.title')}
             </h2>
-            <Button className="self-start px-6 text-lg desktop:self-auto desktop:text-2xl" size="md">
+            {/* TODO: Connect to fees page or service onboarding flow */}
+            <Button className="self-start px-6 text-lg desktop:self-auto desktop:text-2xl opacity-50" size="md" disabled>
               {t('coreTechnology.cta')}
             </Button>
           </div>

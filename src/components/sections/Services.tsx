@@ -151,13 +151,14 @@ export default function Services() {
                         {item.subtitle}
                       </p>
                     </div>
-                    <div className="relative mt-auto aspect-[423/856] w-full self-center max-w-[220px] sm:max-w-[245px] md:max-w-[320px] desktop:max-w-[423px]">
+                    <div className="relative mt-auto w-full self-center max-w-[220px] sm:max-w-[245px] md:max-w-[320px] desktop:max-w-[423px]">
                       <Image
                         src="/images/hero-phone-mockup.png"
                         alt={item.title}
-                        fill
+                        width={423}
+                        height={856}
                         sizes="(max-width: 639px) 220px, (max-width: 767px) 245px, (max-width: 1199px) 320px, 423px"
-                        className="object-contain"
+                        className="w-full h-auto object-contain"
                       />
                     </div>
                   </div>

@@ -227,8 +227,10 @@ export default async function PolicyContent() {
                   </p>
                 </div>
 
+                {/* TODO: Connect to support channel (e.g. mailto:admin@vpayv.com or /contact) */}
                 <Button
-                  className="h-12 rounded-[500px] px-[26px] text-sm font-bold leading-5 shadow-none font-inter"
+                  className="h-12 rounded-[500px] px-[26px] text-sm font-bold leading-5 shadow-none font-inter opacity-50"
+                  disabled
                 >
                   {t('helpCta')}
                 </Button>

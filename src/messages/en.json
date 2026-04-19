@@ -34,30 +34,27 @@
       },
       {
         "slug": "real-time-fx",
-        "label": "Real-Time FX",
+        "label": "FX Guidance",
         "image": "service-menu-real-time-fx.png"
-      },
-      {
-        "slug": "digital-wallet",
-        "label": "Digital Wallet",
-        "image": "service-menu-digital-wallet.png"
       }
     ]
   },
   "hero": {
-    "tag": "P2P\n Remittance",
-    "title": "Personal overseas remittance",
-    "subtitle": "A fast and affordable global remittance service connecting individuals (P2P) between Korea and abroad.",
+    "tag": "Global Small-Amount Remittance Service",
+    "title": "Send money from Korea to overseas, faster and with more clarity",
+    "subtitle": "VPAY provides a faster cross-border remittance experience based on a prefunding structure. Users can review the applied FX rate and fees before sending and track transaction status in the app.",
     "googlePlay": "Google Play",
     "appStore": "Apple Store",
-    "sendNow": "Send now",
+    "sendNow": "Start a Transfer",
     "exchangeRate": "1 KRW = 18.0600 VND",
     "send": "Send",
     "receive": "Receive",
     "exchangeFrom": "KRW",
     "exchangeTo": "VND",
     "exchangeFromAmount": "1,000,000",
-    "exchangeToAmount": "18,060,000"
+    "exchangeToAmount": "18,060,000",
+    "secondaryCta": "Explore the Service",
+    "calculatorNote": "Displayed FX rates and fees are for reference only. Actual conditions may vary depending on destination, amount, and transfer timing."
   },
   "services": {
     "sectionTitle": "International Remittance",
@@ -65,32 +62,27 @@
     "items": [
       {
         "tag": "P2P",
-        "title": "P2P Domestic and International Remittance, Real-time Exchange Rate Provision",
-        "subtitle": "Fast Processing, Low Fees, System Stability"
+        "title": "Personal Remittance",
+        "subtitle": "A simple and fast personal transfer service for sending money from Korea to overseas recipients"
       },
       {
         "tag": "B2B",
-        "title": "B2B Payment / Remittance",
-        "subtitle": "API integration, real-time settlement, automated reconciliation"
+        "title": "Business Transfer",
+        "subtitle": "A business-focused transfer and payment introduction for overseas partner settlement, supplier payments, and operational fund transfers"
       },
       {
-        "tag": "API",
-        "title": "Real-time Exchange",
-        "subtitle": "Real-time exchange rates, automatic cost optimization, transparent fees"
-      },
-      {
-        "tag": "WALLET",
-        "title": "Digital Wallet",
-        "subtitle": "Unified currency management, easy transfers/payments, instant access, secure transactions"
+        "tag": "FX",
+        "title": "FX Guidance",
+        "subtitle": "Transparent FX information so users can review applied rates and fees before sending money"
       }
     ]
   },
   "servicePages": {
     "personalTransfer": {
       "hero": {
-        "badge": "P2P",
-        "title": "Personal Transfer",
-        "subtitle": "A fast and affordable global P2P remittance service connecting Korea and overseas"
+        "badge": "Personal Remittance",
+        "title": "Personal Overseas Remittance",
+        "subtitle": "VPAY is a personal cross-border remittance service designed to help users send money from Korea to overseas recipients with more speed and clarity. Users can review applied FX rates and fees before sending and track transaction status in the app."
       },
       "reviews": {
         "title": "Target Reviews",
@@ -112,13 +104,34 @@
       "keyContent": {
         "title": "Key Content",
         "items": [
-          { "title": "Short Processing Time", "icon": "service-p2p-key-short-processing.svg" },
-          { "title": "Low Fees", "icon": "service-p2p-key-low-fee.svg" },
-          { "title": "Transparent Rates", "icon": "service-p2p-key-transparent-rate.svg" },
-          { "title": "High Success Rate", "icon": "service-p2p-key-high-success.svg" },
-          { "title": "Real-Time Tracking", "icon": "service-p2p-key-real-time-tracking.svg" },
-          { "title": "Multilingual Support", "icon": "service-p2p-key-multilingual.svg" },
-          { "title": "Global Network", "icon": "service-p2p-key-global-network.svg" }
+          {
+            "title": "Short Processing Time",
+            "icon": "service-p2p-key-short-processing.svg"
+          },
+          {
+            "title": "Low Fees",
+            "icon": "service-p2p-key-low-fee.svg"
+          },
+          {
+            "title": "Transparent Rates",
+            "icon": "service-p2p-key-transparent-rate.svg"
+          },
+          {
+            "title": "High Success Rate",
+            "icon": "service-p2p-key-high-success.svg"
+          },
+          {
+            "title": "Real-Time Tracking",
+            "icon": "service-p2p-key-real-time-tracking.svg"
+          },
+          {
+            "title": "Multilingual Support",
+            "icon": "service-p2p-key-multilingual.svg"
+          },
+          {
+            "title": "Global Network",
+            "icon": "service-p2p-key-global-network.svg"
+          }
         ]
       },
       "process": {
@@ -149,19 +162,34 @@
       "faq": {
         "title": "FAQ",
         "items": [
-          { "question": "Is it only available for person-to-person transactions?" },
-          { "question": "How much is the fee?" },
-          { "question": "Is there a limit on the transfer amount?" },
-          { "question": "Why are the fees low?" },
-          { "question": "How long does it take to complete the transfer?" }
+          {
+            "question": "Is only person-to-person transfer available?",
+            "answer": "The current main service presentation focuses on personal remittance, while business transfer information is provided on a separate page."
+          },
+          {
+            "question": "How much is the fee?",
+            "answer": "It depends on destination and amount. Users can check the estimated fee and applied FX rate before sending."
+          },
+          {
+            "question": "What is the transfer limit?",
+            "answer": "Limits apply according to applicable regulations and service policy. Please refer to the Fees / Limits page."
+          },
+          {
+            "question": "How do I check the transfer status?",
+            "answer": "Users can check the current status in the transaction history inside the app."
+          },
+          {
+            "question": "How long does it take?",
+            "answer": "Most transfers are processed quickly, but timing may vary by country, bank, and time window."
+          }
         ]
       }
     },
     "businessTransfer": {
       "hero": {
-        "badge": "Domestic • Global",
-        "title": "Business Transfer",
-        "subtitle": "We provide safer and more efficient B2B global payments across complex borders through our fast, API-based payment and settlement infrastructure."
+        "badge": "Business Transfer",
+        "title": "Business Payment / Transfer",
+        "subtitle": "VPAY is preparing business payment and transfer support to help companies manage cross-border fund movement more clearly, including supplier payments, partner settlement, and operational transfers."
       },
       "reviews": {
         "title": "Target Reviews",
@@ -171,10 +199,22 @@
       "keyContent": {
         "title": "Key Content",
         "items": [
-          { "title": "API Integration", "icon": "service-b2b-key-api.svg" },
-          { "title": "Real-Time Settlement", "icon": "service-b2b-key-real-time-settlement.svg" },
-          { "title": "Secure Processing", "icon": "service-b2b-key-secure-processing.svg" },
-          { "title": "Settlement Automation", "icon": "service-b2b-key-automation.svg" }
+          {
+            "title": "API Integration",
+            "icon": "service-b2b-key-api.svg"
+          },
+          {
+            "title": "Real-Time Settlement",
+            "icon": "service-b2b-key-real-time-settlement.svg"
+          },
+          {
+            "title": "Secure Processing",
+            "icon": "service-b2b-key-secure-processing.svg"
+          },
+          {
+            "title": "Settlement Automation",
+            "icon": "service-b2b-key-automation.svg"
+          }
         ]
       },
       "process": {
@@ -205,19 +245,30 @@
       "faq": {
         "title": "FAQ",
         "items": [
-          { "question": "Is the service only for P2P transactions?" },
-          { "question": "Is it the same as the P2P fee?" },
-          { "question": "Is there a limit on the remittance amount?" },
-          { "question": "Why are the fees low?" },
-          { "question": "How long does it take to complete a transfer?" }
+          {
+            "question": "Is this only for businesses?",
+            "answer": "Yes. This page is for business payment / transfer introduction. Personal remittance is explained separately on the personal transfer page."
+          },
+          {
+            "question": "Is API integration available immediately?",
+            "answer": "This is currently an introduction-stage page. Actual integration scope and schedule will be discussed separately."
+          },
+          {
+            "question": "What type of businesses is this for?",
+            "answer": "Suitable for companies that pay overseas suppliers, settle with partners, or handle recurring cross-border transfers."
+          },
+          {
+            "question": "How is pricing structured?",
+            "answer": "Pricing may vary depending on flow and destination. Detailed conditions should be discussed separately."
+          }
         ]
       }
     },
     "realTimeFx": {
       "hero": {
-        "badge": "Transparent Fees",
-        "title": "Real-Time FX",
-        "subtitle": "A secure exchange service powered by global FX data, offering transparent fees and instant conversion"
+        "badge": "FX Guidance",
+        "title": "FX Guidance",
+        "subtitle": "VPAY provides transparent FX guidance so users can review applied exchange rates and fee structure before submitting a transfer."
       },
       "reviews": {
         "title": "Target Reviews",
@@ -235,10 +286,22 @@
       "keyContent": {
         "title": "Key Content",
         "items": [
-          { "title": "Live Exchange Rates", "icon": "service-fx-key-live-rate.svg" },
-          { "title": "Automatic Cost Optimization", "icon": "service-fx-key-auto-cost.svg" },
-          { "title": "Fast FX Processing", "icon": "service-fx-key-fast-processing.svg" },
-          { "title": "Transparent Fee Structure", "icon": "service-fx-key-transparent-fee.svg" }
+          {
+            "title": "Live Exchange Rates",
+            "icon": "service-fx-key-live-rate.svg"
+          },
+          {
+            "title": "Automatic Cost Optimization",
+            "icon": "service-fx-key-auto-cost.svg"
+          },
+          {
+            "title": "Fast FX Processing",
+            "icon": "service-fx-key-fast-processing.svg"
+          },
+          {
+            "title": "Transparent Fee Structure",
+            "icon": "service-fx-key-transparent-fee.svg"
+          }
         ]
       },
       "process": {
@@ -274,67 +337,18 @@
       "faq": {
         "title": "FAQ",
         "items": [
-          { "question": "Is the amount deposited immediately after currency exchange?" },
-          { "question": "Are there times when transactions are unavailable, such as bank maintenance hours?" },
-          { "question": "Is there a limit on the amount that can be exchanged?" }
-        ]
-      }
-    },
-    "digitalWallet": {
-      "hero": {
-        "badge": "Digital Wallet",
-        "title": "Digital Wallet",
-        "subtitle": "A convenient financial service that integrates cash, cards, payment details, and remittance functions on a single platform across mobile and web environments"
-      },
-      "reviews": {
-        "title": "Target Reviews",
-        "items": [
           {
-            "role": "Business",
-            "quote": "When sending import payments to overseas partners and paying employees abroad, V Pay's digital wallet lets us manage multiple currency balances and exchange rates at a glance, making our work far more efficient and faster."
+            "question": "Is the FX rate always fixed in real time?",
+            "answer": "Applied FX may vary depending on service policy and operational conditions. The confirmed conditions shown before transfer are the key reference."
           },
           {
-            "role": "Creators / Freelancers",
-            "quote": "I no longer have to split income from overseas platforms across multiple accounts. With the V Pay wallet, I can gather everything in one place and convert or transfer funds whenever needed, which makes managing global earnings much simpler."
+            "question": "Are fees separate from FX?",
+            "answer": "Yes. Fees may be applied separately depending on destination and transfer conditions."
+          },
+          {
+            "question": "Where can I check the FX rate?",
+            "answer": "Users can review it in the FX guidance screen and again during the transfer flow."
           }
-        ]
-      },
-      "keyContent": {
-        "title": "Key Content",
-        "items": [
-          { "title": "Unified Currency Management", "icon": "service-wallet-key-multi-currency.svg" },
-          { "title": "Easy Remittance • Payment", "icon": "service-wallet-key-easy-payment.svg" },
-          { "title": "Instant Availability", "icon": "service-wallet-key-instant-access.svg" },
-          { "title": "Secure Transaction Environment", "icon": "service-wallet-key-secure-environment.svg" }
-        ]
-      },
-      "coreTechnology": {
-        "title": "Core Technology",
-        "cta": "Open Wallet",
-        "items": [
-          {
-            "title": "Multi-Currency Management",
-            "description": "Manage multiple currency balances and exchange rates at the same time",
-            "image": "service-wallet-tech-multi-currency.png"
-          },
-          {
-            "title": "Real-Time Exchange Rates",
-            "description": "Apply live exchange rates instantly for cost-efficient conversion",
-            "image": "service-fx-tech-live-rate-module.png"
-          },
-          {
-            "title": "Globally Integrated Transfers",
-            "description": "Secure and efficient transfers and payments powered by partners such as Wise, Tranglo, and GME",
-            "image": "service-fx-tech-global-partner-network.png"
-          }
-        ]
-      },
-      "faq": {
-        "title": "FAQ",
-        "items": [
-          { "question": "Does the app experience any lag during use?" },
-          { "question": "Is the app free to use?" },
-          { "question": "Can it be linked to accounts from other banks?" }
         ]
       }
     }
@@ -342,59 +356,82 @@
   "testimonials": {
     "items": [
       {
-        "quote": "I'm so relieved that I can quickly send\nmoney to my children and wife back home.",
-        "role": "Parents of international students",
-        "tags": ["Low fees", "Multilingual support"]
+        "quote": "Designed for users who need to send living expenses back home quickly and simply.",
+        "role": "Foreign Workers",
+        "tags": [
+          "Low fees",
+          "Multilingual support"
+        ]
       },
       {
-        "quote": "I'm so relieved that I can quickly send\nmoney to my children and wife back home.",
-        "role": "Parents of international students",
-        "tags": ["Transparent exchange rates", "Super-fast remittance"]
+        "quote": "Helps users check applied FX rates and processing status more clearly when sending tuition or living expenses.",
+        "role": "International Students / Parents of Students Abroad",
+        "tags": [
+          "Transparent exchange rates",
+          "Super-fast remittance"
+        ]
       },
       {
-        "quote": "I'm so relieved that I can quickly send\nmoney to my children and wife back home.",
-        "role": "Freelancers / Businesses",
-        "tags": ["Bulk remittance", "Quick payment", "Quick payment"]
+        "quote": "We are preparing business transfer support for companies that need simpler settlement flows with overseas suppliers or partners.",
+        "role": "Businesses with Overseas Payments",
+        "tags": [
+          "Bulk remittance",
+          "Quick payment",
+          "Quick payment"
+        ]
       }
-    ]
+    ],
+    "sectionTitle": "Best fit for these users"
   },
   "whyVpay": {
-    "sectionTitle": "Why V Pay Is Right For You",
+    "sectionTitle": "The core structure behind VPAY",
     "items": [
       {
         "title": "Pooling",
-        "description": "Combining multiple remittances into one for processing at once."
+        "description": "An operational structure designed to process many small-value transactions more efficiently."
       },
       {
         "title": "Pre-funding",
-        "description": "Instant payments using local deposits."
+        "description": "Uses prefunded local balances to support faster recipient-side payout handling."
       },
       {
         "title": "Smart Routing",
-        "description": "Automatically selects the fastest, cheapest, and most successful route."
+        "description": "Designed to select suitable transfer paths based on cost, speed, and success rate."
       },
       {
-        "title": "KYC/AML/FDS",
-        "description": "Automated KYC/AML/FDS with end-to-end encryption."
+        "title": "KYC / AML-Based Controls",
+        "description": "Provides a safer transaction environment through identity verification and transaction monitoring procedures."
       }
     ]
   },
   "remittanceProcess": {
-    "sectionTitle": "Remittance\n Process",
+    "sectionTitle": "How the transfer works",
     "sectionTag": "V Process",
     "cta": "App Download",
     "steps": [
       {
-        "title": "Enter Information",
-        "items": ["Enter Amount", "Check Exchange Rate and Fees in Real Time", "Select Recipient", "Payment (Card/Bank Transfer)"]
+        "title": "Enter Details",
+        "items": [
+          "Enter destination country and amount",
+          "Review applied FX rate and fees",
+          "Add or select recipient information"
+        ]
       },
       {
-        "title": "Send Money",
-        "items": ["Smart Routing Select Optimal Path", "Immediate Payment from Pre-funding Account"]
+        "title": "Submit Transfer",
+        "items": [
+          "Transfer request is received",
+          "Internal checks and processing begin",
+          "Transaction status is updated"
+        ]
       },
       {
-        "title": "Notification Guide",
-        "items": ["Notification of Completion of Remittance to Recipient's Account"]
+        "title": "Completion and Notification",
+        "items": [
+          "Receive processing result notice",
+          "Check status in transaction history",
+          "Contact support if needed"
+        ]
       }
     ]
   },
@@ -402,20 +439,20 @@
     "sectionTitle": "FAQ",
     "items": [
       {
-        "question": "What is the fee?",
-        "answer": "We offer fixed fees and transparent exchange rates that are up to 90% cheaper than traditional banks, depending on the amount and destination."
+        "question": "How can I check the fee?",
+        "answer": "Users can review the applied FX rate and estimated fee before sending. Actual fees may vary depending on destination, amount, and payout method."
       },
       {
-        "question": "Is there a limit?",
-        "answer": "You can safely transfer funds within the annual limit of $100,000 USD, in accordance with Korea's small-sum overseas remittance regulations."
+        "question": "Is there a transfer limit?",
+        "answer": "Transfer limits apply based on service policy and applicable regulations. Please check the Fees / Limits page for more details."
       },
       {
-        "question": "Why is the fee low?",
-        "answer": "Our Pooling technology bundles multiple small transactions into a single batch, significantly reducing unnecessary intermediary banking fees."
+        "question": "Where can I check the transfer status?",
+        "answer": "Users can check the current processing status in the app's transaction history."
       },
       {
-        "question": "How long does it take to transfer?",
-        "answer": "While transfers are typically completed within minutes thanks to our Pre-funding system with local partners, it may take up to 24 hours depending on local banking conditions."
+        "question": "How long does a transfer usually take?",
+        "answer": "Most transfers are processed quickly, but actual timing may vary depending on local bank hours and partner processing conditions."
       }
     ]
   },
@@ -478,7 +515,8 @@
     "metaDescription": "Explore V Pay notices, press releases, SNS content, and partnership updates.",
     "hero": {
       "eyebrow": "News",
-      "title": "Crossing the boundaries of\nglobal finance,\nmore easily and quickly"
+      "title": "News",
+      "subtitle": "Check service notices, updates, operational announcements, and partner-related news from VPAY."
     },
     "tabs": {
       "notice": "Notice",
@@ -487,90 +525,18 @@
       "partnership": "Partnership"
     },
     "notice": {
-      "sectionTitle": "Latest Notices",
+      "sectionTitle": "Notices",
       "searchPlaceholder": "Search content",
       "moreLabel": "View More",
-      "items": [
-        {
-          "date": "October 2, 2025",
-          "title": "12cm — Smart Label Solution Developer for Fintech Platforms",
-          "excerpt": "Today, we introduce 12cm, a platform development company for fintech businesses. Vice President Shin Sung-won shares the company story.",
-          "image": "news-notice-01.png"
-        },
-        {
-          "date": "October 2, 2025",
-          "title": "12cm — Smart Label Solution Developer for Fintech Platforms",
-          "excerpt": "Today, we introduce 12cm, a platform development company for fintech businesses. Vice President Shin Sung-won shares the company story.",
-          "image": "news-notice-02.png"
-        },
-        {
-          "date": "October 2, 2025",
-          "title": "12cm — Smart Label Solution Developer for Fintech Platforms",
-          "excerpt": "Today, we introduce 12cm, a platform development company for fintech businesses. Vice President Shin Sung-won shares the company story.",
-          "image": "news-notice-03.png"
-        },
-        {
-          "date": "October 2, 2025",
-          "title": "12cm — Smart Label Solution Developer for Fintech Platforms",
-          "excerpt": "Today, we introduce 12cm, a platform development company for fintech businesses. Vice President Shin Sung-won shares the company story.",
-          "image": "news-notice-04.png"
-        },
-        {
-          "date": "October 2, 2025",
-          "title": "12cm — Smart Label Solution Developer for Fintech Platforms",
-          "excerpt": "Today, we introduce 12cm, a platform development company for fintech businesses. Vice President Shin Sung-won shares the company story.",
-          "image": "news-notice-05.png"
-        },
-        {
-          "date": "October 2, 2025",
-          "title": "12cm — Smart Label Solution Developer for Fintech Platforms",
-          "excerpt": "Today, we introduce 12cm, a platform development company for fintech businesses. Vice President Shin Sung-won shares the company story.",
-          "image": "news-notice-06.png"
-        }
-      ]
+      "items": [],
+      "emptyState": "No notices available yet."
     },
     "pressReleases": {
       "sectionTitle": "Press Releases",
       "searchPlaceholder": "Search content",
       "moreLabel": "View More",
-      "items": [
-        {
-          "date": "October 2, 2025",
-          "title": "12cm — Smart Label Solution Developer for Fintech Platforms",
-          "excerpt": "Today, we introduce 12cm, a platform development company for fintech businesses. Vice President Shin Sung-won shares the company story.",
-          "image": "news-press-release-01.png"
-        },
-        {
-          "date": "October 2, 2025",
-          "title": "12cm — Smart Label Solution Developer for Fintech Platforms",
-          "excerpt": "Today, we introduce 12cm, a platform development company for fintech businesses. Vice President Shin Sung-won shares the company story.",
-          "image": "news-press-release-02.png"
-        },
-        {
-          "date": "October 2, 2025",
-          "title": "12cm — Smart Label Solution Developer for Fintech Platforms",
-          "excerpt": "Today, we introduce 12cm, a platform development company for fintech businesses. Vice President Shin Sung-won shares the company story.",
-          "image": "news-press-release-03.png"
-        },
-        {
-          "date": "October 2, 2025",
-          "title": "12cm — Smart Label Solution Developer for Fintech Platforms",
-          "excerpt": "Today, we introduce 12cm, a platform development company for fintech businesses. Vice President Shin Sung-won shares the company story.",
-          "image": "news-press-release-04.png"
-        },
-        {
-          "date": "October 2, 2025",
-          "title": "12cm — Smart Label Solution Developer for Fintech Platforms",
-          "excerpt": "Today, we introduce 12cm, a platform development company for fintech businesses. Vice President Shin Sung-won shares the company story.",
-          "image": "news-press-release-05.png"
-        },
-        {
-          "date": "October 2, 2025",
-          "title": "12cm — Smart Label Solution Developer for Fintech Platforms",
-          "excerpt": "Today, we introduce 12cm, a platform development company for fintech businesses. Vice President Shin Sung-won shares the company story.",
-          "image": "news-press-release-06.png"
-        }
-      ]
+      "items": [],
+      "emptyState": "No press releases available yet."
     },
     "detail": {
       "breadcrumb": "News",
@@ -616,26 +582,41 @@
       ]
     },
     "sns": {
-      "heroText": "V Pay content across diverse channels",
+      "heroText": "Official VPAY social channels will be connected here once they are ready.",
       "sectionTitle": "SNS Channels",
       "cta": "Visit",
       "channels": [
-        { "label": "Instagram", "icon": "news-social-instagram.svg" },
-        { "label": "Facebook", "icon": "news-social-facebook.svg" },
-        { "label": "YouTube", "icon": "news-social-youtube.svg" },
-        { "label": "Naver Blog", "icon": "news-social-naver-blog.svg" },
-        { "label": "LinkedIn", "icon": "news-social-linkedin.svg" }
+        {
+          "label": "Instagram",
+          "icon": "news-social-instagram.svg"
+        },
+        {
+          "label": "Facebook",
+          "icon": "news-social-facebook.svg"
+        },
+        {
+          "label": "YouTube",
+          "icon": "news-social-youtube.svg"
+        },
+        {
+          "label": "Naver Blog",
+          "icon": "news-social-naver-blog.svg"
+        },
+        {
+          "label": "LinkedIn",
+          "icon": "news-social-linkedin.svg"
+        }
       ]
     },
     "partnership": {
-      "heroText": "Working together with V Pay"
+      "heroText": "There are currently no public partnership announcements available."
     }
   },
   "contactPage": {
     "metaTitle": "Contact Us | V Pay",
     "metaDescription": "Contact V Pay if you have any inquiries or questions.",
     "heroTitle": "Contact Us",
-    "heroSubtitle": "If you have any inquiries or questions, please contact us.",
+    "heroSubtitle": "For questions about service usage, transaction status, fees, refunds, or account-related issues, please contact VPAY support.",
     "contactItems": [
       {
         "type": "address",
@@ -663,32 +644,39 @@
       },
       "items": [
         {
-          "question": "Are only person-to-person transactions available?"
+          "question": "Is only person-to-person transfer available?",
+          "answer": "Personal remittance is the main user-facing service, while business transfer information is provided separately."
         },
         {
-          "question": "How much is the fee?"
+          "question": "Where can I check the fee?",
+          "answer": "Users can review the applied FX rate and estimated fee before submitting a transfer."
         },
         {
-          "question": "Is there a separate limit on the remittance amount?"
+          "question": "Is there a transfer limit?",
+          "answer": "Yes. It is applied according to service policy and applicable regulations."
         },
         {
-          "question": "Why are the fees low?"
+          "question": "Why can the fee be lower?",
+          "answer": "The service is designed for cost efficiency through operational structure and digital process flow."
         },
         {
-          "question": "How long does it take for the transfer to be completed?"
+          "question": "How long does it take to complete?",
+          "answer": "Most transactions are processed quickly, but actual time may vary depending on local banking and processing conditions."
         }
       ],
       "moreLabel": "View More"
     },
     "helpTitle": "Need Help?",
     "helpSubtitle": "If you have questions about transaction status or payment policies, please contact our support team.",
-    "helpCta": "Contact Support Team"
+    "helpCta": "Contact Support Team",
+    "businessHoursLabel": "Business Hours",
+    "businessHoursValue": "Weekdays 09:00–18:00"
   },
   "policyPage": {
     "metaTitle": "Payment and Security Policy | V Pay",
     "metaDescription": "V Pay policy page covering payment statuses, security, and the transparency of transaction processing.",
-    "heroTitle": "Payment and Security Policy",
-    "heroSubtitle": "Transparency in payment statuses, security, and transaction processing",
+    "heroTitle": "Service and Security Guide",
+    "heroSubtitle": "This page explains identity verification, security, transaction status, and cancellation / refund guidance users should know when using VPAY.",
     "complianceSections": [
       {
         "title": "Regulations and Licenses",
@@ -789,12 +777,12 @@
   "feesPage": {
     "metaTitle": "Fees | V Pay",
     "metaDescription": "Explore competitor comparisons, fee guidance, remittance limits, and processing time guidance on the V Pay fees page.",
-    "comparisonTitle": "Competitor Comparison",
-    "comparisonSubtitle": "Dummy...",
+    "comparisonTitle": "Fees and Limits",
+    "comparisonSubtitle": "VPAY provides transparent cost guidance so users can review the applied FX rate and estimated fees before sending money.",
     "feeGuideTitle": "Fee Guide",
-    "feeGuideSubtitle": "Dummy...",
+    "feeGuideSubtitle": "Fees may vary depending on destination, amount, and payout method. Final conditions can be reviewed before submitting a transfer.",
     "reasons": {
-      "title": "Why Are Our Fees Lower?",
+      "title": "Why Fees Can Be More Efficient",
       "cta": "Send Money",
       "items": [
         {
@@ -827,10 +815,10 @@
         }
       ]
     },
-    "limitTitle": "Limit Guide",
-    "limitSubtitle": "Dummy...",
-    "timeTitle": "Time Guide",
-    "timeSubtitle": "Dummy...",
+    "limitTitle": "Transfer Limits",
+    "limitSubtitle": "Transfer limits apply according to service policy and applicable regulations. The latest limit criteria should be maintained through operational policy.",
+    "timeTitle": "Expected Processing Time",
+    "timeSubtitle": "Most transactions are processed quickly, but actual timing may vary depending on local bank hours and partner-side handling.",
     "ctaTitle": "Beyond the borders of global finance,\nfaster and easier",
     "ctaButton": "Download App"
   },

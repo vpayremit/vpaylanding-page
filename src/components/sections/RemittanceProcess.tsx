@@ -24,9 +24,11 @@ export default async function RemittanceProcess() {
                   >
                     {t('sectionTitle')}
                   </h2>
+                  {/* TODO: Connect to remittance app or onboarding flow */}
                   <button
-                    className="inline-flex h-[52px] cursor-pointer items-center justify-center rounded-[500px] bg-[#FF7A21] px-6 text-[18px] font-bold leading-[1] text-white shadow-[inset_0_0_0_1px_#FFD500] transition duration-200 hover:bg-[#ef6f18] md:h-[56px] md:px-7 md:text-[20px] desktop:h-[64px] desktop:px-[38px] desktop:text-[24px] desktop:leading-[30px] font-noto"
+                    className="inline-flex h-[52px] items-center justify-center rounded-[500px] bg-[#FF7A21] px-6 text-[18px] font-bold leading-[1] text-white shadow-[inset_0_0_0_1px_#FFD500] md:h-[56px] md:px-7 md:text-[20px] desktop:h-[64px] desktop:px-[38px] desktop:text-[24px] desktop:leading-[30px] font-noto opacity-50"
                     type="button"
+                    disabled
                   >
                     {t('cta')}
                   </button>

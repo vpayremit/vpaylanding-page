@@ -275,7 +275,6 @@ export default async function Hero() {
                 fontWeight: 600,
                 fontSize: 20,
                 lineHeight: '25px',
-                cursor: 'pointer',
               }}
             >
               {t('sendNow')}

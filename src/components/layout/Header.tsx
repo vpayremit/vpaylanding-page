@@ -238,7 +238,7 @@ export default function Header() {
 
               <div
                 className={cn(
-                  'fixed inset-x-0 top-[79px] z-[70] hidden transition-[opacity,transform] duration-200 desktop:block',
+                  'fixed inset-x-0 top-[70px] z-[70] hidden transition-[opacity,transform] duration-200 desktop:block',
                   'pointer-events-none -translate-y-2 opacity-0 group-open/service:pointer-events-auto group-open/service:translate-y-0 group-open/service:opacity-100'
                 )}
               >

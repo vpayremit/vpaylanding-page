@@ -104,7 +104,7 @@ export default function ContactFaqPanel({
           {/* TODO: Connect to paginated FAQ list or CMS */}
           <div className="flex justify-center">
             <button
-              className="inline-flex h-[54px] items-center justify-center rounded-[500px] border border-[#b5b5bc] bg-white px-[26px] text-base font-bold leading-6 text-primary font-inter opacity-50 cursor-not-allowed"
+              className="inline-flex h-[54px] items-center justify-center rounded-[500px] border border-[#b5b5bc] bg-white px-[26px] text-base font-bold leading-6 text-primary font-inter opacity-50"
               type="button"
               disabled
             >

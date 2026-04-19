@@ -17,9 +17,11 @@ export default async function NewsContent({ activeTab }: { activeTab: NewsTabKey
         activeTab={activeTab}
         heroEyebrow={t('hero.eyebrow')}
         heroTitle={t('hero.title')}
+        heroSubtitle={t('hero.subtitle')}
         noticeItems={noticeItems}
         noticeLabel={t('tabs.notice')}
         noticeMoreLabel={t('notice.moreLabel')}
+        noticeEmptyState={t('notice.emptyState')}
         noticeSearchPlaceholder={t('notice.searchPlaceholder')}
         noticeSectionTitle={t('notice.sectionTitle')}
         partnershipHeroText={t('partnership.heroText')}
@@ -27,6 +29,7 @@ export default async function NewsContent({ activeTab }: { activeTab: NewsTabKey
         pressItems={pressItems}
         pressLabel={t('tabs.pressReleases')}
         pressMoreLabel={t('pressReleases.moreLabel')}
+        pressEmptyState={t('pressReleases.emptyState')}
         pressSearchPlaceholder={t('pressReleases.searchPlaceholder')}
         pressSectionTitle={t('pressReleases.sectionTitle')}
         snsChannels={snsChannels}

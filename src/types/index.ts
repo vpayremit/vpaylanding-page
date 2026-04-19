@@ -13,7 +13,6 @@ export type ServiceMenuSlug =
   | 'personal-transfer'
   | 'business-transfer'
   | 'real-time-fx'
-  | 'digital-wallet'
 
 export interface ServiceMenuItem {
   slug: ServiceMenuSlug
@@ -83,6 +82,7 @@ export interface ContactInfoItem {
 
 export interface ContactFaqItem {
   question: string
+  answer?: string
 }
 
 export interface FeesReasonItem {

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Clock from 'lucide-react/dist/esm/icons/clock'
 import Mail from 'lucide-react/dist/esm/icons/mail'
 import MapPin from 'lucide-react/dist/esm/icons/map-pin'
 import PhoneCall from 'lucide-react/dist/esm/icons/phone-call'
@@ -79,6 +80,22 @@ export default async function ContactContent() {
                     </div>
                   </div>
                 ))}
+
+                <div className="flex items-start gap-4 desktop:gap-5">
+                  <Clock className="h-11 w-11 shrink-0 text-cta" strokeWidth={1.8} />
+                  <div className="flex flex-col items-start gap-3 pt-1 md:pt-2 desktop:gap-4">
+                    <p
+                      className="text-[22px] font-medium leading-none text-[#1c1c1e] md:text-[24px] desktop:text-[28px] desktop:leading-[23.9px] font-noto"
+                    >
+                      {t('businessHoursLabel')}
+                    </p>
+                    <p
+                      className="max-w-[418px] text-[16px] leading-7 text-[#666563] md:text-[18px] desktop:text-[20px] font-noto"
+                    >
+                      {t('businessHoursValue')}
+                    </p>
+                  </div>
+                </div>
               </address>
             </div>
 
@@ -146,7 +163,7 @@ export default async function ContactContent() {
 
               {/* TODO: Connect to support channel (e.g. mailto:admin@vpayv.com or /contact form) */}
               <Button
-                className="h-9 rounded-[500px] px-4 text-[11px] font-bold leading-4 shadow-none md:h-10 md:px-5 md:text-xs desktop:h-11 desktop:px-[26px] desktop:text-sm desktop:leading-5 font-inter opacity-50 cursor-not-allowed"
+                className="h-9 rounded-[500px] px-4 text-[11px] font-bold leading-4 shadow-none md:h-10 md:px-5 md:text-xs desktop:h-11 desktop:px-[26px] desktop:text-sm desktop:leading-5 font-inter opacity-50"
                 disabled
               >
                 {t('helpCta')}
