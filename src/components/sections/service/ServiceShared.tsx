@@ -331,7 +331,7 @@ export function ServiceFaqSection({
   items,
 }: {
   title: string
-  items: Array<{ question: string }>
+  items: Array<{ question: string; answer: string }>
 }) {
   return (
     <section className="bg-white px-4 pb-20 pt-8 desktop:px-10 desktop:pb-28 desktop:pt-16">
@@ -341,21 +341,31 @@ export function ServiceFaqSection({
         </h2>
         <div className="flex w-full max-w-[850px] flex-col gap-6">
           {items.map((item, index) => (
-            <button
+            <details
               key={`${item.question}-${index}`}
-              className="flex w-full cursor-pointer items-center gap-4 rounded-[20px] bg-[#f7f5ef80] px-6 py-[22px] text-left desktop:px-8 desktop:py-[26px]"
-              type="button"
+              className="group rounded-[20px] bg-[#f7f5ef80] px-6 py-[22px] desktop:px-8 desktop:py-[26px]"
             >
-              <div className="flex min-w-0 flex-1 items-start gap-[17px]">
-                <span className="shrink-0 text-2xl font-bold leading-8 text-cta desktop:text-3xl">Q.</span>
-                <div className="min-w-0 flex-1">
-                  <span className="block text-lg leading-8 text-[#1c1c1e] desktop:text-[32px] desktop:leading-8 font-noto">
-                    {item.question}
-                  </span>
+              <summary className="flex cursor-pointer list-none items-center gap-4 [&::-webkit-details-marker]:hidden">
+                <div className="flex min-w-0 flex-1 items-start gap-[17px]">
+                  <span className="shrink-0 text-2xl font-bold leading-8 text-cta desktop:text-3xl">Q.</span>
+                  <div className="min-w-0 flex-1">
+                    <span className="block text-lg leading-8 text-[#1c1c1e] desktop:text-[32px] desktop:leading-8 font-noto">
+                      {item.question}
+                    </span>
+                  </div>
                 </div>
+                <span
+                  aria-hidden="true"
+                  className="relative block h-4 w-4 shrink-0 rotate-45 border-b-[3px] border-r-[3px] border-[#1a2530] transition-transform duration-200 group-open:-rotate-[135deg] desktop:h-5 desktop:w-5"
+                />
+              </summary>
+              <div className="mt-4 flex items-start gap-[17px] pl-0 desktop:mt-6">
+                <span className="shrink-0 text-2xl font-bold leading-8 text-[#1a2530] desktop:text-3xl">A.</span>
+                <p className="min-w-0 flex-1 text-base leading-7 text-[#666563] desktop:text-xl desktop:leading-9 font-noto">
+                  {item.answer}
+                </p>
               </div>
-              <span aria-hidden="true" className="relative block h-4 w-4 shrink-0 rotate-45 border-b-[3px] border-r-[3px] border-[#1a2530] desktop:h-5 desktop:w-5" />
-            </button>
+            </details>
           ))}
         </div>
       </div>

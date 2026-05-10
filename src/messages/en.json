@@ -1,6 +1,7 @@
 {
   "common": {
     "ctaDownload": "Get Started",
+    "preRegisterCta": "Pre-register",
     "ctaStarted": "Get Started",
     "langKo": "KOR",
     "langEn": "ENG",
@@ -45,6 +46,8 @@
     "subtitle": "VPAY provides a faster cross-border remittance experience based on a prefunding structure. Users can review the applied FX rate and fees before sending and track transaction status in the app.",
     "googlePlay": "Google Play",
     "appStore": "Apple Store",
+    "appComingSoonCta": "Notify Me at Launch",
+    "preRegisterCta": "Pre-register",
     "sendNow": "Start a Transfer",
     "exchangeRate": "1 KRW = 18.0600 VND",
     "send": "Send",
@@ -631,7 +634,7 @@
       {
         "type": "email",
         "label": "Email",
-        "value": "admin@vpayv.com"
+        "value": "admin@vpayremit.com"
       }
     ],
     "faq": {
@@ -824,13 +827,13 @@
   },
   "footer": {
     "company": "V Pay Corporation",
-    "contactEmail": "admin@vpayv.com",
+    "contactEmail": "admin@vpayremit.com",
     "contactPhone": "+82-1533-5845",
     "address": "15, 2nd Floor, Seolleung-ro 155-gil, Gangnam-gu, Seoul (Sinsa-dong)",
     "links": {
       "terms": "Terms of Service",
       "privacy": "Privacy Policy"
     },
-    "copyright": "Copyright © 2025 V Pay. All rights reserved."
+    "copyright": "Copyright © {year} V Pay. All rights reserved."
   }
 }

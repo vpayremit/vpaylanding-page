@@ -103,7 +103,7 @@ export default async function Footer() {
               <p
                 className="text-[14px] font-normal leading-[1.4] text-[#8e8e93] md:text-[16px] desktop:text-[20px] desktop:leading-[25px] font-inter"
               >
-                {t('copyright')}
+                {t('copyright', { year: new Date().getFullYear() })}
               </p>
 
               <div className="flex flex-wrap items-center gap-3 md:gap-4 desktop:gap-6">

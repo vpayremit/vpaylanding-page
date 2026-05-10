@@ -1,6 +1,7 @@
 {
   "common": {
     "ctaDownload": "시작하기",
+    "preRegisterCta": "사전 신청",
     "ctaStarted": "앱다운로드",
     "langKo": "KOR",
     "langEn": "ENG",
@@ -45,6 +46,8 @@
     "subtitle": "VPAY는 사전예치(Prefunding) 기반 구조를 바탕으로 빠른 해외송금 경험을 제공합니다. 송금 전에 적용 환율과 수수료를 확인하고, 거래 상태를 앱에서 추적할 수 있습니다.",
     "googlePlay": "Google Play",
     "appStore": "Apple Store",
+    "appComingSoonCta": "출시 알림 받기",
+    "preRegisterCta": "사전 신청",
     "sendNow": "송금 시작하기",
     "exchangeRate": "1 KRW = 18.0600 VND",
     "send": "Send",
@@ -631,7 +634,7 @@
       {
         "type": "email",
         "label": "메일",
-        "value": "admin@vpayv.com"
+        "value": "admin@vpayremit.com"
       }
     ],
     "faq": {
@@ -824,13 +827,13 @@
   },
   "footer": {
     "company": "브이페이 주식회사",
-    "contactEmail": "admin@vpayv.com",
+    "contactEmail": "admin@vpayremit.com",
     "contactPhone": "+82-1533-5845",
     "address": "서울특별시 강남구 선릉로155길 15, 2층 (신사동)",
     "links": {
       "terms": "서비스 약관",
       "privacy": "개인정보 보호정책"
     },
-    "copyright": "Copyright © 2025 V Pay. All rights reserved."
+    "copyright": "Copyright © {year} V Pay. All rights reserved."
   }
 }

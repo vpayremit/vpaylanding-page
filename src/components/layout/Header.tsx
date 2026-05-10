@@ -14,7 +14,6 @@ import { Link, usePathname, useRouter } from '@/i18n/navigation'
 import { SERVICE_MENU_PREVIEW_IMAGES } from '@/lib/service-menu'
 import type { ServiceMenuItem } from '@/types'
 
-import Button from '../ui/Button'
 import { cn } from '@/lib/utils'
 
 export default function Header() {
@@ -191,9 +190,14 @@ export default function Header() {
                   </button>
                 </div>
 
-                <Button className="mt-4 w-full" size="lg">
-                  {tCommon('ctaDownload')}
-                </Button>
+                {/* Pre-launch state: app not yet live. After launch, swap copy back to
+                    tCommon('ctaDownload') and point to the real app store / onboarding URL. */}
+                <Link
+                  href="/contact"
+                  className="mt-4 inline-flex h-14 w-full cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-full bg-cta px-7 text-base font-semibold text-white shadow-[0_5px_16px_rgba(255,122,33,0.28)] transition duration-200 hover:bg-[#ef6f18]"
+                >
+                  {tCommon('preRegisterCta')}
+                </Link>
               </div>
             </div>
           </details>
@@ -350,9 +354,14 @@ export default function Header() {
               </button>
             </div>
 
-            <Button size="header" className="font-noto">
-              {tCommon('ctaDownload')}
-            </Button>
+            {/* Pre-launch state: app not yet live. After launch, swap copy back to
+                tCommon('ctaDownload') and point to the real app store / onboarding URL. */}
+            <Link
+              href="/contact"
+              className="inline-flex h-[52px] min-w-[150px] cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-[50px] bg-cta px-3 text-xl font-bold leading-none text-white shadow-[0_5px_16px_rgba(255,122,33,0.28)] transition duration-200 hover:bg-[#ef6f18] font-noto"
+            >
+              {tCommon('preRegisterCta')}
+            </Link>
           </div>
         </div>
       </div>

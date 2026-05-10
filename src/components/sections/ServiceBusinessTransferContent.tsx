@@ -16,7 +16,7 @@ export default async function ServiceBusinessTransferContent() {
   const t = await getTranslations('servicePages.businessTransfer')
   const keyItems = t.raw('keyContent.items') as ServiceKeyItem[]
   const techItems = t.raw('coreTechnology.items') as ServiceTechItem[]
-  const faqItems = t.raw('faq.items') as Array<{ question: string }>
+  const faqItems = t.raw('faq.items') as Array<{ question: string; answer: string }>
 
   const processFilename = locale === 'ko' ? 'service-b2b-process-ko.png' : 'service-b2b-process-en.png'
   const ctaFilename = locale === 'ko' ? 'service-p2p-cta-ko.png' : 'service-p2p-cta-en.png'

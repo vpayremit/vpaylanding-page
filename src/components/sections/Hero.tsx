@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import { getTranslations } from 'next-intl/server'
 
+import { Link } from '@/i18n/navigation'
+
 export default async function Hero() {
   const t = await getTranslations('hero')
 
@@ -51,11 +53,11 @@ export default async function Hero() {
               {t('subtitle')}
             </p>
             <div className="flex flex-wrap gap-3 desktop:gap-4">
-              {/* TODO: Replace disabled state with real Google Play store link */}
-              <button
+              {/* Pre-launch state: app stores not yet live. After launch, restore the two
+                  store-badge buttons above and link them to the real Google Play / App Store URLs. */}
+              <Link
+                href="/contact"
                 className="h-[48px] px-5 text-[14px] md:h-[56px] md:px-6 md:text-[16px] desktop:h-[72px] desktop:px-8 desktop:text-[20px]"
-                type="button"
-                disabled
                 style={{
                   borderRadius: 50,
                   background: '#000000',
@@ -67,38 +69,10 @@ export default async function Hero() {
                   fontWeight: 500,
                   lineHeight: '100%',
                   border: 'none',
-                  cursor: 'not-allowed',
-                  opacity: 0.5,
                 }}
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/icons/icon-google-play.svg" alt="" style={{ width: 24, height: 24 }} />
-                {t('googlePlay')}
-              </button>
-              {/* TODO: Replace disabled state with real Apple App Store link */}
-              <button
-                className="h-[48px] px-5 text-[14px] md:h-[56px] md:px-6 md:text-[16px] desktop:h-[72px] desktop:px-8 desktop:text-[20px]"
-                type="button"
-                disabled
-                style={{
-                  borderRadius: 50,
-                  background: '#000000',
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: 9,
-                  color: '#FFFFFF',
-                  fontFamily: 'Helvetica Neue',
-                  fontWeight: 500,
-                  lineHeight: '100%',
-                  border: 'none',
-                  cursor: 'not-allowed',
-                  opacity: 0.5,
-                }}
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/icons/icon-apple-store.svg" alt="" style={{ height: 24, width: 'auto' }} />
-                {t('appStore')}
-              </button>
+                {t('appComingSoonCta')}
+              </Link>
             </div>
           </div>
         </div>
@@ -256,11 +230,11 @@ export default async function Hero() {
               </div>
             </div>
 
-            {/* TODO: Connect to actual remittance app / onboarding flow */}
-            <button
+            {/* Pre-launch state: remittance app not yet live. After launch, swap copy back
+                to t('sendNow') and point href to the real onboarding / app flow. */}
+            <Link
+              href="/contact"
               className="font-inter"
-              type="button"
-              disabled
               style={{
                 width: '100%',
                 height: 54,
@@ -275,10 +249,13 @@ export default async function Hero() {
                 fontWeight: 600,
                 fontSize: 20,
                 lineHeight: '25px',
+                display: 'inline-flex',
+                alignItems: 'center',
+                justifyContent: 'center',
               }}
             >
-              {t('sendNow')}
-            </button>
+              {t('preRegisterCta')}
+            </Link>
           </div>
         </div>
       </div>

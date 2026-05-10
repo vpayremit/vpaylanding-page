@@ -18,7 +18,7 @@ export default async function ServiceRealTimeFxContent() {
   const reviews = t.raw('reviews.items') as ServiceReviewItem[]
   const keyItems = t.raw('keyContent.items') as ServiceKeyItem[]
   const techItems = t.raw('coreTechnology.items') as ServiceTechItem[]
-  const faqItems = t.raw('faq.items') as Array<{ question: string }>
+  const faqItems = t.raw('faq.items') as Array<{ question: string; answer: string }>
 
   const processFilename = locale === 'ko' ? 'service-fx-process-ko.png' : 'service-fx-process-en.png'
   const ctaFilename = locale === 'ko' ? 'service-p2p-cta-ko.png' : 'service-p2p-cta-en.png'

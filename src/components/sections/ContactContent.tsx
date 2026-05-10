@@ -10,9 +10,9 @@ import type { ContactFaqItem, ContactInfoItem } from '@/types'
 import Button from '../ui/Button'
 import ContactFaqPanel from './ContactFaqPanel'
 
-const heroImageFilename = 'contract-hero-badge.png'
+const heroImageFilename = 'contact-hero-badge.png'
 const officeImageFilename = 'contact-office-photo.png'
-const helpBannerFilename = 'contract-help-banner.png'
+const helpBannerFilename = 'contact-help-banner.png'
 
 const heroImagePath = `/images/${heroImageFilename}`
 const officeImagePath = `/images/${officeImageFilename}`
@@ -161,7 +161,7 @@ export default async function ContactContent() {
                 </p>
               </div>
 
-              {/* TODO: Connect to support channel (e.g. mailto:admin@vpayv.com or /contact form) */}
+              {/* TODO: Connect to support channel (e.g. mailto:admin@vpayremit.com or /contact form) */}
               <Button
                 className="h-9 rounded-[500px] px-4 text-[11px] font-bold leading-4 shadow-none md:h-10 md:px-5 md:text-xs desktop:h-11 desktop:px-[26px] desktop:text-sm desktop:leading-5 font-inter opacity-50"
                 disabled

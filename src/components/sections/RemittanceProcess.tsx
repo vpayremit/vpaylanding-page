@@ -83,12 +83,12 @@ export default async function RemittanceProcess() {
                   >
                     <div
                       className={cn(
-                        'flex flex-col gap-4 px-4 py-4 md:px-5 md:py-5 desktop:rounded-[24px]',
+                        'flex flex-row items-center gap-3 px-4 py-4 sm:gap-6 md:px-5 md:py-5 desktop:rounded-[24px] desktop:gap-[40px] desktop:px-[40px] desktop:py-[40px]',
                         index === 0
-                          ? 'flex-row items-center gap-3 sm:min-h-[180px] sm:gap-6 desktop:min-h-[256px] desktop:gap-[40px] desktop:px-[40px] desktop:py-[40px]'
+                          ? 'sm:min-h-[180px] desktop:min-h-[256px]'
                           : index === 1
-                            ? 'min-h-[118px] md:min-h-[146px] desktop:min-h-[196px] desktop:justify-center desktop:px-[40px] desktop:py-[40px]'
-                            : 'min-h-[104px] md:min-h-[126px] desktop:min-h-[166px] desktop:justify-center desktop:px-[40px] desktop:py-[40px]'
+                            ? 'min-h-[118px] md:min-h-[146px] desktop:min-h-[196px]'
+                            : 'min-h-[104px] md:min-h-[126px] desktop:min-h-[166px]'
                       )}
                     >
                       <div className="min-w-0 flex-1">
@@ -111,19 +111,17 @@ export default async function RemittanceProcess() {
                         </ul>
                       </div>
 
-                      {index === 0 ? (
-                        <div className="flex shrink-0 justify-end">
-                          <Image
-                            src={`/images/process-step-${index + 1}.png`}
-                            alt=""
-                            width={1024}
-                            height={1024}
-                            sizes="(max-width: 639px) 72px, (max-width: 1199px) 120px, 120px"
-                            className="h-auto w-[72px] object-contain sm:w-[120px]"
-                            unoptimized
-                          />
-                        </div>
-                      ) : null}
+                      <div className="flex shrink-0 justify-end">
+                        <Image
+                          src={`/images/process-step-${index + 1}.png`}
+                          alt=""
+                          width={1024}
+                          height={1024}
+                          sizes="(max-width: 639px) 72px, (max-width: 1199px) 120px, 120px"
+                          className="h-auto w-[72px] object-contain sm:w-[120px]"
+                          unoptimized
+                        />
+                      </div>
                     </div>
                   </article>
                 </div>
