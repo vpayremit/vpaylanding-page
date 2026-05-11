@@ -835,5 +835,10 @@
       "privacy": "개인정보 보호정책"
     },
     "copyright": "Copyright © {year} V Pay. All rights reserved."
+  },
+  "cookieConsent": {
+    "message": "이 사이트는 서비스 개선을 위해 쿠키를 사용합니다.",
+    "acceptCta": "동의",
+    "privacyLinkText": "개인정보 보호정책 보기"
   }
 }

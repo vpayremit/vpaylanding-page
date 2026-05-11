@@ -835,5 +835,10 @@
       "privacy": "Privacy Policy"
     },
     "copyright": "Copyright © {year} V Pay. All rights reserved."
+  },
+  "cookieConsent": {
+    "message": "We use cookies to improve your experience on this site.",
+    "acceptCta": "Accept",
+    "privacyLinkText": "View Privacy Policy"
   }
 }
