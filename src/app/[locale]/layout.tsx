@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 
+import CookieConsentBanner from '@/components/layout/CookieConsentBanner'
 import Footer from '@/components/layout/Footer'
 import Header from '@/components/layout/Header'
 import { isValidLocale } from '@/i18n/routing'
@@ -27,6 +28,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       <Header />
       {children}
       <Footer />
+      <CookieConsentBanner />
     </NextIntlClientProvider>
   )
 }

@@ -1,10 +1,17 @@
+import type { ComponentType, SVGProps } from 'react'
+
 import Image from 'next/image'
+import Scale from 'lucide-react/dist/esm/icons/scale'
+import ShieldCheck from 'lucide-react/dist/esm/icons/shield-check'
+import Zap from 'lucide-react/dist/esm/icons/zap'
 import { getTranslations } from 'next-intl/server'
 
 import AssetOrPlaceholder, { hasPublicAsset } from '@/components/ui/AssetOrPlaceholder'
 import type { FeesReasonItem } from '@/types'
 
 import Button from '../ui/Button'
+
+type LucideIconComponent = ComponentType<SVGProps<SVGSVGElement> & { size?: string | number }>
 
 const ctaBannerFilename = 'fees-banner.png'
 
@@ -85,10 +92,24 @@ function MediaLeftReasonCard({
   )
 }
 
-function TextReasonCard({ item }: { item: FeesReasonItem }) {
+function TextReasonCard({
+  item,
+  Icon,
+}: {
+  item: FeesReasonItem
+  Icon?: LucideIconComponent
+}) {
   return (
     <article className="h-full rounded-2xl bg-white px-6 py-6 md:px-8 md:py-8 desktop:px-10 desktop:py-8">
       <div className="flex h-full flex-col items-start justify-start gap-4">
+        {/* Lucide placeholder. Swap to AssetOrPlaceholder with designer SVG when delivered:
+            fees-reason-scale.svg / fees-reason-fx.svg / fees-reason-license.svg */}
+        {Icon ? (
+          <Icon
+            className="h-10 w-10 text-cta md:h-12 md:w-12 desktop:h-14 desktop:w-14"
+            strokeWidth={1.8}
+          />
+        ) : null}
         <ReasonTitle>{item.title}</ReasonTitle>
         <ReasonDescription>{item.description}</ReasonDescription>
       </div>
@@ -178,9 +199,9 @@ export default async function FeesContent() {
               </div>
 
               <div className="grid gap-6 desktop:grid-cols-3">
-                <TextReasonCard item={reasonItems[2]} />
-                <TextReasonCard item={reasonItems[3]} />
-                <TextReasonCard item={reasonItems[4]} />
+                <TextReasonCard item={reasonItems[2]} Icon={Scale} />
+                <TextReasonCard item={reasonItems[3]} Icon={Zap} />
+                <TextReasonCard item={reasonItems[4]} Icon={ShieldCheck} />
               </div>
 
               <div className="grid gap-6 desktop:grid-cols-2 2xl:grid-cols-[614px_minmax(0,1fr)]">

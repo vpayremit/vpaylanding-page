@@ -464,7 +464,7 @@
     "hero": {
       "eyebrow": "회사 소개",
       "title": "글로벌 금융의 경계를 넘어,\n더 쉽고 빠르게",
-      "subtitle": "글로벌 금융의 경계를 넘어, 더 빠르고 쉽게"
+      "subtitle": "현지 파트너 네트워크와 직접 연결해 SWIFT 없이 빠르게 송금합니다"
     },
     "history": {
       "title": "연혁",
@@ -624,7 +624,7 @@
       {
         "type": "address",
         "label": "주소",
-        "value": "서울특별시 강남구 선릉로 155길 15, 2층 (신사동)"
+        "value": "인천광역시 연수구 인천타워대로 323, B동 30층 V494호"
       },
       {
         "type": "phone",
@@ -634,7 +634,7 @@
       {
         "type": "email",
         "label": "메일",
-        "value": "admin@vpayremit.com"
+        "value": "info@vpayv.com"
       }
     ],
     "faq": {
@@ -699,7 +699,7 @@
           "2FA 다단계 인증으로 계정 탈취 방지",
           "Transaction Risk Engine 거래 패턴 분석 및 이상 거래 실시간 탐지",
           "데이터 암호화, 접근 제어, 로그 모니터링",
-          "데이터 암호화, 접근 제어, 로그 모니터링",
+          "거래 이상 탐지, 실시간 모니터링, 내부 감사 로그",
           "고가용성, 실시간 대응, 규제 준수"
         ]
       }
@@ -827,9 +827,9 @@
   },
   "footer": {
     "company": "브이페이 주식회사",
-    "contactEmail": "admin@vpayremit.com",
+    "contactEmail": "info@vpayv.com",
     "contactPhone": "+82-1533-5845",
-    "address": "서울특별시 강남구 선릉로155길 15, 2층 (신사동)",
+    "address": "인천광역시 연수구 인천타워대로 323, B동 30층 V494호",
     "links": {
       "terms": "서비스 약관",
       "privacy": "개인정보 보호정책"

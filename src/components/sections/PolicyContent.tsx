@@ -227,7 +227,7 @@ export default async function PolicyContent() {
                   </p>
                 </div>
 
-                {/* TODO: Connect to support channel (e.g. mailto:admin@vpayremit.com or /contact) */}
+                {/* TODO: Connect to support channel (e.g. mailto:info@vpayv.com or /contact) */}
                 <Button
                   className="h-12 rounded-[500px] px-[26px] text-sm font-bold leading-5 shadow-none font-inter opacity-50"
                   disabled
