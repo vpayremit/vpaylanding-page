@@ -4,15 +4,16 @@ import { getTranslations } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 
 import NewsDetailContent from '@/components/sections/NewsDetailContent'
+import { getNotices, getPressReleases } from '@/data/news'
 import { buildNewsArticleItems, getRelatedNewsItems } from '@/lib/news'
 import { createBasicMetadata } from '@/lib/metadata'
-import type { LocaleSlugPageProps, NewsArticleItem, NewsDetailSection } from '@/types'
+import type { LocaleSlugPageProps, NewsDetailSection } from '@/types'
 
 async function getNewsDetailData(locale: string) {
   const t = await getTranslations({ locale, namespace: 'newsPage' })
-  const noticeItems = buildNewsArticleItems(t.raw('notice.items') as NewsArticleItem[], 'notice')
+  const noticeItems = buildNewsArticleItems(getNotices(locale as 'ko' | 'en'), 'notice')
   const pressItems = buildNewsArticleItems(
-    t.raw('pressReleases.items') as NewsArticleItem[],
+    getPressReleases(locale as 'ko' | 'en'),
     'pressReleases',
   )
 

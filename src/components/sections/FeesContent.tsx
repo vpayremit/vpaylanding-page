@@ -4,10 +4,12 @@ import Image from 'next/image'
 import Scale from 'lucide-react/dist/esm/icons/scale'
 import ShieldCheck from 'lucide-react/dist/esm/icons/shield-check'
 import Zap from 'lucide-react/dist/esm/icons/zap'
-import { getTranslations } from 'next-intl/server'
+import { getLocale, getTranslations } from 'next-intl/server'
 
 import AssetOrPlaceholder, { hasPublicAsset } from '@/components/ui/AssetOrPlaceholder'
-import type { FeesReasonItem } from '@/types'
+import feesData from '@/data/fees.json'
+import { cn } from '@/lib/utils'
+import type { FeeEntry, FeesReasonItem } from '@/types'
 
 import Button from '../ui/Button'
 
@@ -151,21 +153,107 @@ function MediaRightReasonCard({
   )
 }
 
+function FeeCard({ entry, locale, t }: { entry: FeeEntry; locale: 'ko' | 'en'; t: FeeCardTranslator }) {
+  const isAvailable = entry.status === 'available'
+  const countryName = locale === 'ko' ? entry.country_ko : entry.country
+  const processingTime = locale === 'ko' ? entry.processing_time_ko : entry.processing_time
+
+  return (
+    <article className="flex h-full flex-col gap-6 rounded-2xl border border-[#e8e3da] bg-white p-6 md:p-8 desktop:p-10">
+      <div className="flex items-center justify-between gap-4">
+        <div className="flex min-w-0 items-center gap-3">
+          {hasPublicAsset('icons', entry.flag) ? (
+            <Image
+              src={`/icons/${entry.flag}`}
+              alt=""
+              width={40}
+              height={40}
+              className="h-10 w-10 shrink-0 rounded-full object-cover"
+              sizes="40px"
+              unoptimized
+            />
+          ) : (
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#e8e3da] text-[11px] font-bold text-[#666563] font-inter">
+              {entry.currency.slice(0, 2)}
+            </div>
+          )}
+          <div className="min-w-0">
+            <p className="truncate text-[18px] font-bold leading-[1.2] text-primary md:text-[20px] desktop:text-[22px] font-noto">
+              {countryName}
+            </p>
+            <p className="text-[13px] leading-[1.4] text-[#8e8e93] md:text-[14px] font-inter">
+              {entry.currency}
+            </p>
+          </div>
+        </div>
+        <span
+          className={cn(
+            'shrink-0 rounded-full px-3 py-1 text-[12px] font-semibold leading-none md:text-[13px] font-inter',
+            isAvailable
+              ? 'bg-[#e6f7ee] text-[#0a7a3b]'
+              : 'bg-[#f0f0f3] text-[#666563]',
+          )}
+        >
+          {isAvailable ? t('statusBadge.available') : t('statusBadge.comingSoon')}
+        </span>
+      </div>
+
+      {isAvailable ? (
+        <dl className="grid gap-4 text-[14px] leading-[1.4] md:text-[15px] desktop:text-[16px] font-noto">
+          <FeeCardRow label={t('cardLabels.fee')} value={entry.fee} />
+          <FeeCardRow label={t('cardLabels.processingTime')} value={processingTime} />
+          <FeeCardRow label={t('cardLabels.limitPerTxn')} value={entry.limit_per_txn} />
+          <FeeCardRow label={t('cardLabels.limitAnnual')} value={entry.limit_annual} />
+        </dl>
+      ) : null}
+    </article>
+  )
+}
+
+function FeeCardRow({ label, value }: { label: string; value?: string }) {
+  if (!value) return null
+  return (
+    <div className="flex items-baseline justify-between gap-4 border-b border-[#f0eee9] pb-3 last:border-b-0 last:pb-0">
+      <dt className="text-[#666563]">{label}</dt>
+      <dd className="text-right font-semibold text-primary">{value}</dd>
+    </div>
+  )
+}
+
+type FeeCardTranslator = (key: string) => string
+
 export default async function FeesContent() {
-  const t = await getTranslations('feesPage')
+  const [t, locale] = await Promise.all([getTranslations('feesPage'), getLocale()])
   const reasonItems = t.raw('reasons.items') as FeesReasonItem[]
+  const fees = feesData as FeeEntry[]
+  const safeLocale: 'ko' | 'en' = locale === 'en' ? 'en' : 'ko'
 
   return (
     <main className="bg-white">
-      <SectionIntro
-        subtitle={t('comparisonSubtitle')}
-        title={t('comparisonTitle')}
-      />
+      <section className="bg-white py-12 md:py-16 desktop:py-20">
+        <div className="mx-auto w-full max-w-[1920px] px-4 md:px-8 desktop:px-20 2xl:px-56">
+          <div className="flex flex-col gap-10 md:gap-12 desktop:gap-16">
+            <div className="flex flex-col items-start gap-6 md:gap-8 desktop:gap-10">
+              <h1 className="text-[36px] font-bold leading-tight text-primary md:text-[48px] desktop:text-[60px] font-noto">
+                {t('comparisonTitle')}
+              </h1>
+              <p className="text-[20px] font-medium leading-[1.5] text-[#666563] md:text-[24px] desktop:text-[32px] desktop:leading-10 font-noto">
+                {t('comparisonSubtitle')}
+              </p>
+            </div>
 
-      <SectionIntro
-        subtitle={t('feeGuideSubtitle')}
-        title={t('feeGuideTitle')}
-      />
+            <div className="grid gap-6 sm:grid-cols-2 desktop:grid-cols-3">
+              {fees.map((entry) => (
+                <FeeCard key={entry.country} entry={entry} locale={safeLocale} t={t} />
+              ))}
+            </div>
+
+            <p className="text-[12px] leading-[1.6] text-[#8e8e93] md:text-[13px] desktop:text-[14px] font-noto">
+              {t('disclaimer')}
+            </p>
+          </div>
+        </div>
+      </section>
 
       <section className="bg-[#f6f2eb] py-14 md:py-20 desktop:py-36">
         <div className="mx-auto w-full max-w-[1920px] px-4 md:px-8 desktop:px-20 2xl:px-56">
@@ -219,10 +307,6 @@ export default async function FeesContent() {
           </div>
         </div>
       </section>
-
-      <SectionIntro subtitle={t('limitSubtitle')} title={t('limitTitle')} />
-
-      <SectionIntro subtitle={t('timeSubtitle')} title={t('timeTitle')} />
 
       <section className="bg-white py-14 md:py-20 desktop:py-24">
         <div className="mx-auto w-full max-w-[1920px] px-4 md:px-8 desktop:px-20 2xl:px-60">

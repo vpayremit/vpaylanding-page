@@ -83,9 +83,9 @@
   "servicePages": {
     "personalTransfer": {
       "hero": {
-        "badge": "Personal Remittance",
-        "title": "Personal Overseas Remittance",
-        "subtitle": "VPAY is a personal cross-border remittance service designed to help users send money from Korea to overseas recipients with more speed and clarity. Users can review applied FX rates and fees before sending and track transaction status in the app."
+        "badge": "Domestic · International",
+        "title": "Personal Transfer",
+        "subtitle": "A Fast and Low-Cost P2P Global Remittance Service Connecting Korea and Overseas"
       },
       "reviews": {
         "title": "Target Reviews",
@@ -190,9 +190,9 @@
     },
     "businessTransfer": {
       "hero": {
-        "badge": "Business Transfer",
-        "title": "Business Payment / Transfer",
-        "subtitle": "VPAY is preparing business payment and transfer support to help companies manage cross-border fund movement more clearly, including supplier payments, partner settlement, and operational transfers."
+        "badge": "Domestic · International",
+        "title": "Business Payment & Transfers",
+        "subtitle": "A fast and secure B2B global payment and remittance service powered by API-based payment and settlement infrastructure."
       },
       "reviews": {
         "title": "Target Reviews",
@@ -269,9 +269,9 @@
     },
     "realTimeFx": {
       "hero": {
-        "badge": "FX Guidance",
-        "title": "FX Guidance",
-        "subtitle": "VPAY provides transparent FX guidance so users can review applied exchange rates and fee structure before submitting a transfer."
+        "badge": "Transparent Fees",
+        "title": "Real-Time FX",
+        "subtitle": "A secure transaction service that supports instant currency exchange with transparent fees, based on global exchange rate data."
       },
       "reviews": {
         "title": "Target Reviews",
@@ -531,14 +531,12 @@
       "sectionTitle": "Notices",
       "searchPlaceholder": "Search content",
       "moreLabel": "View More",
-      "items": [],
       "emptyState": "No notices available yet."
     },
     "pressReleases": {
       "sectionTitle": "Press Releases",
       "searchPlaceholder": "Search content",
       "moreLabel": "View More",
-      "items": [],
       "emptyState": "No press releases available yet."
     },
     "detail": {
@@ -780,10 +778,19 @@
   "feesPage": {
     "metaTitle": "Fees | V Pay",
     "metaDescription": "Explore competitor comparisons, fee guidance, remittance limits, and processing time guidance on the V Pay fees page.",
-    "comparisonTitle": "Fees and Limits",
-    "comparisonSubtitle": "VPAY provides transparent cost guidance so users can review the applied FX rate and estimated fees before sending money.",
-    "feeGuideTitle": "Fee Guide",
-    "feeGuideSubtitle": "Fees may vary depending on destination, amount, and payout method. Final conditions can be reviewed before submitting a transfer.",
+    "comparisonTitle": "Transparent Fees. Fast Transfers.",
+    "comparisonSubtitle": "Send money up to 90% cheaper than a bank with VPay.",
+    "cardLabels": {
+      "fee": "Fee",
+      "processingTime": "Processing Time",
+      "limitPerTxn": "Per Transaction",
+      "limitAnnual": "Annual Limit"
+    },
+    "statusBadge": {
+      "available": "Available",
+      "comingSoon": "Coming Soon"
+    },
+    "disclaimer": "Fees and processing times are subject to change. Transfer limits comply with applicable laws and are calculated on a calendar year basis (Jan 1 – Dec 31).",
     "reasons": {
       "title": "Why Fees Can Be More Efficient",
       "cta": "Send Money",
@@ -818,15 +825,12 @@
         }
       ]
     },
-    "limitTitle": "Transfer Limits",
-    "limitSubtitle": "Transfer limits apply according to service policy and applicable regulations. The latest limit criteria should be maintained through operational policy.",
-    "timeTitle": "Expected Processing Time",
-    "timeSubtitle": "Most transactions are processed quickly, but actual timing may vary depending on local bank hours and partner-side handling.",
     "ctaTitle": "Beyond the borders of global finance,\nfaster and easier",
     "ctaButton": "Download App"
   },
   "footer": {
     "company": "V Pay Corporation",
+    "fssDisclaimer": "VPay Co., Ltd. is currently in the process of registering as a small-amount overseas remittance service provider with the Financial Supervisory Service (FSS) of Korea. Actual remittance services will not be available until registration is complete.",
     "contactEmail": "info@vpayv.com",
     "contactPhone": "+82-1533-5845",
     "address": "30F, V494, B-dong, 323 Incheon Tower-daero, Yeonsu-gu, Incheon, Republic of Korea",

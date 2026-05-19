@@ -99,6 +99,15 @@ export default async function Footer() {
           <div className="flex flex-col gap-6 desktop:gap-8">
             <div className="h-px w-full bg-[#d1d1d6]" />
 
+            <p
+              className={cn(
+                'text-[12px] font-normal leading-[1.6] text-[#8e8e93] md:text-[13px] desktop:text-[14px] desktop:leading-[22px]',
+                locale === 'ko' ? 'font-noto' : 'font-inter',
+              )}
+            >
+              {t('fssDisclaimer')}
+            </p>
+
             <div className="flex flex-col gap-4 desktop:flex-row desktop:items-center desktop:justify-between">
               <p
                 className="text-[14px] font-normal leading-[1.4] text-[#8e8e93] md:text-[16px] desktop:text-[20px] desktop:leading-[25px] font-inter"

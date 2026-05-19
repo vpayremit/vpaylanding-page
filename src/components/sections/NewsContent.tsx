@@ -1,14 +1,15 @@
-import { getTranslations } from 'next-intl/server'
+import { getLocale, getTranslations } from 'next-intl/server'
 
+import { getNotices, getPressReleases } from '@/data/news'
 import { buildNewsArticleItems } from '@/lib/news'
-import type { NewsArticleItem, NewsChannelItem, NewsTabKey } from '@/types'
+import type { NewsChannelItem, NewsTabKey } from '@/types'
 
 import NewsTabs from './NewsTabs'
 
 export default async function NewsContent({ activeTab }: { activeTab: NewsTabKey }) {
-  const t = await getTranslations('newsPage')
-  const noticeItems = buildNewsArticleItems(t.raw('notice.items') as NewsArticleItem[], 'notice')
-  const pressItems = buildNewsArticleItems(t.raw('pressReleases.items') as NewsArticleItem[], 'pressReleases')
+  const [t, locale] = await Promise.all([getTranslations('newsPage'), getLocale()])
+  const noticeItems = buildNewsArticleItems(getNotices(locale as 'ko' | 'en'), 'notice')
+  const pressItems = buildNewsArticleItems(getPressReleases(locale as 'ko' | 'en'), 'pressReleases')
   const snsChannels = t.raw('sns.channels') as NewsChannelItem[]
 
   return (

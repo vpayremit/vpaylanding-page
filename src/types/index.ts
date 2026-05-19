@@ -126,6 +126,21 @@ export interface NewsChannelItem {
   icon: string
 }
 
+export type FeeStatus = 'available' | 'coming_soon'
+
+export interface FeeEntry {
+  country: string
+  country_ko: string
+  flag: string
+  currency: string
+  fee?: string
+  processing_time?: string
+  processing_time_ko?: string
+  limit_per_txn?: string
+  limit_annual?: string
+  status: FeeStatus
+}
+
 export interface LocalePageProps {
   params: Promise<{ locale: string }>
 }

@@ -21,7 +21,7 @@ export default async function ServiceRealTimeFxContent() {
   const faqItems = t.raw('faq.items') as Array<{ question: string; answer: string }>
 
   const processFilename = locale === 'ko' ? 'service-fx-process-ko.png' : 'service-fx-process-en.png'
-  const ctaFilename = locale === 'ko' ? 'service-p2p-cta-ko.png' : 'service-p2p-cta-en.png'
+  const ctaFilename = locale === 'ko' ? 'service-fx-cta-ko.png' : 'service-fx-cta-en.png'
   const reviewAvatars = ['service-fx-testimonial-1.png', 'service-fx-testimonial-2.png']
 
   return (

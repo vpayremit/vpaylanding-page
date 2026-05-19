@@ -1,0 +1,42 @@
+[
+  {
+    "country": "Hong Kong",
+    "country_ko": "홍콩",
+    "flag": "flag-hk.svg",
+    "currency": "HKD",
+    "fee": "₩5,000",
+    "processing_time": "Within 1 business day",
+    "processing_time_ko": "영업일 기준 1일 이내",
+    "limit_per_txn": "USD 5,000",
+    "limit_annual": "USD 100,000",
+    "status": "available"
+  },
+  {
+    "country": "Vietnam",
+    "country_ko": "베트남",
+    "flag": "flag-vn.svg",
+    "currency": "VND",
+    "status": "coming_soon"
+  },
+  {
+    "country": "Philippines",
+    "country_ko": "필리핀",
+    "flag": "flag-ph.svg",
+    "currency": "PHP",
+    "status": "coming_soon"
+  },
+  {
+    "country": "Thailand",
+    "country_ko": "태국",
+    "flag": "flag-th.svg",
+    "currency": "THB",
+    "status": "coming_soon"
+  },
+  {
+    "country": "United States",
+    "country_ko": "미국",
+    "flag": "flag-en.svg",
+    "currency": "USD",
+    "status": "coming_soon"
+  }
+]

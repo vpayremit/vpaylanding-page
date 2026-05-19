@@ -83,9 +83,9 @@
   "servicePages": {
     "personalTransfer": {
       "hero": {
-        "badge": "Personal Remittance",
-        "title": "개인 해외송금",
-        "subtitle": "VPAY는 한국에서 해외 수취인에게 보다 빠르고 명확하게 송금할 수 있도록 설계된 개인 해외송금 서비스입니다. 송금 전에 적용 환율과 수수료를 확인하고, 거래 상태를 앱에서 추적할 수 있습니다."
+        "badge": "국•내외",
+        "title": "개인 송금",
+        "subtitle": "빠르고 저렴하게, 한국과 해외를 연결하는 개인 간(P2P) 글로벌 송금 서비스"
       },
       "reviews": {
         "title": "타깃 리뷰",
@@ -190,9 +190,9 @@
     },
     "businessTransfer": {
       "hero": {
-        "badge": "Business Transfer",
+        "badge": "국•내외",
         "title": "기업 결제/송금",
-        "subtitle": "VPAY는 해외 공급업체 대금 지급, 파트너 정산, 운영 자금 이체 등 기업의 국경 간 자금 이동을 보다 명확하게 관리할 수 있도록 기업 결제/송금 서비스를 준비하고 있습니다."
+        "subtitle": "빠르고 API 기반의 결제 및 정산 인프라로, 빠르고 안전한 기업 간(B2B) 글로벌 결제"
       },
       "reviews": {
         "title": "타깃 리뷰",
@@ -269,9 +269,9 @@
     },
     "realTimeFx": {
       "hero": {
-        "badge": "FX Guidance",
-        "title": "환율 안내",
-        "subtitle": "VPAY는 송금 전에 적용 환율과 수수료 구조를 보다 명확하게 확인할 수 있도록 환율 안내 정보를 제공합니다."
+        "badge": "투명한 수수료",
+        "title": "실시간 환전",
+        "subtitle": "글로벌 환율 데이터를 기반으로, 투명한 수수료와 즉시 환전을 지원하는 안전한 거래 서비스"
       },
       "reviews": {
         "title": "타깃 리뷰",
@@ -530,14 +530,12 @@
       "sectionTitle": "공지사항",
       "searchPlaceholder": "내용 검색",
       "moreLabel": "더 보기",
-      "items": [],
       "emptyState": "등록된 공지사항이 없습니다."
     },
     "pressReleases": {
       "sectionTitle": "보도자료",
       "searchPlaceholder": "내용 검색",
       "moreLabel": "더 보기",
-      "items": [],
       "emptyState": "등록된 보도자료가 없습니다."
     },
     "detail": {
@@ -780,10 +778,19 @@
   "feesPage": {
     "metaTitle": "수수료 | V Pay",
     "metaDescription": "경쟁사 비교, 수수료 안내, 한도 안내와 시간 안내를 확인하는 V Pay 수수료 페이지입니다.",
-    "comparisonTitle": "수수료 및 한도 안내",
-    "comparisonSubtitle": "VPAY는 송금 전에 적용 환율과 예상 수수료를 확인할 수 있도록 투명한 비용 안내를 제공합니다.",
-    "feeGuideTitle": "수수료 안내",
-    "feeGuideSubtitle": "수수료는 송금 국가, 금액, 지급 방식에 따라 달라질 수 있습니다. 실제 송금 진행 전에 최종 적용 조건을 확인할 수 있습니다.",
+    "comparisonTitle": "투명한 수수료, 빠른 송금",
+    "comparisonSubtitle": "은행보다 최대 90% 저렴하게, VPay로 보내세요.",
+    "cardLabels": {
+      "fee": "수수료",
+      "processingTime": "처리 시간",
+      "limitPerTxn": "건당 한도",
+      "limitAnnual": "연간 한도"
+    },
+    "statusBadge": {
+      "available": "이용 가능",
+      "comingSoon": "출시 예정"
+    },
+    "disclaimer": "수수료 및 처리 시간은 서비스 상황에 따라 변경될 수 있습니다. 송금 한도는 관련 법령에 따르며, 연간 한도는 역년(1.1~12.31) 기준으로 산정됩니다.",
     "reasons": {
       "title": "수수료가 낮은 이유",
       "cta": "송금하기",
@@ -818,15 +825,12 @@
         }
       ]
     },
-    "limitTitle": "한도 안내",
-    "limitSubtitle": "서비스 정책 및 관련 법규에 따라 송금 한도가 적용됩니다. 최신 한도 기준은 서비스 운영 정책에 따라 반영됩니다.",
-    "timeTitle": "예상 처리 시간",
-    "timeSubtitle": "대부분의 거래는 빠르게 처리되지만, 국가별 은행 운영 시간 및 파트너 처리 상황에 따라 시간이 달라질 수 있습니다.",
     "ctaTitle": "글로벌 금융의 경계를 넘어,\n더 빠르고 쉽게",
     "ctaButton": "앱 다운로드"
   },
   "footer": {
     "company": "브이페이 주식회사",
+    "fssDisclaimer": "주식회사 브이페이는 현재 금융감독원 소액해외송금업 등록 신청 중입니다. 등록 완료 전까지 실제 송금 서비스는 제공되지 않으며, 등록 완료 후 정식 서비스를 개시할 예정입니다.",
     "contactEmail": "info@vpayv.com",
     "contactPhone": "+82-1533-5845",
     "address": "인천광역시 연수구 인천타워대로 323, B동 30층 V494호",

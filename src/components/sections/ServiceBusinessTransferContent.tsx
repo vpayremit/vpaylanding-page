@@ -19,7 +19,7 @@ export default async function ServiceBusinessTransferContent() {
   const faqItems = t.raw('faq.items') as Array<{ question: string; answer: string }>
 
   const processFilename = locale === 'ko' ? 'service-b2b-process-ko.png' : 'service-b2b-process-en.png'
-  const ctaFilename = locale === 'ko' ? 'service-p2p-cta-ko.png' : 'service-p2p-cta-en.png'
+  const ctaFilename = locale === 'ko' ? 'service-b2b-cta-ko.png' : 'service-b2b-cta-en.png'
 
   return (
     <main className="bg-white">

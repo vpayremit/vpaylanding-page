@@ -1,0 +1,18 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="flag-ph-clip">
+      <circle cx="12" cy="12" r="12"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#flag-ph-clip)">
+    <rect width="24" height="12" fill="#0038A8"/>
+    <rect y="12" width="24" height="12" fill="#CE1126"/>
+    <path d="M0 0 L10.4 12 L0 24 Z" fill="#FFFFFF"/>
+    <circle cx="3.6" cy="12" r="2" fill="#FCD116"/>
+    <g fill="#FCD116">
+      <circle cx="1.4" cy="3.4" r="0.6"/>
+      <circle cx="1.4" cy="20.6" r="0.6"/>
+      <circle cx="7.4" cy="12" r="0.6"/>
+    </g>
+  </g>
+</svg>

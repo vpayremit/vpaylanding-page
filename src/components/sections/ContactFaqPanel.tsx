@@ -18,6 +18,8 @@ interface ContactFaqPanelProps {
   moreLabel: string
 }
 
+const INITIAL_VISIBLE_COUNT = 4
+
 export default function ContactFaqPanel({
   title,
   searchPlaceholder,
@@ -27,6 +29,10 @@ export default function ContactFaqPanel({
 }: ContactFaqPanelProps) {
   const [activeTab, setActiveTab] = useState(tabs[0]?.key ?? '')
   const [searchValue, setSearchValue] = useState('')
+  const [showAll, setShowAll] = useState(false)
+
+  const visibleItems = showAll ? items : items.slice(0, INITIAL_VISIBLE_COUNT)
+  const hasMore = items.length > INITIAL_VISIBLE_COUNT && !showAll
 
   return (
     <section className="bg-white pt-12 pb-16 md:pt-16 md:pb-20 desktop:pt-[80px] desktop:pb-[80px]">
@@ -82,7 +88,7 @@ export default function ContactFaqPanel({
           </div>
 
           <div className="border-t border-[#d1d1d6]">
-            {items.map((item) => (
+            {visibleItems.map((item) => (
               <div
                 key={item.question}
                 className="border-b border-[#d1d1d6] py-5 md:py-6 desktop:py-[26px]"
@@ -101,16 +107,17 @@ export default function ContactFaqPanel({
             ))}
           </div>
 
-          {/* TODO: Connect to paginated FAQ list or CMS */}
-          <div className="flex justify-center">
-            <button
-              className="inline-flex h-[54px] items-center justify-center rounded-[500px] border border-[#b5b5bc] bg-white px-[26px] text-base font-bold leading-6 text-primary font-inter opacity-50"
-              type="button"
-              disabled
-            >
-              {moreLabel}
-            </button>
-          </div>
+          {hasMore ? (
+            <div className="flex justify-center">
+              <button
+                className="inline-flex h-[54px] cursor-pointer items-center justify-center rounded-[500px] border border-[#b5b5bc] bg-white px-[26px] text-base font-bold leading-6 text-primary transition hover:border-cta hover:text-cta font-inter"
+                type="button"
+                onClick={() => setShowAll(true)}
+              >
+                {moreLabel}
+              </button>
+            </div>
+          ) : null}
         </div>
       </div>
     </section>
