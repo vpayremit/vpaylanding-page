@@ -262,26 +262,28 @@ function SnsPanel({
           </div>
 
           <div className="flex flex-wrap justify-center gap-4 desktop:gap-8">
-            {channels.map((channel) => (
-              // TODO: Replace with <a href={channel.url}> once official SNS URLs are confirmed
-              <button
-                className="flex min-h-[92px] w-full flex-none items-center justify-between rounded-3xl bg-white px-6 py-5 text-left shadow-[0_12px_30px_rgba(15,23,42,0.04)] md:w-[calc((100%-1rem)/2)] desktop:w-[calc((100%-4rem)/3)] opacity-50"
-                data-news-sns-channel={channel.label}
-                key={channel.label}
-                type="button"
-                disabled
-              >
-                <div className="flex items-center gap-4">
-                  <SocialIcon filename={channel.icon} />
-                  <span
-                    className="text-[20px] font-bold leading-none text-[#1c1c1e] desktop:text-[28px] font-noto"
-                  >
-                    {channel.label}
-                  </span>
-                </div>
-                <span className="text-2xl font-bold text-cta">→</span>
-              </button>
-            ))}
+            {channels
+              .filter((channel) => Boolean(channel.url))
+              .map((channel) => (
+                <a
+                  className="flex min-h-[92px] w-full flex-none items-center justify-between rounded-3xl bg-white px-6 py-5 text-left shadow-[0_12px_30px_rgba(15,23,42,0.04)] transition hover:shadow-[0_18px_40px_rgba(15,23,42,0.08)] md:w-[calc((100%-1rem)/2)] desktop:w-[calc((100%-4rem)/3)]"
+                  data-news-sns-channel={channel.label}
+                  href={channel.url}
+                  key={channel.label}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <div className="flex items-center gap-4">
+                    <SocialIcon filename={channel.icon} />
+                    <span
+                      className="text-[20px] font-bold leading-none text-[#1c1c1e] desktop:text-[28px] font-noto"
+                    >
+                      {channel.label}
+                    </span>
+                  </div>
+                  <span className="text-2xl font-bold text-cta">→</span>
+                </a>
+              ))}
           </div>
         </div>
       </section>

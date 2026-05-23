@@ -83,7 +83,7 @@
   "servicePages": {
     "personalTransfer": {
       "hero": {
-        "badge": "국•내외",
+        "badge": "개인",
         "title": "개인 송금",
         "subtitle": "빠르고 저렴하게, 한국과 해외를 연결하는 개인 간(P2P) 글로벌 송금 서비스"
       },
@@ -190,9 +190,9 @@
     },
     "businessTransfer": {
       "hero": {
-        "badge": "국•내외",
+        "badge": "기업",
         "title": "기업 결제/송금",
-        "subtitle": "빠르고 API 기반의 결제 및 정산 인프라로, 빠르고 안전한 기업 간(B2B) 글로벌 결제"
+        "subtitle": "API 기반의 결제 및 정산 인프라로, 빠르고 안전한 기업 간(B2B) 글로벌 결제 및 송금 서비스"
       },
       "reviews": {
         "title": "타깃 리뷰",
@@ -589,19 +589,22 @@
       "channels": [
         {
           "label": "인스타그램",
-          "icon": "news-social-instagram.svg"
+          "icon": "news-social-instagram.svg",
+          "url": "https://www.instagram.com/vpay.official/"
+        },
+        {
+          "label": "네이버 블로그",
+          "icon": "news-social-naver-blog.svg",
+          "url": "https://blog.naver.com/vpay_official"
+        },
+        {
+          "label": "유튜브",
+          "icon": "news-social-youtube.svg",
+          "url": "https://www.youtube.com/@VPay_Official"
         },
         {
           "label": "페이스북",
           "icon": "news-social-facebook.svg"
-        },
-        {
-          "label": "유튜브",
-          "icon": "news-social-youtube.svg"
-        },
-        {
-          "label": "네이버 블로그",
-          "icon": "news-social-naver-blog.svg"
         },
         {
           "label": "링크드인",
@@ -830,6 +833,7 @@
   },
   "footer": {
     "company": "브이페이 주식회사",
+    "termsAndPoliciesTitle": "이용약관 및 정책",
     "fssDisclaimer": "주식회사 브이페이는 현재 금융감독원 소액해외송금업 등록 신청 중입니다. 등록 완료 전까지 실제 송금 서비스는 제공되지 않으며, 등록 완료 후 정식 서비스를 개시할 예정입니다.",
     "contactEmail": "info@vpayv.com",
     "contactPhone": "+82-1533-5845",

@@ -2,11 +2,21 @@ import Image from 'next/image'
 import { getLocale, getTranslations } from 'next-intl/server'
 
 import { Link } from '@/i18n/navigation'
+import { TERMS_MANIFEST, TERMS_SLUGS } from '@/data/terms'
 import { cn } from '@/lib/utils'
+import type { NewsChannelItem } from '@/types'
 
 export default async function Footer() {
-  const [t, locale] = await Promise.all([getTranslations('footer'), getLocale()])
+  const [t, tNews, locale] = await Promise.all([
+    getTranslations('footer'),
+    getTranslations('newsPage'),
+    getLocale(),
+  ])
   const backgroundSrc = locale === 'ko' ? '/images/footer-bg-ko.png' : '/images/footer-bg-en.png'
+  const safeLocale: 'ko' | 'en' = locale === 'en' ? 'en' : 'ko'
+  const socialChannels = (tNews.raw('sns.channels') as NewsChannelItem[]).filter(
+    (channel): channel is NewsChannelItem & { url: string } => Boolean(channel.url),
+  )
 
   return (
     <footer className="relative overflow-hidden bg-primary" id="contact">
@@ -81,6 +91,56 @@ export default async function Footer() {
                   </p>
                 </div>
               </div>
+
+              {socialChannels.length > 0 ? (
+                <div className="flex flex-wrap items-center gap-3 desktop:gap-4">
+                  {socialChannels.map((channel) => (
+                    <a
+                      key={channel.label}
+                      href={channel.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={channel.label}
+                      className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/80 transition hover:bg-white desktop:h-12 desktop:w-12"
+                    >
+                      <Image
+                        src={`/icons/${channel.icon}`}
+                        alt=""
+                        width={24}
+                        height={24}
+                        className="h-5 w-5 desktop:h-6 desktop:w-6"
+                        unoptimized
+                      />
+                    </a>
+                  ))}
+                </div>
+              ) : null}
+            </div>
+
+            <div className="flex flex-col gap-5 desktop:gap-6">
+              <p
+                className={cn(
+                  'text-[15px] font-bold leading-none text-[#1c1c1e] md:text-[18px] desktop:text-[20px]',
+                  locale === 'ko' ? 'font-noto' : 'font-inter',
+                )}
+              >
+                {t('termsAndPoliciesTitle')}
+              </p>
+              <ul className="flex flex-col gap-3 desktop:gap-4">
+                {TERMS_SLUGS.map((slug) => (
+                  <li key={slug}>
+                    <Link
+                      href={`/terms/${slug}`}
+                      className={cn(
+                        'text-[14px] leading-[1.45] text-[#414545] transition hover:text-cta md:text-[16px] desktop:text-[17px]',
+                        locale === 'ko' ? 'font-noto' : 'font-inter',
+                      )}
+                    >
+                      {TERMS_MANIFEST[slug].label[safeLocale]}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
 
             <div className="flex items-center justify-start desktop:justify-end">
@@ -116,13 +176,6 @@ export default async function Footer() {
               </p>
 
               <div className="flex flex-wrap items-center gap-3 md:gap-4 desktop:gap-6">
-                <Link
-                  className={cn("cursor-pointer text-[16px] font-semibold leading-none text-[#1c1c1e] transition hover:text-cta md:text-[20px] desktop:text-[24px] desktop:leading-[24px]", locale === 'ko' ? 'font-noto' : 'font-inter')}
-                  href="/terms"
-                >
-                  {t('links.terms')}
-                </Link>
-                <span className="hidden h-5 w-px bg-[#d1d1d6] desktop:block" />
                 <Link
                   className={cn("cursor-pointer text-[16px] font-semibold leading-none text-[#1c1c1e] transition hover:text-cta md:text-[20px] desktop:text-[24px] desktop:leading-[24px]", locale === 'ko' ? 'font-noto' : 'font-inter')}
                   href="/policy"

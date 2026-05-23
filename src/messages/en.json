@@ -83,7 +83,7 @@
   "servicePages": {
     "personalTransfer": {
       "hero": {
-        "badge": "Domestic · International",
+        "badge": "Personal",
         "title": "Personal Transfer",
         "subtitle": "A Fast and Low-Cost P2P Global Remittance Service Connecting Korea and Overseas"
       },
@@ -190,7 +190,7 @@
     },
     "businessTransfer": {
       "hero": {
-        "badge": "Domestic · International",
+        "badge": "Business",
         "title": "Business Payment & Transfers",
         "subtitle": "A fast and secure B2B global payment and remittance service powered by API-based payment and settlement infrastructure."
       },
@@ -589,19 +589,22 @@
       "channels": [
         {
           "label": "Instagram",
-          "icon": "news-social-instagram.svg"
+          "icon": "news-social-instagram.svg",
+          "url": "https://www.instagram.com/vpay.official/"
+        },
+        {
+          "label": "Naver Blog",
+          "icon": "news-social-naver-blog.svg",
+          "url": "https://blog.naver.com/vpay_official"
+        },
+        {
+          "label": "YouTube",
+          "icon": "news-social-youtube.svg",
+          "url": "https://www.youtube.com/@VPay_Official"
         },
         {
           "label": "Facebook",
           "icon": "news-social-facebook.svg"
-        },
-        {
-          "label": "YouTube",
-          "icon": "news-social-youtube.svg"
-        },
-        {
-          "label": "Naver Blog",
-          "icon": "news-social-naver-blog.svg"
         },
         {
           "label": "LinkedIn",
@@ -830,6 +833,7 @@
   },
   "footer": {
     "company": "V Pay Corporation",
+    "termsAndPoliciesTitle": "Terms & Policies",
     "fssDisclaimer": "VPay Co., Ltd. is currently in the process of registering as a small-amount overseas remittance service provider with the Financial Supervisory Service (FSS) of Korea. Actual remittance services will not be available until registration is complete.",
     "contactEmail": "info@vpayv.com",
     "contactPhone": "+82-1533-5845",

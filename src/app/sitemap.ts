@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next'
 
 import { getNotices, getPressReleases } from '@/data/news'
+import { TERMS_SLUGS } from '@/data/terms'
 import { routing } from '@/i18n/routing'
 import { getSiteUrl } from '@/lib/metadata'
 import { buildNewsArticleItems } from '@/lib/news'
@@ -42,6 +43,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         lastModified,
         changeFrequency: 'monthly',
         priority: 0.6,
+      })
+    }
+
+    for (const slug of TERMS_SLUGS) {
+      entries.push({
+        url: `${origin}/${locale}/terms/${slug}`,
+        lastModified,
+        changeFrequency: 'yearly',
+        priority: 0.4,
       })
     }
 

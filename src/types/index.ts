@@ -124,6 +124,7 @@ export interface NewsDetailSection {
 export interface NewsChannelItem {
   label: string
   icon: string
+  url?: string
 }
 
 export type FeeStatus = 'available' | 'coming_soon'

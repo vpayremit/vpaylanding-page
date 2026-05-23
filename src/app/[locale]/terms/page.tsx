@@ -1,7 +1,11 @@
-import SubpageScaffold from '@/components/layout/SubpageScaffold'
-import { getTranslations } from 'next-intl/server'
+import { redirect } from '@/i18n/navigation'
+import { TERMS_SLUGS } from '@/data/terms'
+import type { LocalePageProps } from '@/types'
 
-export default async function TermsPage() {
-  const t = await getTranslations('footer')
-  return <SubpageScaffold title={t('links.terms')} />
+export default async function TermsPage({ params }: LocalePageProps) {
+  const { locale } = await params
+  redirect({
+    href: `/terms/${TERMS_SLUGS[0]}`,
+    locale: locale as 'ko' | 'en',
+  })
 }
