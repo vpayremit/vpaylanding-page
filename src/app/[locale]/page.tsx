@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: LocalePageProps) {
       locale === 'ko'
         ? `${tNav('brand')}는 한국과 해외를 연결하는 글로벌 송금 및 결제 서비스를 제공합니다.`
         : `${tNav('brand')} provides global remittance and payment services connecting Korea and overseas.`,
-    image: '/images/policy-hero-badge.png',
+    image: '/images/og-home.png',
   })
 }
 
