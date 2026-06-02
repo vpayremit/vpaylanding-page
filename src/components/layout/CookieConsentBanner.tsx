@@ -41,7 +41,7 @@ export default function CookieConsentBanner() {
     >
       {t('message')}{' '}
       <Link
-        href="/policy"
+        href="/terms"
         style={{ color: '#FF7A21', textDecoration: 'underline' }}
       >
         {t('privacyLinkText')}

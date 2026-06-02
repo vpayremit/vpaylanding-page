@@ -15,7 +15,6 @@
     "services": "Service",
     "fees": "Fees",
     "news": "News",
-    "policy": "Policy",
     "contact": "Contact"
   },
   "serviceMenu": {
@@ -676,108 +675,6 @@
     "businessHoursLabel": "Business Hours",
     "businessHoursValue": "Weekdays 09:00–18:00"
   },
-  "policyPage": {
-    "metaTitle": "Payment and Security Policy | V Pay",
-    "metaDescription": "V Pay policy page covering payment statuses, security, and the transparency of transaction processing.",
-    "heroTitle": "Service and Security Guide",
-    "heroSubtitle": "This page explains identity verification, security, transaction status, and cancellation / refund guidance users should know when using VPAY.",
-    "complianceSections": [
-      {
-        "title": "Regulations and Licenses",
-        "description": "V Pay strictly complies with both global and domestic financial regulations to provide a stable and trustworthy service.\nWe secure the licenses and certifications required across multiple countries and markets, enabling business expansion while protecting users.",
-        "bullets": [
-          "Compliance with domestic financial regulations: full adherence to the Foreign Exchange Transactions Act, Electronic Financial Transactions Act, and related laws",
-          "Global licensing secured: acquisition of key country-specific approvals for remittance, payments, and digital asset services",
-          "KYC / AML policy: automated systems for customer identity verification and anti-money laundering controls",
-          "Data protection and security: compliance with personal data protection laws and international standards such as ISO / IEC 27001",
-          "Response to regulatory changes: flexible adaptation to new laws and policy changes to minimize business risk"
-        ]
-      },
-      {
-        "title": "Security",
-        "description": "Security architecture (2FA, Transaction Risk Engine, and more)",
-        "bullets": [
-          "2FA multi-factor authentication to prevent account takeover",
-          "Transaction Risk Engine analyzes transaction patterns and detects abnormal transactions in real time",
-          "Data encryption, access control, and log monitoring",
-          "Fraud detection, real-time monitoring, internal audit logging",
-          "High availability, real-time response, and regulatory compliance"
-        ]
-      }
-    ],
-    "statusTitle": "Payment Status",
-    "statusSubtitle": "A table describing the meaning of statuses used in the system",
-    "tableHeaders": {
-      "code": "Status Code",
-      "status": "Status",
-      "description": "Description"
-    },
-    "statusTables": [
-      {
-        "title": "Payment Status",
-        "rows": [
-          {
-            "code": "PAY_STANDBY",
-            "status": "Pending",
-            "description": "The transaction is being processed."
-          },
-          {
-            "code": "PAY_APPROVED",
-            "status": "Approved",
-            "description": "The transaction has been confirmed."
-          },
-          {
-            "code": "PAY_PROGRESS",
-            "status": "In Progress",
-            "description": "The transaction is being processed."
-          },
-          {
-            "code": "PAY_COMPLETE",
-            "status": "Completed",
-            "description": "The payment has been completed."
-          },
-          {
-            "code": "PAY_CANCEL",
-            "status": "Cancelled",
-            "description": "The transaction has been cancelled."
-          }
-        ]
-      },
-      {
-        "title": "Refund Status",
-        "rows": [
-          {
-            "code": "REFUND_PROGRESS",
-            "status": "Refund in Progress",
-            "description": "Refund is being processed"
-          },
-          {
-            "code": "REFUND_SUCCESS",
-            "status": "Refund Successful",
-            "description": "Refund successful"
-          }
-        ]
-      },
-      {
-        "title": "Settlement Status",
-        "rows": [
-          {
-            "code": "SETTLEMENT_COMPLETE",
-            "status": "Settlement Completed",
-            "description": "Settlement has been completed"
-          },
-          {
-            "code": "SETTLEMENT_REFUND_COMPLETE",
-            "status": "Settlement Refunded",
-            "description": "Settlement refund has been completed"
-          }
-        ]
-      }
-    ],
-    "helpTitle": "Need Help?",
-    "helpSubtitle": "If you have questions about transaction statuses or payment policies, please contact our support team.",
-    "helpCta": "Contact Support Team"
-  },
   "feesPage": {
     "metaTitle": "Fees | V Pay",
     "metaDescription": "Explore competitor comparisons, fee guidance, remittance limits, and processing time guidance on the V Pay fees page.",
@@ -832,7 +729,7 @@
     "ctaButton": "Download App"
   },
   "footer": {
-    "company": "V Pay Corporation",
+    "company": "VPay Co., Ltd.",
     "termsAndPoliciesTitle": "Terms & Policies",
     "fssDisclaimer": "VPay Co., Ltd. is currently in the process of registering as a small-amount overseas remittance service provider with the Financial Supervisory Service (FSS) of Korea. Actual remittance services will not be available until registration is complete.",
     "contactEmail": "info@vpayv.com",

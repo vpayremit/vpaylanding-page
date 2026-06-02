@@ -73,7 +73,6 @@ export default function Header() {
   const navItems = [
     { label: tNav('fees'), href: '/fees' },
     { label: tNav('news'), href: '/news' },
-    { label: tNav('policy'), href: '/policy' },
     { label: tNav('contact'), href: '/contact' },
   ]
   const serviceMenuItems = tServiceMenu.raw('items') as ServiceMenuItem[]

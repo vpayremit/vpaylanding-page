@@ -171,7 +171,7 @@ export default async function AboutContent() {
 
               <Link
                 className="inline-flex h-14 items-center justify-center rounded-[500px] bg-primary px-6 text-base font-bold text-white transition hover:bg-[#111923] md:h-16 md:text-lg desktop:text-2xl desktop:leading-8 font-noto"
-                href="/policy"
+                href="/terms"
               >
                 {t('confidence.cta')}
               </Link>

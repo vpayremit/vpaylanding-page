@@ -57,32 +57,18 @@ export interface FaqItem {
   answer: string
 }
 
-export interface PolicyBulletSection {
-  title: string
-  description: string
-  bullets: string[]
-}
-
-export interface PolicyStatusRow {
-  code: string
-  status: string
-  description: string
-}
-
-export interface PolicyStatusSection {
-  title: string
-  rows: PolicyStatusRow[]
-}
-
 export interface ContactInfoItem {
   type: 'address' | 'phone' | 'email'
   label: string
   value: string
 }
 
+export type ContactFaqCategory = 'paymentStatus' | 'refundStatus' | 'settlementStatus'
+
 export interface ContactFaqItem {
   question: string
   answer?: string
+  category?: ContactFaqCategory
 }
 
 export interface FeesReasonItem {

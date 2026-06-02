@@ -15,7 +15,6 @@
     "services": "서비스",
     "fees": "수수료",
     "news": "소식",
-    "policy": "정책",
     "contact": "문의"
   },
   "serviceMenu": {
@@ -675,108 +674,6 @@
     "helpCta": "지원팀에 문의하기",
     "businessHoursLabel": "운영시간",
     "businessHoursValue": "평일 09:00 ~ 18:00"
-  },
-  "policyPage": {
-    "metaTitle": "결제 및 보안 정책 | V Pay",
-    "metaDescription": "결제 상태, 보안 및 거래 처리 프로세스의 투명성을 안내하는 V Pay 정책 페이지입니다.",
-    "heroTitle": "서비스 이용 및 보안 안내",
-    "heroSubtitle": "VPAY 서비스 이용 시 확인해야 하는 본인확인, 보안, 거래 상태, 취소 및 환불 관련 안내를 제공합니다.",
-    "complianceSections": [
-      {
-        "title": "규제 및 라이센스",
-        "description": "V Pay는 글로벌 및 국내 금융 규제를 철저히 준수하며, 안정적이고 신뢰할 수 있는 서비스를 제공합니다.\n다양한 국가와 시장에서 필요한 라이선스와 인증을 확보하여 사업 확장과 사용자 보호를 동시에 실현합니다.",
-        "bullets": [
-          "국내 금융 규제 준수: 외국환거래법, 전자금융거래법 등 관련 법규 철저 준수",
-          "글로벌 라이선스 확보: 송금, 결제, 디지털 자산 관련 주요 국가별 인허가 취득",
-          "KYC / AML 정책: 고객 신원 확인 및 자금세탁 방지 자동화 시스템 운영",
-          "데이터 보호 및 보안: 개인정보 보호법, ISO / IEC 27001 등 국제 표준 준수",
-          "규제 변화 대응: 신규 법규 및 정책 변화에 유연하게 대응하여 사업 리스크 최소화"
-        ]
-      },
-      {
-        "title": "보안",
-        "description": "보안 구조 (2FA, Transaction Risk Engine 등)",
-        "bullets": [
-          "2FA 다단계 인증으로 계정 탈취 방지",
-          "Transaction Risk Engine 거래 패턴 분석 및 이상 거래 실시간 탐지",
-          "데이터 암호화, 접근 제어, 로그 모니터링",
-          "거래 이상 탐지, 실시간 모니터링, 내부 감사 로그",
-          "고가용성, 실시간 대응, 규제 준수"
-        ]
-      }
-    ],
-    "statusTitle": "결제 상태",
-    "statusSubtitle": "시스템 내 상태의 의미를 조회하는 표",
-    "tableHeaders": {
-      "code": "상태 코드",
-      "status": "상태",
-      "description": "설명"
-    },
-    "statusTables": [
-      {
-        "title": "결제 상태",
-        "rows": [
-          {
-            "code": "PAY_STANDBY",
-            "status": "대기 중",
-            "description": "거래가 처리 중입니다."
-          },
-          {
-            "code": "PAY_APPROVED",
-            "status": "승인됨",
-            "description": "거래가 확인되었습니다."
-          },
-          {
-            "code": "PAY_PROGRESS",
-            "status": "진행 중",
-            "description": "거래가 처리 중입니다."
-          },
-          {
-            "code": "PAY_COMPLETE",
-            "status": "완료됨",
-            "description": "결제가 완료되었습니다."
-          },
-          {
-            "code": "PAY_CANCEL",
-            "status": "취소됨",
-            "description": "거래가 취소되었습니다."
-          }
-        ]
-      },
-      {
-        "title": "환불 상태",
-        "rows": [
-          {
-            "code": "REFUND_PROGRESS",
-            "status": "환불 진행 중",
-            "description": "환불 처리 중"
-          },
-          {
-            "code": "REFUND_SUCCESS",
-            "status": "환불 성공",
-            "description": "환불 성공"
-          }
-        ]
-      },
-      {
-        "title": "정산 상태",
-        "rows": [
-          {
-            "code": "SETTLEMENT_COMPLETE",
-            "status": "정산 완료",
-            "description": "정산이 완료되었습니다"
-          },
-          {
-            "code": "SETTLEMENT_REFUND_COMPLETE",
-            "status": "정산 환불됨",
-            "description": "정산 환불이 완료되었습니다"
-          }
-        ]
-      }
-    ],
-    "helpTitle": "도움이 필요하신가요?",
-    "helpSubtitle": "거래 상태나 결제 정책에 대한 질문이 있으시면, 저희 지원 팀에 문의해 주세요.",
-    "helpCta": "지원팀에 문의하기"
   },
   "feesPage": {
     "metaTitle": "수수료 | V Pay",

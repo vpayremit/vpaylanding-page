@@ -31,8 +31,20 @@ export default function ContactFaqPanel({
   const [searchValue, setSearchValue] = useState('')
   const [showAll, setShowAll] = useState(false)
 
-  const visibleItems = showAll ? items : items.slice(0, INITIAL_VISIBLE_COUNT)
-  const hasMore = items.length > INITIAL_VISIBLE_COUNT && !showAll
+  const selectTab = (key: string) => {
+    setActiveTab(key)
+    setShowAll(false)
+  }
+
+  // Filter by tab only once items carry a `category`. Until JAY's category data
+  // lands, no item has one, so every tab shows the full list (current behaviour).
+  const hasCategories = items.some((item) => item.category)
+  const tabItems = hasCategories
+    ? items.filter((item) => item.category === activeTab)
+    : items
+
+  const visibleItems = showAll ? tabItems : tabItems.slice(0, INITIAL_VISIBLE_COUNT)
+  const hasMore = tabItems.length > INITIAL_VISIBLE_COUNT && !showAll
 
   return (
     <section className="bg-white pt-12 pb-16 md:pt-16 md:pb-20 desktop:pt-[80px] desktop:pb-[80px]">
@@ -51,7 +63,7 @@ export default function ContactFaqPanel({
                   <button
                     key={tab.key}
                     className="group relative inline-flex cursor-pointer items-center justify-center pb-4 pt-2.5"
-                    onClick={() => setActiveTab(tab.key)}
+                    onClick={() => selectTab(tab.key)}
                     type="button"
                   >
                     <span

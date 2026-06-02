@@ -178,7 +178,7 @@ export default async function Footer() {
               <div className="flex flex-wrap items-center gap-3 md:gap-4 desktop:gap-6">
                 <Link
                   className={cn("cursor-pointer text-[16px] font-semibold leading-none text-[#1c1c1e] transition hover:text-cta md:text-[20px] desktop:text-[24px] desktop:leading-[24px]", locale === 'ko' ? 'font-noto' : 'font-inter')}
-                  href="/policy"
+                  href="/terms"
                 >
                   {t('links.privacy')}
                 </Link>
